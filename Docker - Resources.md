@@ -4,6 +4,7 @@
 
 * [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/) - ropnop
 * [Serverless Toolkit for Pentesters](https://blog.ropnop.com/serverless-toolkit-for-pentesters/) - ropnop
+* [Introduction to Docker for CTFs](https://www.youtube.com/watch?v=cPGZMt4cJ0I&t) - LiveOverflow
 
 
 ### Attacking Docker
@@ -11,8 +12,6 @@
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 
 * [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
-
-* [Introduction to Docker for CTFs](https://www.youtube.com/watch?v=cPGZMt4cJ0I&t) - LiveOverflow
 
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 
