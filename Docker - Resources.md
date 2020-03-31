@@ -17,22 +17,19 @@
 ### Attacking Docker
 
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
-
 * [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
-
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
-
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 
 
 ### Securing Docker
 
+* [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
 * [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - snyk
 
 ### Vulns and Exploit
 
 * [CVE Details - Docker](https://www.cvedetails.com/vulnerability-list/vendor_id-13534/product_id-28125/Docker-Docker.html)
-
 * [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271) - NIST
 * [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - palo alto networks
 * [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
