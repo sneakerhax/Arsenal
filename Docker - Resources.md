@@ -33,7 +33,8 @@
 
 * [CVE Details - Docker](https://www.cvedetails.com/vulnerability-list/vendor_id-13534/product_id-28125/Docker-Docker.html)
 
-* [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271)
+* [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271) - NIST
+* [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
 
 
 ### Kubernetes
