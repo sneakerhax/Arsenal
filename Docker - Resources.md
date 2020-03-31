@@ -29,7 +29,7 @@
 
 * [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - snyk
 
-### CVE
+### Vulnerablities and Exploit
 
 * [CVE Details - Docker](https://www.cvedetails.com/vulnerability-list/vendor_id-13534/product_id-28125/Docker-Docker.html)
 
