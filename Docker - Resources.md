@@ -39,5 +39,4 @@
 ### Kubernetes
 
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Kubernetes.io
-
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
