@@ -1,7 +1,7 @@
 # Resources
 
 ### General
-* [Docker Overview](https://docs.docker.com/engine/docker-overview/)
+* [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
 
