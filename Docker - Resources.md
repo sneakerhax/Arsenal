@@ -21,6 +21,7 @@
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - morphuslabs
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
+* [HackTheBox - Registry](https://www.youtube.com/watch?v=w0h0QYswFNA&t) - IppSec
 
 
 ### Securing Docker
