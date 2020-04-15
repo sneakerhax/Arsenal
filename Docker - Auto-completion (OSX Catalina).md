@@ -18,5 +18,13 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-complet
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose
 ```
 
+### Add to your .zshrc file
+
+```
+autoload -Uz compinit
+fpath=(~/.zsh/completion $fpath)
+compinit -i
+```
+
 ### Resources
 * https://daten-und-bass.io/blog/fixing-docker-command-auto-completion-in-mac-os-catalina/
