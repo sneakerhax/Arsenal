@@ -34,13 +34,13 @@ Run command inside of container eg. /bin/bash (must have persistent container)
 
 ### Cleanup
 
-```docker rm <container_name>```
-
-Destroy container
-
 ```docker rmi <image_name>```
 
 Destroy image
+
+```docker rm <container_name>```
+
+Destroy container
 
 ```docker rmi -f $(docker images -f "dangling=true" -q)```
 
