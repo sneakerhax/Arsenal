@@ -16,19 +16,23 @@ Building/Updating an image
 
 ### Containers
 
-```docker ps -a```
+```docker container ps -a```
 
-List all containers
+List all running containers
 
-```docker run -t -d <image>```
+```docker container ls -a```
+
+List all stopped containers
+
+```docker container run -t -d <image>```
 
 Create persistent container
 
-```docker run -it <image_name> <argument>```
+```docker container run -it <image_name> <argument>```
 
 Start a container that has an ENTRYPOINT and accepts arguments
 
-```docker exec -it <container_name> <command_name>```
+```docker container exec -it <container_name> <command_name>```
 
 Run command inside of container eg. /bin/bash (must have persistent container)
 
