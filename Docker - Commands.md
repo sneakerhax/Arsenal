@@ -1,20 +1,24 @@
 # Docker - Commands
 
-```docker pull```
+### Images
 
-Pull down Docker image
+```docker pull <image_name>```
+
+Pull down an image
 
 ```docker images```
 
-List all built images
+List all images (Includes built images)
+
+```docker build -t <image_name> <location of Dockerfile>```
+
+Building/Updating an image
+
+### Containers
 
 ```docker ps -a```
 
 List all containers
-
-```docker build -t <image_name> <location of Dockerfile>```
-
-Building/Updating a docker image
 
 ```docker run -t -d <image>```
 
@@ -22,11 +26,13 @@ Create persistent container
 
 ```docker run -it <image_name> <argument>```
 
-Running a docker image that contains an ENTRYPOINT and accepts arguments
+Start a container that has an ENTRYPOINT and accepts arguments
 
 ```docker exec -it <container_name> <command_name>```
 
-Run command inside of docker container eg. /bin/bash (must have persistent container)
+Run command inside of container eg. /bin/bash (must have persistent container)
+
+### Cleanup
 
 ```docker rm <container_name>```
 
@@ -39,6 +45,10 @@ Destroy image
 ```docker rmi -f $(docker images -f "dangling=true" -q)```
 
 Remove all dangling images
+
+```docker rm $(docker ps -a -q)```
+
+Delete all stopped containers
 
 
 
