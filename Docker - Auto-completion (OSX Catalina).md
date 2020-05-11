@@ -1,7 +1,7 @@
 # Setting up Docker auto completion on OSX Catalina
 
 
-### Fetching the completion files
+## Fetching the completion files
 
 ```
 curl -L https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
@@ -9,7 +9,7 @@ curl -L https://raw.githubusercontent.com/docker/machine/master/contrib/completi
 curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
 ```
 
-### Linking the completion files
+## Linking the completion files
 
 ```
 mkdir -p ~/.zsh/completion
@@ -18,7 +18,7 @@ ln -s /Applications/Docker.app/Contents/Resources/etc/docker-machine.zsh-complet
 ln -s /Applications/Docker.app/Contents/Resources/etc/docker-compose.zsh-completion ~/.zsh/completion/_docker-compose
 ```
 
-### Add to your .zshrc file
+## Add to your .zshrc file
 
 ```
 autoload -Uz compinit
@@ -26,5 +26,5 @@ fpath=(~/.zsh/completion $fpath)
 compinit -i
 ```
 
-### Resources
+## Resources
 * https://daten-und-bass.io/blog/fixing-docker-command-auto-completion-in-mac-os-catalina/
