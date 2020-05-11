@@ -2,7 +2,7 @@
 
 A tool that collects DNS records from the 4 resources and tools that create unique findings
 
-### Setup
+## Setup
 
 Add your Censys.io censys API ID and secret (Line 9,10):
 ```
@@ -11,7 +11,7 @@ censys_API_ID = "<censys_API_ID>"
 censys_secret = "<censys_secret>"
 ```
 
-### Running with Docker
+## Running with Docker
 
 Building Docker image
 
@@ -25,7 +25,7 @@ docker run -it pydnsrecon <target>
 ```
 
 
-### Example usage
+## Example usage
 
 ```
 $ docker run -it PyDNSRecon.py site.com
