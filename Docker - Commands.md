@@ -1,6 +1,8 @@
 # Docker - Commands
 
-### Images
+Useful commands for running Docker
+
+## Images
 
 ```docker pull <image_name>```
 
@@ -14,7 +16,7 @@ List all images (Includes built images)
 
 Building/Updating an image
 
-### Containers
+## Containers
 
 ```docker container ps -a```
 
@@ -36,7 +38,7 @@ Start a container that has an ENTRYPOINT and accepts arguments
 
 Run command inside of container eg. /bin/bash (must have persistent container)
 
-### Cleanup
+## Cleanup
 
 ```docker rmi <image_name>```
 
