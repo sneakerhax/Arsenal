@@ -1,8 +1,12 @@
 # Docker - Kali Linux
 
+A dockerized version of Kali Linux
+
+## Building the image
+
 ```docker build -t kalilinux .```
 
-Building Docker image
+## Running the container
 
 ```docker run -it kalilinux /bin/bash```
 
