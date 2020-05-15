@@ -1,12 +1,14 @@
 # Docker - EmailHarvester
 
+## Building the image
+
 ```docker build -t emailharvester .```
 
-Building Docker image
+## Running the container
 
 ```docker run -it emailharvester <target>```
 
-Running Docker container
+## Troubleshooting
 
 ```docker run -it emailharvester <target> -r dogpile```
 
