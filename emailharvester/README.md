@@ -1,6 +1,6 @@
 # Docker - EmailHarvester
 
-A Dockerized version of EmailHarvester by maldevel
+A Dockerized version of the tool EmailHarvester by maldevel
 
 ## Building the image
 
