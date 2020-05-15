@@ -1,6 +1,6 @@
 # Docker - Kali Linux
 
-A dockerized version of Kali Linux
+A Dockerized version of Kali Linux by Offensive Security
 
 ## Building the image
 
