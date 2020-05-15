@@ -1,6 +1,6 @@
 # Docker - Nmap (Kali Linux)
 
-A Dockerized version of Nmap
+A Dockerized version of the tool Nmap
 
 ## Building the image
 
