@@ -1,5 +1,7 @@
 # Docker - EmailHarvester
 
+A Dockerized version of EmailHarvester
+
 ## Building the image
 
 ```docker build -t emailharvester .```
