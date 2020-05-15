@@ -1,6 +1,6 @@
 # C2Concealer
 
-A Dockerized version of Chris Truncers C2Concealer
+A Dockerized version of C2Concealer by Chris Truncer
 
 ## Building the image
 
