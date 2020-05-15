@@ -6,7 +6,7 @@ A Dockerized tool written in Python to perform recon
 
 ```docker build -t pyreconer .```
 
-Building Docker image (Chromium download takes a few minutes)
+*Chromium download takes a few minutes
 
 ## Running the container
 
