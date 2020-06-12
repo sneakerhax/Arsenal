@@ -22,6 +22,7 @@
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - morphuslabs
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 * [HackTheBox - Registry](https://www.youtube.com/watch?v=w0h0QYswFNA&t) - IppSec
+* [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - F-Secure
 
 
 ## Securing Docker
