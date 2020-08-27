@@ -23,6 +23,7 @@
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 * [HackTheBox - Registry](https://www.youtube.com/watch?v=w0h0QYswFNA&t) - IppSec
 * [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - F-Secure
+* [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 
 
 ## Securing Docker
