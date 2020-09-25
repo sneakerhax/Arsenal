@@ -16,7 +16,6 @@
 
 ## Attacking Docker
 
-* [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 * [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
@@ -25,6 +24,7 @@
 * [HackTheBox - Registry](https://www.youtube.com/watch?v=w0h0QYswFNA&t) - IppSec
 * [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - F-Secure
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
+* [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 
 
 ## Securing Docker
