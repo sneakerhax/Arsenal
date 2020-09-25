@@ -16,6 +16,7 @@
 
 ## Attacking Docker
 
+* [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 * [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
