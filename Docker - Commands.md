@@ -30,6 +30,10 @@ List all stopped containers
 
 Create persistent container
 
+```docker container logs <name/id>```
+
+Check the logs of a persistent container
+
 ```docker container run -it <image_name> <argument>```
 
 Start a container that has an ENTRYPOINT and accepts arguments
