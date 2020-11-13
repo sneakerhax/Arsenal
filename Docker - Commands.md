@@ -26,6 +26,10 @@ List all running containers
 
 List all stopped containers
 
+```docker container stats```
+
+List active stats of running containers
+
 ```docker container run -t -d <image>```
 
 Create persistent container
