@@ -68,5 +68,12 @@ Remove all dangling images
 
 Delete all stopped containers
 
+## Networking
 
+```docker network ls```
 
+List all docker networks
+
+```docker network inspect <network_name>```
+
+Inspect the details of a network
