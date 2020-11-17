@@ -81,3 +81,7 @@ Inspect the details of a network
 ```docker network create <network_name>```
 
 Create new docker network (default driver is bridge)
+
+```docker network connect/disconnect <network_name> <container_name>```
+
+Connect/disconnect a container from a network
