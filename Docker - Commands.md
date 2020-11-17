@@ -77,3 +77,7 @@ List all docker networks
 ```docker network inspect <network_name>```
 
 Inspect the details of a network
+
+```docker network create <network_name>```
+
+Create new docker network (default driver is bridge)
