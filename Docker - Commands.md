@@ -30,6 +30,10 @@ List all stopped containers
 
 List active stats of running containers
 
+```docker container port <container_name>```
+
+List port mapping in container
+
 ```docker container run -t -d <image>```
 
 Create persistent container
