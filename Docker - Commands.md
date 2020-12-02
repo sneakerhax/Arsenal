@@ -16,6 +16,14 @@ List all images (Includes built images)
 
 Building/Updating an image
 
+```docker image history <image_name>```
+
+List the image change history
+
+```docker image inspect <image_name>```
+
+Inspect the image configuration
+
 ## Containers
 
 ```docker container ps -a```
