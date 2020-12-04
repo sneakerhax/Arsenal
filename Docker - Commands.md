@@ -12,7 +12,7 @@ Pull down an image
 
 List all images (Includes built images)
 
-```docker build -t <image_name> <location of Dockerfile>```
+```docker image build -t <image_name> <location of Dockerfile>```
 
 Building/Updating an image
 
