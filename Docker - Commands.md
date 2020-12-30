@@ -48,7 +48,7 @@ Create persistent container
 
 ```docker container logs <name/id>```
 
-Check the logs of a persistent container
+Check the logs of a persistent container (add -f to continue watching)
 
 ```docker container run -it <image_name> <argument>```
 
