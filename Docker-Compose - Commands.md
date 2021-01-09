@@ -4,7 +4,7 @@
 
 ```docker-compose up```
 
-Running yaml file build (yaml file must be called docker-compose.yml or specified)
+Running yaml file build (yaml file must be called docker-compose.yml or specified). Add -d to detach (run in background)
 
 ```docker-compose build```
 
@@ -23,3 +23,9 @@ Stops all running services and deletes volumes
 ```docker-compose --rmi all```
 
 Delete all images created during the build
+
+## Monitor
+
+```docker-compose logs```
+
+View logs of running compose service
