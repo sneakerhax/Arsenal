@@ -18,4 +18,7 @@ For more information on Dockerizing tools check out these [resources](https://gi
 
 ## Usage
 
-You can find detailed information inside each tool in the Tool folder for running any of the tools in this repo
+* Commands - Commands for running Docker and Docker related tools
+* Resources - Docker Resources
+* Setup - Information about setting up Docker
+* Tools - A directory of tools. Each tool folder contains a set of instructions on how to run the tool
