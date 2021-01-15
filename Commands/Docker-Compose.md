@@ -1,4 +1,4 @@
-# Docker-Compose - Commands
+# Docker-Compose
 
 ## Starting
 
