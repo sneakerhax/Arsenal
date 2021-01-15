@@ -6,8 +6,6 @@ Offensive security tools Dockerized
 [![Docker](https://img.shields.io/badge/docker-required-0db7ed.svg?logo=docker)](https://www.docker.com/) [![PEP8](https://img.shields.io/badge/code%20style-pep8-red.svg)](https://www.python.org/dev/peps/pep-0008/) [![License](https://img.shields.io/badge/license-GPL3-lightgrey.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html) [![Twitter](https://img.shields.io/badge/twitter-sneakerhax-38A1F3?logo=twitter)](https://twitter.com/sneakerhax)
 
 
-# Usage
-
 Docker is an effective way to configure, deploy, and use offensive security tools. 
 
 Dockerizing offensive security tools provides the following benefits:
@@ -17,3 +15,7 @@ Dockerizing offensive security tools provides the following benefits:
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
 For more information on Dockerizing tools check out these [resources](https://github.com/sneakerhax/OffensiveDocker/blob/main/Resources/Resources.md)
+
+## Usage
+
+You can find detailed information inside each tool in the Tool folder for running any of the tools in this repo
