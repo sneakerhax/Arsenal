@@ -1,4 +1,4 @@
-# Docker - Commands
+# Docker
 
 Useful commands for running Docker
 
