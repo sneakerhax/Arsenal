@@ -35,7 +35,7 @@ Increase number of nodes to 3
 
 ## Deploy
 
-```docker stack deploy -c <compose_file> <service_name>
+```docker stack deploy -c <compose_file> <service_name>```
 
 Deploy a service from compose file
 
