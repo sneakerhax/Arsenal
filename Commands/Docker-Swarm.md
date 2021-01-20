@@ -37,7 +37,7 @@ Increase number of nodes to 3
 
 ```docker stack deploy -c <compose_file> <service_name>```
 
-Deploy a service from compose file
+Deploy a service to the swarm from compose file
 
 ```docker stack ls```
 
