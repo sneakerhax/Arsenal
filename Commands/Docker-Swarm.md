@@ -42,3 +42,7 @@ Deploy a service to the swarm from compose file
 ```docker stack ls```
 
 List docker swarm sevices
+
+```docker stack services <service_name>```
+
+List containers and number of replicas for a service
