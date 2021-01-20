@@ -32,3 +32,13 @@ List information on a service
 ```docker service update <service_name> --replicas 3```
 
 Increase number of nodes to 3
+
+## Deploy
+
+```docker stack deploy -c <compose_file> <service_name>
+
+Deploy a service from compose file
+
+```docker stack ls```
+
+List docker swarm sevices
