@@ -14,6 +14,9 @@ print the command to add worker to the swarm as worker (Run printed command on w
 
 print the command to add worker to the swarm as manager (Run printed command on manager node)
 
+```docker swarm leave```
+
+Run on a worker node to make it leave the swarm (use --force for managers)
 
 ## Service
 
