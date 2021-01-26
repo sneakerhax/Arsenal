@@ -4,6 +4,7 @@
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
+* [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 
 
 ## Offensive Docker (Tooling)
@@ -34,6 +35,7 @@
 * [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Stackrox
 * [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
+* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
 
 ## Vulns and Exploit
 
