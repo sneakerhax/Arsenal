@@ -14,11 +14,15 @@ Scaling to 5 replicas
 
 Expose port inside Kubenetes cluster
 
-## Monitor
+## Resources
 
 ```kubectl get all```
 
 List all Kubernetes services and resources
+
+```kubectl get services```
+
+List deployed services
 
 ## Cleanup
 
