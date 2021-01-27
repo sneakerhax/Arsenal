@@ -14,6 +14,10 @@ Scaling to 5 replicas
 
 Expose port inside Kubenetes cluster
 
+```kubectl expose deployment/<deployment_name> --port 8080 --name <name> --type NodePort```
+
+Expose port outside cluster (Used for Docker Desktop)
+
 ## Resources
 
 ```kubectl get all```
