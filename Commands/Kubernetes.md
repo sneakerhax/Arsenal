@@ -13,3 +13,9 @@ Scaling to 5 replicas
 ```kubectl expose deployment/<deployment_name> --port 8080```
 
 Expose port inside Kubenetes cluster
+
+## Cleanup
+
+```kubectl delete deployment <deployment_name>```
+
+Delete deployment
