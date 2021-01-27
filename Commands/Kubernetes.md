@@ -28,6 +28,10 @@ List all Kubernetes services and resources
 
 List deployed services
 
+```kubectl get namespaces```
+
+List all namespaces
+
 ## Cleanup
 
 ```kubectl delete deployment <deployment_name>```
