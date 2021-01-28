@@ -31,11 +31,12 @@
 ## Securing Docker
 
 * [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
+* [Docker Bench Security](https://github.com/docker/docker-bench-security) - Docker
+* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
 * [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - snyk
 * [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Stackrox
 * [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
-* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
 * [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
 
 ## Vulns and Exploit
