@@ -1,14 +1,24 @@
 # Kubernetes
 
-## Deploy
+## Create
 
 ```kubectl create deployment <deployment_name> --image=<image_name>```
 
 Create deployment
 
+## Apply
+
+```kubectl apply -f <file_name>.yml --dry-run```
+
+Shows output for the deployment without actually running
+
+## Scale
+
 ```kubectl scale deployment/<deployment_name> --replicas 5```
 
 Scaling to 5 replicas
+
+## Expose
 
 ```kubectl expose deployment/<deployment_name> --port 8080```
 
@@ -18,7 +28,7 @@ Expose port inside Kubenetes cluster
 
 Expose port outside cluster (Used for Docker Desktop)
 
-## Resources
+## Get
 
 ```kubectl get all```
 
@@ -32,7 +42,7 @@ List deployed services
 
 List all namespaces
 
-## Cleanup
+## Delete
 
 ```kubectl delete deployment <deployment_name>```
 
