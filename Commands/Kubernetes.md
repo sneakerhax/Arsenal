@@ -16,6 +16,12 @@ Shows output for the deployment without actually running
 
 Shows output for deployment by checking API (If deployment exists it will list changes)
 
+## Diff
+
+```kubectl diff -f <file_name>.yml```
+
+Compare differences between current deployment and yml deployment
+
 ## Scale
 
 ```kubectl scale deployment/<deployment_name> --replicas 5```
