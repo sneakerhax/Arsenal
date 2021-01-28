@@ -36,6 +36,7 @@
 * [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
 * [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
+* [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
 
 ## Vulns and Exploit
 
