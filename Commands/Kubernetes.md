@@ -42,6 +42,12 @@ List deployed services
 
 List all namespaces
 
+## Explain
+
+```kubectl explain services.spec```
+
+List information about services.spec (yaml spec)
+
 ## Delete
 
 ```kubectl delete deployment <deployment_name>```
