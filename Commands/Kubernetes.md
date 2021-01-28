@@ -50,6 +50,10 @@ List deployed services
 
 ```kubectl get namespaces```
 
+List namespaces in your curent context
+
+```kubectl get all --all-namespaces```
+
 List all namespaces
 
 ## Explain
