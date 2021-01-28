@@ -12,6 +12,10 @@ Create deployment
 
 Shows output for the deployment without actually running
 
+```kubectl apply -f <file_name>.yml --server-dry-run```
+
+Shows output for deployment by checking API
+
 ## Scale
 
 ```kubectl scale deployment/<deployment_name> --replicas 5```
