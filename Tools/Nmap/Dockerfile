@@ -1,4 +1,3 @@
 FROM kalilinux/kali-rolling
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get update && apt-get -y install nmap
-ENTRYPOINT [ "nmap", "-p 80" ]
+RUN apt-get update && apt-get upgrade -y && apt-get -y install nmap
+ENTRYPOINT [ "nmap" ]
