@@ -4,6 +4,7 @@
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
+* [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 
 
 ## Offensive Docker (Tooling)
@@ -25,15 +26,19 @@
 * [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - F-Secure
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 * [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
+* [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Intezer
 
 
 ## Securing Docker
 
 * [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
+* [Docker Bench Security](https://github.com/docker/docker-bench-security) - Docker
+* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
 * [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - snyk
 * [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Stackrox
 * [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
+* [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
 
 ## Vulns and Exploit
 

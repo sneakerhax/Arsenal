@@ -14,6 +14,9 @@ print the command to add worker to the swarm as worker (Run printed command on w
 
 print the command to add worker to the swarm as manager (Run printed command on manager node)
 
+```docker swarm leave```
+
+Run on a worker node to make it leave the swarm (use --force for managers)
 
 ## Service
 
@@ -32,3 +35,17 @@ List information on a service
 ```docker service update <service_name> --replicas 3```
 
 Increase number of nodes to 3
+
+## Deploy
+
+```docker stack deploy -c <compose_file> <service_name>```
+
+Deploy a service to the swarm from compose file
+
+```docker stack ls```
+
+List docker swarm sevices
+
+```docker stack services <service_name>```
+
+List containers and number of replicas for a service

@@ -2,6 +2,13 @@
 
 Useful commands for running Docker
 
+## Remote
+
+```docker -H <host>:<port> info```
+
+Connect to a remote docker api and run info command (requires protocol e.g. tcp:// ssh://)
+
+
 ## Images
 
 ```docker pull <image_name>```
