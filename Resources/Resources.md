@@ -48,8 +48,18 @@
 * [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - palo alto networks
 * [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
 
-
 ## Kubernetes
 
-* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Kubernetes.io
+* [Kubernetes Docs](https://kubernetes.io/docs/home/) - Kubernetes
+* [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) - Kubernetes
+* [Kubernetes By Example](https://kubernetesbyexample.com/) - OpenShift
+
+## Attacking Kubernetes
+
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
+
+## Securing Kubernetes
+
+* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Kubernetes.io
+
+
