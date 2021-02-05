@@ -6,6 +6,7 @@
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
 * [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 * [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
+* [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
 
 ## Offensive Docker (Tooling)
 
