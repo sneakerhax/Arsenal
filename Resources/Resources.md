@@ -5,7 +5,7 @@
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
 * [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
-
+* [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
 
 ## Offensive Docker (Tooling)
 
@@ -14,7 +14,6 @@
 * [Introduction to Docker for CTFs](https://www.youtube.com/watch?v=cPGZMt4cJ0I&t) - LiveOverflow
 * [Solving Pwnable CTF Challenge With Docker Workflow](https://www.youtube.com/watch?v=OqTpc_ljPYk) - Live Overflow
 * [Red Cloud](https://github.com/khast3x/Redcloud) - khast3x
-
 
 ## Attacking Docker
 
