@@ -59,6 +59,7 @@
 ## Attacking Kubernetes
 
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
+* [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://www.youtube.com/watch?v=aEaSZJRbnTo) - Madhu Akula
 
 ## Securing Kubernetes
 
