@@ -4,6 +4,10 @@ Useful commands for running Docker
 
 ## Remote
 
+```docker context ls```
+
+List all docker contexts (api endpoints)
+
 ```docker -H <host>:<port> info```
 
 Connect to a remote docker api and run info command (requires protocol e.g. tcp:// ssh://)
