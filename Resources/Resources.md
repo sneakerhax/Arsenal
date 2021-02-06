@@ -40,6 +40,7 @@
 * [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
 * [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
+* [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - NCC Group
 
 ## Vulns and Exploit
 
