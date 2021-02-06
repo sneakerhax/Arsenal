@@ -25,7 +25,8 @@
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - morphuslabs
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 * [ippsec.rocks - Type "docker" as the search term](https://ippsec.rocks/) - IppSec
-* [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - F-Secure
+* [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - Pasi Saarinen (F-Secure)
+* [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/) - Dominik Czarnota (Trail of Bits)
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 * [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Intezer
