@@ -48,6 +48,7 @@
 ## Vulns and Exploit
 
 * [CVE Details for Docker](https://www.cvedetails.com/vulnerability-list/vendor_id-13534/product_id-28125/Docker-Docker.html) - cvedetails
+* [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - cvedetails
 * [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - Yuval Avrahami (Palo Alto Networks)
 * [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
 
