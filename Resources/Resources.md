@@ -68,6 +68,7 @@
 * [Bust-a-Kube](https://www.bustakube.com/) - Jay Beale
    * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale (InGuardians)
    * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale (InGuardians)
+* [The Path Less Traveled: Abusing Kubernetes Defaults](https://www.youtube.com/watch?v=HmoVSmTIOxM&t=2466s) - Ian Coldwater & Duffie Cooley
 
 ## Securing Kubernetes
 
