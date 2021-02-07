@@ -22,33 +22,34 @@
 * [Attacking Docker exposed API](https://medium.com/@riccardo.ancarani94/attacking-docker-exposed-api-3e01ffc3c124) - Riccardo Ancarani
 * [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
-* [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - morphuslabs
+* [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - Victor Pasknel
+(morphuslabs)
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 * [ippsec.rocks - Type "docker" as the search term](https://ippsec.rocks/) - IppSec
 * [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - Pasi Saarinen (F-Secure)
 * [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/) - Dominik Czarnota (Trail of Bits)
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 * [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
-* [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Intezer
-* [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic
+* [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Nicole Fishbein and Michael Kajiloti (Intezer)
+* [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic (Pulse Security)
 
 ## Securing Docker
 
 * [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
 * [Docker Bench Security](https://github.com/docker/docker-bench-security) - Docker
 * [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
-* [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - snyk
-* [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Stackrox
-* [Docker Security](http://containertutorials.com/docker-security.html) - container tutorials
+* [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - Liran Tal and Omer Levi Hevroni (snyk)
+* [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Ajmal Kohgadai (StackRox)
+* [Docker Security](http://containertutorials.com/docker-security.html) - Rajdeep Dua (Container Tutorials)
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
 * [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
-* [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - NCC Group
+* [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Aaron Grattafior (NCC Group)
 
 ## Vulns and Exploit
 
 * [CVE Details for Docker](https://www.cvedetails.com/vulnerability-list/vendor_id-13534/product_id-28125/Docker-Docker.html) - cvedetails
 * [CVE-2019-14271](https://nvd.nist.gov/vuln/detail/CVE-2019-14271) - NIST
-* [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - palo alto networks
+* [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - Yuval Avrahami (Palo Alto Networks)
 * [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
 
 ## Kubernetes
@@ -62,14 +63,14 @@
 
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
 * [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://www.youtube.com/watch?v=aEaSZJRbnTo) - Madhu Akula
-* [Kubernetes Pentest Methodology Part 1](https://www.cyberark.com/resources/threat-research-blog/kubernetes-pentest-methodology-part-1) - Or Ida
-* [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi
+* [Kubernetes Pentest Methodology Part 1](https://www.cyberark.com/resources/threat-research-blog/kubernetes-pentest-methodology-part-1) - Or Ida (CyberArk)
+* [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi (Cyber Ark)
 * [Bust-a-Kube](https://www.bustakube.com/) - Jay Beale
-   * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale
-   * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale
+   * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale (InGuardians)
+   * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale (InGuardians)
 
 ## Securing Kubernetes
 
-* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Kubernetes.io
+* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
 
 
