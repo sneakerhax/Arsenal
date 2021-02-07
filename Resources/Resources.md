@@ -72,5 +72,6 @@
 ## Securing Kubernetes
 
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
+* [Kubernetes Security Best Practices](https://www.youtube.com/watch?v=wqsUfvRyYpw) - Ian Lewis, (Google)
 
 
