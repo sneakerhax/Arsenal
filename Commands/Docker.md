@@ -12,6 +12,7 @@ List all docker contexts (api endpoints)
 
 Connect to a remote docker api and run info command (requires protocol e.g. tcp:// ssh://)
 
+*Default port is 2375 un-encrypted or 2376 for encrypted communication with the daemon*
 
 ## Images
 
