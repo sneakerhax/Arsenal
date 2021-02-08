@@ -1,5 +1,18 @@
 # Kubernetes
 
+#Remote
+
+```kubectl --kubeconfig ~/.kube/config <command>```
+
+Using a kubeconfig file to access a remote API and run commands
+
+```curl https://kubernetes.site.com:6443/api```
+
+Check for the existance of the kubernetes api secure port
+
+*Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md) for interacting with kubernetes*
+
+
 ## Create
 
 ```kubectl create deployment <deployment_name> --image=<image_name>```
