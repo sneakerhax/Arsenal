@@ -63,6 +63,7 @@
 ## Attacking Kubernetes
 
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
+  * [Kubecon video NA 2019 CTF](https://www.youtube.com/watch?v=UdMFTdeAL1s&t)
 * [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://www.youtube.com/watch?v=aEaSZJRbnTo) - Madhu Akula
 * [Kubernetes Pentest Methodology Part 1](https://www.cyberark.com/resources/threat-research-blog/kubernetes-pentest-methodology-part-1) - Or Ida (CyberArk)
 * [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi (Cyber Ark)
