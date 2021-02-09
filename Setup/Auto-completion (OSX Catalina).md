@@ -33,9 +33,9 @@ compinit -i
 
 ```kubectl completion zsh```
 
-Generate the auto completion script (save this to be soured by .zshrc)
+Generate the auto completion script
 
-```source <kubectl completion zsh>```
+```source <(kubectl completion zsh)```
 
 Add this line to .zshrc
 
