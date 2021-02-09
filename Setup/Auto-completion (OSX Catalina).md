@@ -1,4 +1,4 @@
-# Setting up Docker auto completion on OSX Catalina
+# Setting up Docker auto completion on OSX Catalina (zsh)
 
 
 ## Fetching the completion files
@@ -28,3 +28,16 @@ compinit -i
 
 ## Resources
 * https://daten-und-bass.io/blog/fixing-docker-command-auto-completion-in-mac-os-catalina/
+
+# Setting up Kubernetes auto completion on OSX (zsh)
+
+```kubectl completion zsh```
+
+Generate the auto completion script (save this to be soured by .zshrc)
+
+```source <kubectl completion zsh>```
+
+Add this line to .zshrc
+
+## Resources
+* https://kubernetes.io/docs/tasks/tools/install-kubectl/
