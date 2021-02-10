@@ -82,6 +82,8 @@ Delete deployment
 
 ## Attacking
 
+### Single pod service accounts
+
 ```mount | grep kube```
 
 Searching for the serviceaccount folder (Default: /run/secrets/kubernetes.io/serviceaccount)
