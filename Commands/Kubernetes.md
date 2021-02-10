@@ -127,6 +127,9 @@ alias kubectl="<path_to_kubectl> --token=`cat /run/secrets/kubernetes.io/service
 
 Setup kubectl command with discovered credentials from serviceaccount folder
 
+```kubectl auth can-i --list```
+
+List all privileges with current context
 
 
 
