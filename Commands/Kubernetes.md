@@ -12,7 +12,6 @@ Check for the existance of the kubernetes api secure port
 
 *Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md) for interacting with kubernetes*
 
-
 ## Create
 
 ```kubectl create deployment <deployment_name> --image=<image_name>```
@@ -115,9 +114,17 @@ HOME=/root
 Search environment variables for api endpoints
 
 ```
+curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+```
+
+Downloading a copy of [kubectl](https://kubernetes.io/docs/tasks/tools/install-kubectl/) (chmod u+x before running)
+
+```
 alias kubectl="<path_to_kubectl> --token=`cat /run/secrets/kubernetes.io/serviceaccount/token` --certificate-authority=/run/secrets/kubernetes.io/serviceaccount/ca.crt -n `cat /run/secrets/kubernetes.io/serviceaccount/namespace` --server=https://<api_server_ip>:<api_server_port>"
 ```
 
 Setup kubectl command with discovered credentials from serviceaccount folder
+
+
 
 
