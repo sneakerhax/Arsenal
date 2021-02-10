@@ -70,7 +70,7 @@ List all namespaces
 
 ## Exec
 
-```kubectl exec -it <image_name> -- /bin/bash```
+```kubectl exec -it <pod_name> -- /bin/bash```
 
 Drop into interactive bash shell inside pod
 
