@@ -68,6 +68,16 @@ List namespaces in your curent context
 
 List all namespaces
 
+## Exec
+
+```kubectl exec -it <image_name> -- /bin/bash```
+
+Drop into interactive bash shell inside pod
+
+```kubectl exec <pod_name> -- <command>```
+
+Execute single command inside pod
+
 ## Explain
 
 ```kubectl explain services.spec```
