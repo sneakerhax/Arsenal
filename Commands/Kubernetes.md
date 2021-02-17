@@ -54,7 +54,7 @@ Expose port outside cluster (Used for Docker Desktop)
 
 ```kubectl get all```
 
-List all Kubernetes services and resources
+List all Kubernetes services and resources (Current namespace)
 
 ```kubectl get services```
 
@@ -67,6 +67,10 @@ List namespaces in your curent context
 ```kubectl get all --all-namespaces```
 
 List all namespaces
+
+```kubectl get pods --all-namespaces```
+
+List all pods in all namespaces
 
 ## Describe
 
