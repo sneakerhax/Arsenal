@@ -72,6 +72,10 @@ List all namespaces
 
 List all pods in all namespaces
 
+```kubectl get pods -n <namespace>```
+
+Get all pods in a namespace
+
 ## Describe
 
 ```kubectl describe node <node_name>```
