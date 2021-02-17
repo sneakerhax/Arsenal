@@ -68,6 +68,12 @@ List namespaces in your curent context
 
 List all namespaces
 
+## Describe
+
+```kubectl describe node <node_name>```
+
+Detailed information about a node
+
 ## Exec
 
 ```kubectl exec -it <pod_name> -- /bin/bash```
