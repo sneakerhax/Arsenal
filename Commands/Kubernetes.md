@@ -90,6 +90,10 @@ Execute single command inside pod
 
 List information about services.spec (yaml spec)
 
+```kubectl explain <type>```
+
+Explain a resource type (e.g. node)
+
 ## Delete
 
 ```kubectl delete deployment <deployment_name>```
