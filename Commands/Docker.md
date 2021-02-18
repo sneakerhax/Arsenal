@@ -14,6 +14,10 @@ Connect to a remote docker api and run info command (requires protocol e.g. tcp:
 
 *Default port is 2375 un-encrypted or 2376 for encrypted communication with the daemon*
 
+```curl -s --unix-socket /var/run/docker.sock http://localhost/version | jq ".ApiVersion"```
+
+Using curl to connect to the Unix socket and pulling the api version
+
 ## Images
 
 ```docker pull <image_name>```
