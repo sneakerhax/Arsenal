@@ -18,8 +18,8 @@ For more information on Dockerizing tools check out these [resources](https://gi
 
 ## Usage
 
-* Attacking - Information and commands for Attacking Docker and Kubernetes
-* Commands - Commands for running Docker and Kubernetes
-* Resources - Docker and Kubernetes Resources
-* Setup - Information about setting up Docker and Kubernetes
-* Tools - A directory of tools. Each tool folder contains a set of instructions on how to run the tool
+* **Attacking** - Information and commands for Attacking Docker and Kubernetes
+* **Commands** - Commands for running Docker and Kubernetes
+* **Resources** - Docker and Kubernetes Resources
+* **Setup** - Information about setting up Docker and Kubernetes
+* **Tools** - A directory of tools. Each tool folder contains a set of instructions on how to run the tool
