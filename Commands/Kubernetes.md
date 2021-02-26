@@ -122,6 +122,10 @@ Explain a resource type (e.g. node)
 
 Get last 10 logs from pod
 
+```kubectl logs <name> --tail 1 --follow```
+
+Follow logs
+
 ## Delete
 
 ```kubectl delete deployment <deployment_name>```
