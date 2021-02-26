@@ -28,6 +28,10 @@ Deploy a single pod
 
 Create deployment
 
+```kubectl create deployment <name> --image=alpine --replicas 3 -- ping 1.1.1.1```
+
+Create deployment with 3 replica pods and override the default command to run ping
+
 ## Apply
 
 ```kubectl apply -f <file_name>.yml --dry-run```
