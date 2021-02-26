@@ -112,6 +112,12 @@ List information about services.spec (yaml spec)
 
 Explain a resource type (e.g. node)
 
+## Logs
+
+```kubectl logs <name> --tail=10```
+
+Get last 10 logs from pod
+
 ## Delete
 
 ```kubectl delete deployment <deployment_name>```
