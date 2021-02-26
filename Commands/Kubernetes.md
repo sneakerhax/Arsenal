@@ -12,6 +12,16 @@ Check for the existance of the kubernetes api secure port
 
 *Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md) for interacting with kubernetes*
 
+```curl -k https://kubernetes.site.com:6443/version```
+
+Get api version
+
+## Run
+
+```kubectl run <name> --image alpine```
+
+Deploy a single pod
+
 ## Create
 
 ```kubectl create deployment <deployment_name> --image=<image_name>```
