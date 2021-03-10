@@ -2,11 +2,14 @@
 
 ## General
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
+* [Docker for Beginners](https://docker-curriculum.com/) - Prakhar Srivastav
 * [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
 * [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 * [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
 * [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
+* [Top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - Álvaro Iradier (sysdig)
+* [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
 
 ## Offensive Docker (Tooling)
 
@@ -34,6 +37,7 @@
 * [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Nicole Fishbein and Michael Kajiloti (Intezer)
 * [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic (Pulse Security)
+* [Docker image history modification - why you can't trust docker history](https://www.justinsteven.com/posts/2021/02/14/docker-image-history-modification/) - justinsteven
 
 ## Securing Docker
 
@@ -61,6 +65,7 @@
 * [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) - Kubernetes
 * [Kubernetes By Example](https://kubernetesbyexample.com/) - OpenShift
 * [The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno) - Matt Butcher
+* [Kubernetes Failure Stories](https://k8s.af/) - @try_except_
 
 ## Attacking Kubernetes
 
@@ -81,5 +86,6 @@
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
 * [Kubernetes Security Best Practices](https://www.youtube.com/watch?v=wqsUfvRyYpw) - Ian Lewis, (Google)
 * [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
+* [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
 
 
