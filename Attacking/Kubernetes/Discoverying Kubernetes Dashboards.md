@@ -2,7 +2,14 @@
 
 **Description:** This entry describes how to discovery Kubernetes dashboard
 
-**Requirements:** Nmap, Metasploit
+**Requirements:** Curl, Nmap, Metasploit
+
+## Curl
+
+```
+$ curl -sL localhost:30632 | grep title
+<title>Kubernetes Dashboard</title>
+```
 
 ## Nmap
 
