@@ -1,5 +1,9 @@
 # Attacking
 
+**Details:** This entry details how to use serviceaccount details that are mounted into a pod to run command on the control plane API
+
+**Requirements:** kubectl
+
 ## Pod service accounts
 
 ```mount | grep kube```
