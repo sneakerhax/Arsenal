@@ -84,13 +84,13 @@ Destroy image
 
 Destroy container
 
+```docker rm -f $(docker ps -a -q)```
+
+Delete all stopped containers (This may be required before removing all dangling images)
+
 ```docker rmi -f $(docker images -f "dangling=true" -q)```
 
 Remove all dangling images
-
-```docker rm $(docker ps -a -q)```
-
-Delete all stopped containers
 
 ## Networking
 
