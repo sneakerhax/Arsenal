@@ -90,6 +90,10 @@ List all pods in all namespaces
 
 Get all pods in a namespace
 
+```kubectl get deployment <deployment> -o yaml```
+
+Get yaml output for deployment (Also works with service, pod, secret)
+
 ## Describe
 
 ```kubectl describe node <node_name>```
