@@ -32,7 +32,7 @@ Create deployment
 
 Create deployment with 3 replica pods and override the default command to run ping
 
-```kubectl create deployment <name> --image=nginx -o yaml --dry-run```
+```kubectl create deployment <name> --image=nginx -o yaml --dry-run=client```
 
 Check deployment but don't spin up any resources. This will create a yaml file for deployment
 
