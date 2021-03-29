@@ -10,7 +10,7 @@ Using a kubeconfig file to access a remote API and run commands
 
 Check for the existance of the kubernetes api secure port
 
-*Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md) for interacting with kubernetes*
+*Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md#firewall-ports-fire) for interacting with kubernetes*
 
 ```curl -k https://kubernetes.site.com:6443/version```
 
