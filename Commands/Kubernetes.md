@@ -16,6 +16,10 @@ Check for the existance of the kubernetes api secure port
 
 Get api version
 
+```kubectl get --raw='/readyz?verbose'```
+
+Health check the API server
+
 ## Run
 
 ```kubectl run <name> --image alpine```
