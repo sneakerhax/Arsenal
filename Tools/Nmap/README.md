@@ -8,6 +8,6 @@ A Dockerized version of the tool Nmap
 
 ## Running the container
 
-```docker run -it nmap <target>```
+```docker run -it nmap <parameter> <target>```
 
-Run nmap (current build tests for port 80. Modify ENTRYPOINT in Dockerfile to change)
+Run nmap with parameters
