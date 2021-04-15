@@ -10,7 +10,7 @@ Docker is an effective way to configure, deploy, and use offensive security tool
 
 Dockerizing offensive security tools provides the following benefits:
 
-* Consistent setup and configuration (Even complicated tools can be setup with 1 command)
+* Consistent setup and configuration (Single comand build and runs)
 * Documented setup process (Dockerfiles)
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
