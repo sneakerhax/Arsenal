@@ -6,7 +6,7 @@ A Dockerized version of the Shodan cli
 
 ```docker build --build-arg shodan_api_key=$shodan_api_key -t shodan_cli .```
 
-Requires the Shodan api key. This can be passed directly or through an environment variable shown above
+Requires the Shodan api key. This can be passed directly or through an environment variable
 
 ## Running the container
 
