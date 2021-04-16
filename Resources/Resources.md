@@ -82,6 +82,7 @@
 * [The Path Less Traveled: Abusing Kubernetes Defaults](https://www.youtube.com/watch?v=HmoVSmTIOxM&t=2466s) - Ian Coldwater & Duffie Cooley
   * [Github repo for demos](https://github.com/mauilion/blackhat-2019) - Ian Coldwater & Duffie Cooley
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
+* [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
 
 ## Securing Kubernetes
 
@@ -89,5 +90,7 @@
 * [Kubernetes Security Best Practices](https://www.youtube.com/watch?v=wqsUfvRyYpw) - Ian Lewis, (Google)
 * [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
 * [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
+* [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
+* [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
 
 
