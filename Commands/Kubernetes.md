@@ -2,6 +2,10 @@
 
 ## Remote
 
+```kubectl cluster-info```
+
+Get cluster info
+
 ```kubectl --kubeconfig ~/.kube/config <command>```
 
 Using a kubeconfig file to access a remote API and run commands
