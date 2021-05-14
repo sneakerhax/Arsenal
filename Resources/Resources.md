@@ -81,6 +81,7 @@
    * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale (InGuardians)
 * [The Path Less Traveled: Abusing Kubernetes Defaults](https://www.youtube.com/watch?v=HmoVSmTIOxM&t=2466s) - Ian Coldwater & Duffie Cooley
   * [Github repo for demos](https://github.com/mauilion/blackhat-2019) - Ian Coldwater & Duffie Cooley
+* [Advanced Persistence Threats: The Future of Kubernetes Attacks](https://youtu.be/auUgVullAWM) - Ian Coldwater & Brad Geesaman
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
 
