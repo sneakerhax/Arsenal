@@ -3,8 +3,8 @@
 ## General
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
 * [Docker for Beginners](https://docker-curriculum.com/) - Prakhar Srivastav
-* [How Docker Works - Intro to Namespaces](https://www.youtube.com/watch?v=-YnMr1lj4Z8) - LiveOverflow
-* [Deepdive Containers - Kernel Sources and nsenter](https://www.youtube.com/watch?v=sHp0Q3rvamk) - LiveOverflow
+* [How Docker Works - Intro to Namespaces](https://youtu.be/-YnMr1lj4Z8) - LiveOverflow
+* [Deepdive Containers - Kernel Sources and nsenter](https://youtu.be/sHp0Q3rvamk) - LiveOverflow
 * [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 * [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
 * [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
@@ -15,8 +15,8 @@
 
 * [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/) - ropnop
 * [Serverless Toolkit for Pentesters](https://blog.ropnop.com/serverless-toolkit-for-pentesters/) - ropnop
-* [Introduction to Docker for CTFs](https://www.youtube.com/watch?v=cPGZMt4cJ0I&t) - LiveOverflow
-* [Solving Pwnable CTF Challenge With Docker Workflow](https://www.youtube.com/watch?v=OqTpc_ljPYk) - Live Overflow
+* [Introduction to Docker for CTFs](https://youtu.be/cPGZMt4cJ0I) - LiveOverflow
+* [Solving Pwnable CTF Challenge With Docker Workflow](https://youtu.be/OqTpc_ljPYk) - Live Overflow
 * [Red Cloud](https://github.com/khast3x/Redcloud) - khast3x
 
 ## Attacking Docker
@@ -24,8 +24,8 @@
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 * [Attacking Docker exposed API](https://medium.com/@riccardo.ancarani94/attacking-docker-exposed-api-3e01ffc3c124) - Riccardo Ancarani
 * [Metasploit - Docker Daemon - Unprotected TCP Socket Exploit](https://www.rapid7.com/db/modules/exploit/linux/http/docker_daemon_tcp/) - Martin Pizala (Rapid7)
-* [Docker - PRIVILEGE ESCALATION Technique](https://www.youtube.com/watch?v=MnUtHSpcdLQ&t) - John Hammond
-* [An Attacker Looks at Docker Approaching Multi Container Applications](https://www.youtube.com/watch?v=-Ug2vmRiI8g) - Wesley McGrew
+* [Docker - PRIVILEGE ESCALATION Technique](https://youtu.be/MnUtHSpcdLQ) - John Hammond
+* [An Attacker Looks at Docker Approaching Multi Container Applications](https://youtu.be/-Ug2vmRiI8g) - Wesley McGrew
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - Victor Pasknel
 (morphuslabs)
 * [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
@@ -34,7 +34,7 @@
 * [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/) - Dominik Czarnota (Trail of Bits)
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 * [The Route to Root: Container Escape Using Kernel Exploitation](https://www.cyberark.com/resources/threat-research-blog/the-route-to-root-container-escape-using-kernel-exploitation) Nimrod Stoler (CyberArk)
-* [A Compendium of Container Escapes](https://www.youtube.com/watch?v=BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
+* [A Compendium of Container Escapes](https://youtu.be/BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Nicole Fishbein and Michael Kajiloti (Intezer)
 * [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic (Pulse Security)
 * [Docker image history modification - why you can't trust docker history](https://www.justinsteven.com/posts/2021/02/14/docker-image-history-modification/) - justinsteven
@@ -66,20 +66,20 @@
 * [Kubernetes Docs](https://kubernetes.io/docs/home/) - Kubernetes
 * [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) - Kubernetes
 * [Kubernetes By Example](https://kubernetesbyexample.com/) - OpenShift
-* [The Illustrated Children's Guide to Kubernetes](https://www.youtube.com/watch?v=4ht22ReBjno) - Matt Butcher
+* [The Illustrated Children's Guide to Kubernetes](https://youtu.be/4ht22ReBjno) - Matt Butcher
 * [Kubernetes Failure Stories](https://k8s.af/) - @try_except_
 
 ## Attacking Kubernetes
 
 * [KubeCon NA 2019 CTF](https://securekubernetes.com/) - securekubernetes
-  * [Kubecon video NA 2019 CTF](https://www.youtube.com/watch?v=UdMFTdeAL1s&t)
-* [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://www.youtube.com/watch?v=aEaSZJRbnTo) - Madhu Akula
+  * [Kubecon video NA 2019 CTF](https://youtu.be/UdMFTdeAL1s)
+* [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://youtu.be/aEaSZJRbnTo) - Madhu Akula
 * [Kubernetes Pentest Methodology Part 1](https://www.cyberark.com/resources/threat-research-blog/kubernetes-pentest-methodology-part-1) - Or Ida (CyberArk)
 * [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi (Cyber Ark)
 * [Bust-a-Kube](https://www.bustakube.com/) - Jay Beale
    * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale (InGuardians)
    * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale (InGuardians)
-* [The Path Less Traveled: Abusing Kubernetes Defaults](https://www.youtube.com/watch?v=HmoVSmTIOxM&t=2466s) - Ian Coldwater & Duffie Cooley
+* [The Path Less Traveled: Abusing Kubernetes Defaults](https://youtu.be/HmoVSmTIOxM) - Ian Coldwater & Duffie Cooley
   * [Github repo for demos](https://github.com/mauilion/blackhat-2019) - Ian Coldwater & Duffie Cooley
 * [Advanced Persistence Threats: The Future of Kubernetes Attacks](https://youtu.be/auUgVullAWM) - Ian Coldwater & Brad Geesaman
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
@@ -88,7 +88,7 @@
 ## Securing Kubernetes
 
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
-* [Kubernetes Security Best Practices](https://www.youtube.com/watch?v=wqsUfvRyYpw) - Ian Lewis, (Google)
+* [Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Ian Lewis, (Google)
 * [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
 * [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
 * [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
