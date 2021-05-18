@@ -10,6 +10,7 @@
 * [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
 * [Top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - Álvaro Iradier (sysdig)
 * [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
+* [The capable kernel an intro to linux capabilities](https://www.starkandwayne.com/blog/the-capable-kernel-an-introduction-to-linux-capabilities/) - James Hunt
 
 ## Offensive Docker (Tooling)
 
@@ -60,6 +61,8 @@
 * [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - cvedetails
 * [Docker Patched the Most Severe Copy Vulnerability to Date With CVE-2019-14271](https://unit42.paloaltonetworks.com/docker-patched-the-most-severe-copy-vulnerability-to-date-with-cve-2019-14271/) - Yuval Avrahami (Palo Alto Networks)
 * [Vulnerabilities in the Container Ecosystem: A Brief History](https://blog.aquasec.com/container-security-vulnerabilities) - aquasec
+* [CVE-2020-15275: New Vulnerability Exploits containerd-shim API](https://blog.aquasec.com/cve-2020-15257-containerd-shim-api-vulnerability) - Gal Singer (aquasec)
+* [ABSTRACT SHIMMER (CVE-2020-15257): Host Networking is root-Equivalent, Again](https://research.nccgroup.com/2020/12/10/abstract-shimmer-cve-2020-15257-host-networking-is-root-equivalent-again/) - Jeff Dileo (NCC Group)
 
 ## Kubernetes
 
@@ -84,6 +87,7 @@
 * [Advanced Persistence Threats: The Future of Kubernetes Attacks](https://youtu.be/auUgVullAWM) - Ian Coldwater & Brad Geesaman
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
+* [Creating a Super-privileged Pod with Root and Host Namespaces](https://downey.io/notes/dev/kubernetes-privileged-root-pod-example) - Tim Downey
 
 ## Securing Kubernetes
 
@@ -93,5 +97,7 @@
 * [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
 * [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
 * [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
+* [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
+* [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
 
 
