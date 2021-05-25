@@ -1,6 +1,6 @@
 # Dirbpy
 
-A Dockerized version of the Dirbpy
+A Dockerized version of Dirbpy
 
 ## Building the image
 
