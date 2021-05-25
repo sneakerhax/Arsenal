@@ -1,6 +1,6 @@
 # WhatWeb
 
-A Dockerized version of the WhatWeb
+A Dockerized version of WhatWeb
 
 ## Building the image
 
