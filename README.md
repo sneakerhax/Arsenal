@@ -42,6 +42,7 @@ For more information on Dockerizing tools check out these [resources](https://gi
 │   └── Auto_completion_OSX_Catalina.md
 └── Tools
     ├── C2concealer
+    ├── Dirbpy
     ├── Emailharvester
     ├── Infra
     ├── Kali_Linux
@@ -51,5 +52,6 @@ For more information on Dockerizing tools check out these [resources](https://gi
     ├── PyReconer
     ├── Pyfiscan
     ├── Shodan
-    └── Ultra-Recon
+    ├── Ultra-Recon
+    └── WhatWeb
 ```
