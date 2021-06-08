@@ -37,7 +37,8 @@ For more information on Dockerizing tools check out these [resources](https://gi
 ├── LICENSE
 ├── README.md
 ├── Resources
-│   └── Resources.md
+│   ├── Docker.md
+│   └── Kubernetes.md
 ├── Setup
 │   └── Auto_completion_OSX_Catalina.md
 └── Tools
