@@ -14,7 +14,7 @@ Dockerizing offensive security tools provides the following benefits:
 * Documented setup process (Dockerfiles)
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
-For more information on Dockerizing tools check out these [resources](https://github.com/sneakerhax/OffensiveDocker/blob/main/Resources/Resources.md)
+For more information on Dockerizing tools check out these [resources](https://github.com/sneakerhax/OffensiveDocker/blob/main/Resources/)
 
 ## Usage
 
