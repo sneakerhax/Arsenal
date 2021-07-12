@@ -18,6 +18,20 @@ Connect to a remote docker api and run info command (requires protocol e.g. tcp:
 
 Using curl to connect to the Unix socket and pulling the api version
 
+## Registry
+
+```docker login <registry>```
+
+Login to remote registry (Can also be done with VSCode Docker plugin)
+
+```curl -X GET -u <user>:<password> https://<registry>:<port>/v2/_catalog```
+
+Get list of images from container registry using credentials with curl
+
+```curl -X GET -u <user>:<password> https://<registry>:<port>/v2/<image>/tags/list```
+
+Get list of all image tags from container registry using credentials with curl 
+
 ## Images
 
 ```docker pull <image_name>```
