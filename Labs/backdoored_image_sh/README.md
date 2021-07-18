@@ -1,4 +1,4 @@
-# Backdoored Image shell script
+# Backdoored shell script in container image
 
 ## Scenario
 
