@@ -44,11 +44,11 @@ This step is only required if you choose to make your payload a reverse shell. T
 
 ### Start the netcat listener
 
-```netcat lkvp 8080```
+```netcat -lkvp 8080```
 
 ## Start your container
 
-This step emulates what will occur when the backdoored image it deployed and the container starts. The script in the case will only execute once so what you choose to execute should be taken into consideration.
+This step emulates what will occur when the backdoored image it deployed and the container starts. The script in the case will only execute once when the container is started
 
 ### Start the Docker container (execute the payload)
 
