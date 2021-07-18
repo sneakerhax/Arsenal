@@ -48,7 +48,7 @@ This step is only required if you choose to make your payload a reverse shell. T
 
 ## Start your container
 
-This step emulates what will occur when the backdoored image it deployed and the container starts. The script in the case will only execute once when the container is started
+This step emulates what will occur when the backdoored image is deployed and the container starts. The script in the case will only execute once when the container is started
 
 ### Start the Docker container (execute the payload)
 
