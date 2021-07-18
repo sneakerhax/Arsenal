@@ -40,7 +40,7 @@ Next you need to setup the server that will host the file containing your payloa
 
 ## Start your Netcat handler
 
-This step is only required if you choose to make your payload a reverse shell. This step will start a netcat server that will handler the callback from your reverse shell.
+This step is only required if you choose to make your payload a reverse shell. This step will start a netcat server that will handle the callback from your reverse shell.
 
 ### Start the netcat listener
 
