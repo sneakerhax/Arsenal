@@ -1,7 +1,9 @@
 import argparse
 import configparser
+from os import system
 import docker
 from pathlib import Path
+import sys
 
 
 def banner():
@@ -44,7 +46,7 @@ def main():
         client.images.build(path=str(tool_dir), tag=args.image)
     else:
         print("[-] Path to Dockerfile does not exist")
-        exit()
+        sys.exit()
 
     # Target output file check and creation
     output_dir = Path('output', args.name)
