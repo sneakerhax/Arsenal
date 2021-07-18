@@ -2,7 +2,7 @@
 
 ## Scenario
 
-You have the acccess to modify docker images either through access to source that contains a shell script called in the Dockerfile or through an image registry. The shell script that you can modify runs on startup (a pretty common scenario)
+You have the acccess to modify docker images either through source that contains a shell script called in the Dockerfile or through an image registry. The shell script that you can modify runs on startup (a pretty common scenario)
 
 ## Building the image
 
