@@ -20,6 +20,7 @@ For more information on Dockerizing tools check out these [resources](https://gi
 
 * **Attacking** - Information and commands for Attacking Docker and Kubernetes
 * **Commands** - Commands for running Docker and Kubernetes
+* **Labs** - Labs for learning how to attack containers
 * **Resources** - Docker and Kubernetes Resources
 * **Setup** - Information about setting up Docker and Kubernetes
 * **Tools** - A directory of tools. Each tool folder contains a set of instructions on how to run the tool
@@ -35,6 +36,9 @@ For more information on Dockerizing tools check out these [resources](https://gi
 │   ├── Docker.md
 │   └── Kubernetes.md
 ├── LICENSE
+├── Labs
+│   ├── README.md
+│   └── backdoored_image_sh
 ├── README.md
 ├── Resources
 │   ├── Docker.md
