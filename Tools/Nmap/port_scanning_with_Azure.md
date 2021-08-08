@@ -16,6 +16,15 @@ Create a new ACI context using the Azure container instance service
 
 Run an nmap scan using an Azure container instance
 
+```docker --context <context_name> ps -a```
+
+Check the status of the scan
+
+```az container list -o table```
+
+Check the status of the scan using Azure cli
+
+
 ```docker logs <container_name>```
 
 Get the results using docker logs
