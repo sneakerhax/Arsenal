@@ -46,7 +46,7 @@ Next you need to setup the server that will host the file containing your payloa
 
 ### Starts a server on port 8000 by default
 
-```python -m SimpleHTTPServer```
+```python3 -m http.server```
 
 ## Start your Netcat handler
 
