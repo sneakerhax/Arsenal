@@ -9,7 +9,7 @@
 * [Kubernetes Failure Stories](https://k8s.af/) - @try_except_
 
 ## Vulns and Exploits
-* [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - cvedetails
+* [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - Cvedetails
 
 ## Attacking Kubernetes
 
@@ -30,6 +30,7 @@
 ### Open Source Tools
 
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
+* [Kube-hunter](https://github.com/aquasecurity/kube-hunter) - Aquasecurity
 
 
 ## Securing Kubernetes
@@ -37,14 +38,15 @@
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
 * [Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Ian Lewis, (Google)
 * [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
-* [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
+* [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (Snyk)
 * [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
 * [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
 * [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
-* [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (aquasec)
+* [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (Aquasec)
 
 
 ### Open Source Tools
 
 * [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
-* [Kubeaudit](https://github.com/Shopify/kubeaudit) - Shopify
+* [KubeAudit](https://github.com/Shopify/kubeaudit) - Shopify
+* [Kube-Bench](https://github.com/aquasecurity/kube-bench) - Aquasec
