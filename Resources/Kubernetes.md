@@ -25,8 +25,12 @@
   * [Github repo for demos](https://github.com/mauilion/blackhat-2019) - Ian Coldwater & Duffie Cooley
 * [Advanced Persistence Threats: The Future of Kubernetes Attacks](https://youtu.be/auUgVullAWM) - Ian Coldwater & Brad Geesaman
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
-* [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
 * [Creating a Super-privileged Pod with Root and Host Namespaces](https://downey.io/notes/dev/kubernetes-privileged-root-pod-example) - Tim Downey
+
+### Open Source Tools
+
+* [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
+
 
 ## Securing Kubernetes
 
@@ -35,6 +39,12 @@
 * [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
 * [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (snyk)
 * [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
-* [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
 * [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
 * [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
+* [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (aquasec)
+
+
+### Open Source Tools
+
+* [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
+* [Kubeaudit](https://github.com/Shopify/kubeaudit) - Shopify
