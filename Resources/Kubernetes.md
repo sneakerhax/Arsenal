@@ -50,3 +50,4 @@
 * [KubeScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
 * [KubeAudit](https://github.com/Shopify/kubeaudit) - Shopify
 * [Kube-Bench](https://github.com/aquasecurity/kube-bench) - Aquasec
+* [KubeLinter](https://github.com/stackrox/kube-linter) - Stackrox
