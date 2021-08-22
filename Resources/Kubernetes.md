@@ -1,6 +1,6 @@
 # Kubernetes
 
-## Kubernetes
+## General
 
 * [Kubernetes Docs](https://kubernetes.io/docs/home/) - Kubernetes
 * [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) - Kubernetes
@@ -32,7 +32,6 @@
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
 * [Kube-hunter](https://github.com/aquasecurity/kube-hunter) - Aquasecurity
 
-
 ## Securing Kubernetes
 
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
@@ -43,7 +42,7 @@
 * [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
 * [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
 * [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (Aquasec)
-
+* [How to secure your Kubernetes control plane and node components](https://www.cncf.io/blog/2021/08/20/how-to-secure-your-kubernetes-control-plane-and-node-components/) - Amit Ashwini Bhagat (LOGIQ.AI)
 
 ### Open Source Tools
 
