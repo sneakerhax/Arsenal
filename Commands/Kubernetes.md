@@ -6,7 +6,7 @@
 
 Get cluster info
 
-```kubectl --kubeconfig ~/.kube/config <command>```
+```kubectl <command> --kubeconfig ~/.kube/config```
 
 Using a kubeconfig file to access a remote API and run commands
 
