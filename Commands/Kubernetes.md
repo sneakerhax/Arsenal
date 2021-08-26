@@ -10,13 +10,17 @@ Get cluster info
 
 Using a kubeconfig file to access a remote API and run commands
 
-```curl https://kubernetes.site.com:6443/api```
+```curl -kv -H "Authorization: Bearer <bearer_token>" https://kubernetes.site.com:<port>/api/v1/namespaces```
+
+Access Kubernetes API with bearer (JWT) token
+
+```curl https://kubernetes.site.com:<port>/api```
 
 Check for the existance of the kubernetes api secure port
 
 *Other relevant [ports](https://github.com/freach/kubernetes-security-best-practice/blob/master/README.md#firewall-ports-fire) for interacting with kubernetes*
 
-```curl -k https://kubernetes.site.com:6443/version```
+```curl -k https://kubernetes.site.com:<port>/version```
 
 Get api version
 
