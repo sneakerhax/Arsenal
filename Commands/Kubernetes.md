@@ -10,9 +10,13 @@ Get cluster info
 
 Using a kubeconfig file to access a remote API and run commands
 
+```kubectl --token=<bearer_token> --server https://kubernetes.site.com:<port> <command>```
+
+Using kubectl and bearer token (JWT) with specified server api to run commands
+
 ```curl -kv -H "Authorization: Bearer <bearer_token>" https://kubernetes.site.com:<port>/api/v1/namespaces```
 
-Access Kubernetes API with bearer (JWT) token
+Access Kubernetes API with bearer token (JWT)
 
 ```curl https://kubernetes.site.com:<port>/api```
 
