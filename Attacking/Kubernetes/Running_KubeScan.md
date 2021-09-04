@@ -14,3 +14,6 @@ Starting the container and mounting a volume with the Kubernetes cluster config 
 
 Check for all risky roles
 
+## References
+* https://github.com/cyberark/KubiScan
+
