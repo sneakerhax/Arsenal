@@ -27,11 +27,6 @@
 * [Hacking and Hardening Kubernetes Clusters by Example](https://youtu.be/vTgQLzeBfRU) - Brad Geesaman (Symantec)
 * [Creating a Super-privileged Pod with Root and Host Namespaces](https://downey.io/notes/dev/kubernetes-privileged-root-pod-example) - Tim Downey
 
-### Open Source Tools
-
-* [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Kubernetes
-* [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
-* [Kube-hunter](https://github.com/aquasecurity/kube-hunter) - Aquasecurity
 
 ## Securing Kubernetes
 
@@ -47,6 +42,7 @@
 
 ### Open Source Tools
 
+* [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Kubernetes
 * [KubiScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
 * [KubeAudit](https://github.com/Shopify/kubeaudit) - Shopify
 * [Kube-Bench](https://github.com/aquasecurity/kube-bench) - Aquasec
