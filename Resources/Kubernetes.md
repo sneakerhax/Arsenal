@@ -29,6 +29,7 @@
 
 ### Open Source Tools
 
+* [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Kubernetes
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Eviatar Gerzi (CyberArk)
 * [Kube-hunter](https://github.com/aquasecurity/kube-hunter) - Aquasecurity
 
