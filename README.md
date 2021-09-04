@@ -28,6 +28,7 @@ For more information on Dockerizing tools check out these [resources](https://gi
 ```
 .
 ├── Attacking
+│   ├── Docker
 │   └── Kubernetes
 ├── Commands
 │   ├── Docker-Compose.md
@@ -35,9 +36,6 @@ For more information on Dockerizing tools check out these [resources](https://gi
 │   ├── Docker.md
 │   └── Kubernetes.md
 ├── LICENSE
-├── Labs
-│   ├── README.md
-│   └── backdoored_image_sh
 ├── README.md
 ├── Resources
 │   ├── Docker.md
