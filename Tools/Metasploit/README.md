@@ -6,7 +6,7 @@ A Dockerized version of the tool Metasploit
 
 ```docker build -t metasploit .```
 
-The initial build can take 10-15 minutes
+The initial build can take 10-15 minutes (locally)
 
 ```docker run -it metasploit```
 
