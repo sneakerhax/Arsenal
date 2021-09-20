@@ -16,6 +16,8 @@ Run nmap with parameters
 
 ```docker run -it sneakerhax\nmap <parameters> <targets>```
 
+Start image pulled from Docker Hub and run nmap with target
+
 ## Using nse search function
 
 ```bash
