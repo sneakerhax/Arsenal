@@ -6,7 +6,7 @@ A Dockerized version of the tool Nmap
 
 ```docker build -t nmap .```
 
-Build the container
+Build the container (locally)
 
 ```docker run -it nmap <parameter> <target>```
 
