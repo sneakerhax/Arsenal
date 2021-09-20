@@ -2,11 +2,11 @@
 
 A Dockerized version of the tool Nmap
 
-## Building the image
+## Running with Docker (Local build)
 
 ```docker build -t nmap .```
 
-## Running the container
+Build the container
 
 ```docker run -it nmap <parameter> <target>```
 
@@ -25,3 +25,7 @@ smb-print-text.nse
 ```
 
 Search for nse modules that contain smb
+
+## Running with Docker (Docker Hub)
+
+```docker run -it sneakerhax\nmap <parameters> <targets>```
