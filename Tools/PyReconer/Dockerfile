@@ -1,5 +1,6 @@
 FROM python:3
 
+RUN apt update && apt upgrade -y
 RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer
