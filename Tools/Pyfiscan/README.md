@@ -16,6 +16,6 @@ Run Docker container with target
 
 ```docker run -it sneakerhax\pyfiscan <target>```
 
-Run Docker container from Docker Hub with target
+Start image pulled from Docker Hub and run pyfiscan with target
 
 
