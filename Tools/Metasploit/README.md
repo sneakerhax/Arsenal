@@ -14,4 +14,6 @@ Runs msfstart.sh and drops into msfconsole
 
 ## Running with Docker (Docker Hub)
 
-```docker run -it sneakerhax\metasploit <parameters> <targets>```
+```docker run -it sneakerhax\metasploit```
+
+Start image pulled from Docker Hub and run Metasploit
