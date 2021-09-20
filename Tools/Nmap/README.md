@@ -28,4 +28,4 @@ smb-print-text.nse
 ---truncated---
 ```
 
-Search for nse modules that containing the string smb
+Search for nse modules containing the string smb
