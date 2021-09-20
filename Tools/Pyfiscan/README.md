@@ -2,10 +2,20 @@
 
 A Dockerized version of the tool pyfiscan by fgeek
 
-## Building the image
+## Running with Docker (Local build)
 
 ```docker build -t pyfiscan .```
 
-## Running the container
+Building the image (locally)
 
 ```docker run -it pyfiscan <target>```
+
+Run Docker container with target
+
+## Running with Docker (From Docker Hub)
+
+```docker run -it sneakerhax\pyfiscan <target>```
+
+Run Docker container from Docker Hub with target
+
+

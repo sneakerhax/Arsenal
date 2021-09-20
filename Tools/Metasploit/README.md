@@ -2,14 +2,16 @@
 
 A Dockerized version of the tool Metasploit
 
-## Building the image
+## Running with Docker (Local build)
 
 ```docker build -t metasploit .```
 
-The initial build can take 10-15 minutes
-
-## Running the container
+The initial build can take 10-15 minutes (locally)
 
 ```docker run -it metasploit```
 
 Runs msfstart.sh and drops into msfconsole
+
+## Running with Docker (Docker Hub)
+
+```docker run -it sneakerhax\metasploit <parameters> <targets>```
