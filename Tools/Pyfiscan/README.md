@@ -12,7 +12,7 @@ Building the image (locally)
 
 Run Docker container with target
 
-## Running with Docker (From Docker Hub)
+## Running with Docker (Docker Hub)
 
 ```docker run -it sneakerhax\pyfiscan <target>```
 
