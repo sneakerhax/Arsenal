@@ -74,3 +74,4 @@ Resources related to Docker, building offensive security Tools with Docker, Atta
 * [Anchore](https://github.com/anchore/anchore-engine) - Anchore
 * [Dockerscan](https://github.com/cr0hn/dockerscan) - cr0hn
 * [Docker_Explorer](https://github.com/matiassequeira/docker_explorer) - matiassequeira
+* [SecretScanner](https://github.com/deepfence/SecretScanner) - DeepFence
