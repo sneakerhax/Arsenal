@@ -1,4 +1,6 @@
-# Resources
+# Docker
+
+Resources related to Docker, building offensive security Tools with Docker, Attacking Docker, and Securing Docker
 
 ## General
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
@@ -33,7 +35,6 @@
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 * [Attacking Docker exposed API](https://medium.com/@riccardo.ancarani94/attacking-docker-exposed-api-3e01ffc3c124) - Riccardo Ancarani
 * [Metasploit - Docker Daemon - Unprotected TCP Socket Exploit](https://www.rapid7.com/db/modules/exploit/linux/http/docker_daemon_tcp/) - Martin Pizala (Rapid7)
-* [Docker - PRIVILEGE ESCALATION Technique](https://youtu.be/MnUtHSpcdLQ) - John Hammond
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://youtu.be/-Ug2vmRiI8g) - Wesley McGrew
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - Victor Pasknel
 (morphuslabs)
@@ -50,6 +51,7 @@
 * [The Route to Root: Container Escape Using Kernel Exploitation](https://www.cyberark.com/resources/threat-research-blog/the-route-to-root-container-escape-using-kernel-exploitation) Nimrod Stoler (CyberArk)
 * [A Compendium of Container Escapes](https://youtu.be/BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
 * [Traitor - Automatic Linux privesc via exploitation of low-hanging fruit](https://github.com/liamg/traitor) - liamg
+* [Docker - PRIVILEGE ESCALATION Technique](https://youtu.be/MnUtHSpcdLQ) - John Hammond
 
 ## Securing Docker
 
@@ -68,4 +70,7 @@
 
 ## Open Source Tools
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
-* [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
+* [Clair](https://github.com/quay/clair) - Quay
+* [Anchore](https://github.com/anchore/anchore-engine) - Anchore
+* [Dockerscan](https://github.com/cr0hn/dockerscan) - cr0hn
+* [Docker_Explorer](https://github.com/matiassequeira/docker_explorer) - matiassequeira
