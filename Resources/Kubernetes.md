@@ -1,5 +1,7 @@
 # Kubernetes
 
+Resources related to Kubernetes, Building offensive security Tools with Kubernetes, Attacking Kubernetes, and Securing Kubernetes
+
 ## General
 
 * [Kubernetes Docs](https://kubernetes.io/docs/home/) - Kubernetes
@@ -41,6 +43,7 @@
 * [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
 * [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (Aquasec)
 * [How to secure your Kubernetes control plane and node components](https://www.cncf.io/blog/2021/08/20/how-to-secure-your-kubernetes-control-plane-and-node-components/) - Amit Ashwini Bhagat (LOGIQ.AI)
+* [Kubernetes Hardening Guide](https://media.defense.gov/2021/Aug/03/2002820425/-1/-1/1/CTR_KUBERNETES%20HARDENING%20GUIDANCE.PDF) - NSA
 
 ### Open Source Tools
 
