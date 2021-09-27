@@ -2,14 +2,12 @@
 
 ## General
 * [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
-* [Docker for Beginners](https://docker-curriculum.com/) - Prakhar Srivastav
 * [How Docker Works - Intro to Namespaces](https://youtu.be/-YnMr1lj4Z8) - LiveOverflow
 * [Deepdive Containers - Kernel Sources and nsenter](https://youtu.be/sHp0Q3rvamk) - LiveOverflow
 * [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
 * [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
 * [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
 * [Top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - Álvaro Iradier (sysdig)
-* [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
 * [The capable kernel an intro to linux capabilities](https://www.starkandwayne.com/blog/the-capable-kernel-an-introduction-to-linux-capabilities/) - James Hunt
 * [Github Actions - Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images) - Docker
 * [Container Training](https://container.training/) - Jérôme Petazzoni
@@ -39,16 +37,18 @@
 * [An Attacker Looks at Docker Approaching Multi Container Applications](https://youtu.be/-Ug2vmRiI8g) - Wesley McGrew
 * [Attacking Docker Environments](https://morphuslabs.com/attacking-docker-environments-a703fcad2a39) - Victor Pasknel
 (morphuslabs)
-* [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
 * [ippsec.rocks - Type "docker" as the search term](https://ippsec.rocks/) - IppSec
+* [Docker image history modification - why you can't trust docker history](https://www.justinsteven.com/posts/2021/02/14/docker-image-history-modification/) - justinsteven
+* [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Nicole Fishbein and Michael Kajiloti (Intezer)
+* [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic (Pulse Security)
+
+## Container Escapes
+
 * [Abusing access to mount namespaces through /proc/pid/root](https://labs.f-secure.com/blog/abusing-the-access-to-mount-namespaces-through-procpidroot/) - Pasi Saarinen (F-Secure)
 * [Understanding Docker container escapes](https://blog.trailofbits.com/2019/07/19/understanding-docker-container-escapes/) - Dominik Czarnota (Trail of Bits)
 * [A Tale of Escaping a Hardened Docker container](https://www.redtimmy.com/docker/a-tale-of-escaping-a-hardened-docker-container/) - Red Timmy Security
 * [The Route to Root: Container Escape Using Kernel Exploitation](https://www.cyberark.com/resources/threat-research-blog/the-route-to-root-container-escape-using-kernel-exploitation) Nimrod Stoler (CyberArk)
 * [A Compendium of Container Escapes](https://youtu.be/BQlqita2D2s) ([slides](https://i.blackhat.com/USA-19/Thursday/us-19-Edwards-Compendium-Of-Container-Escapes-up.pdf)) - Brandon Edwards & Nick Freeman
-* [Watch Your Containers: Doki Infecting Docker Servers in the Cloud](https://www.intezer.com/blog/cloud-security/watch-your-containers-doki-infecting-docker-servers-in-the-cloud/) - Nicole Fishbein and Michael Kajiloti (Intezer)
-* [PLAYING WITH NAMESPACES - WRITING DOCKER-AWARE ROOTKITS](https://pulsesecurity.co.nz/articles/docker-rootkits) - Denis Andzakovic (Pulse Security)
-* [Docker image history modification - why you can't trust docker history](https://www.justinsteven.com/posts/2021/02/14/docker-image-history-modification/) - justinsteven
 * [Traitor - Automatic Linux privesc via exploitation of low-hanging fruit](https://github.com/liamg/traitor) - liamg
 
 ## Securing Docker
@@ -62,6 +62,10 @@
 * [Docker security scanning cheatsheet 2021](https://snyk.io/blog/docker-security-scanning-cheatsheet-2021/) - Jim Armstrong (snyk)
 * [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Ajmal Kohgadai (StackRox)
 * [Docker Security](http://containertutorials.com/docker-security.html) - Rajdeep Dua (Container Tutorials)
-* [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
 * [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
 * [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Aaron Grattafior (NCC Group)
+* [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
+
+## Open Source Tools
+* [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
+* [Dockerscan - A Docker analysis & hacking tools](https://github.com/cr0hn/dockerscan) - cr0hn
