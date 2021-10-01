@@ -4,6 +4,7 @@
 ## Fetching the completion files
 
 ```
+mkdir -p ~/.zsh/completion
 curl -L https://raw.githubusercontent.com/docker/docker-ce/master/components/cli/contrib/completion/zsh/_docker > ~/.zsh/completion/_docker
 curl -L https://raw.githubusercontent.com/docker/machine/master/contrib/completion/zsh/_docker-machine > ~/.zsh/completion/_docker-machine
 curl -L https://raw.githubusercontent.com/docker/compose/master/contrib/completion/zsh/_docker-compose > ~/.zsh/completion/_docker-compose
