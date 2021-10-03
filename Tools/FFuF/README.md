@@ -11,3 +11,9 @@ Build the container (locally)
 ```docker run -it ffuf <arguments>```
 
 Running the Docker container with arguments
+
+## Running with Docker (Docker Hub)
+
+```docker run -it sneakerhax\ffuf <arguments>```
+
+Start image pulled from Docker Hub and run ffuf with arguments
