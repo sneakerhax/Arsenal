@@ -20,4 +20,8 @@ Download the results of a query and use a volume to persist the data in your hos
 
 ```docker run -it -v $(pwd):/tmp shodan parse --fields hostnames /tmp/shodan.json.gz```
 
-Extract hostname field using the parse function from shodan json file in host
+Extract hostname field using the parse function from shodan json file in host (pipe to `grep "\S"` to remove blank lines)
+
+```docker run -it -v $(pwd):/tmp shodan parse --fields hostnames -f port:80 /tmp/shodan.json.gz | grep "\S"```
+
+Extract hostnames that have port 80 open using the parse function from shodan json file in host and remove blank lines
