@@ -11,3 +11,9 @@ Requires the Shodan api key. This can be passed directly or through an environme
 ## Running the container
 
 ```docker run -it shodan_cli <arguments>```
+
+## Usage examples
+
+```docker run -it -v $(pwd):/tmp shodan download /tmp/<org>_shodan org:<org_name>```
+
+Download the results of a query and use a volume to persist the data in your host
