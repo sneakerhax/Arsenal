@@ -33,3 +33,17 @@ Extract hostname field using the parse function from shodan json file in host (p
 ```docker run -it -v $(pwd):/tmp shodan parse --fields hostnames -f port:80 /tmp/shodan.json.gz | grep "\S"```
 
 Extract hostnames that have port 80 open using the parse function from shodan json file in host and remove blank lines
+
+```docker run -it -v $(pwd):/tmp shodan parse --no-color --fields ip_str,hostnames,port,org --separator : /tmp/shodan.json.gz > shodan.txt```
+
+Extract IP, hostnames, ports, and org and separate them by `:` then dump to file (--no-color is to avoid terminal color characters in text file)
+
+```docker run -it -v $(pwd):/tmp shodan parse --fields ip_str,hostnames,port,org --separator : -f product:"Apache httpd" /tmp/shodan.json.gz```
+
+Same as previous but find Apache servers (add --no-color for piping to file)
+
+```docker run -it -v $(pwd):/tmp shodan parse --fields ip_str,hostnames,port,product,version,org --separator : -f product:"Apache httpd" -f version:"2.4.29" /tmp/shodan_all.gz```
+
+Same as previous but search a particular version (add --no-color for piping to file)
+
+
