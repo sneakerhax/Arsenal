@@ -1,6 +1,6 @@
 # Docker - Nmap (Alpine)
 
-A Dockerized version of the tool Nmap that is smaller and works on Raspberry pi
+A Dockerized version of the tool Nmap that is small and works on Raspberry pi
 
 ## Running with Docker (Local build)
 
