@@ -1,2 +1,2 @@
-output/*.txt
+output/**/*.txt
 *.conf

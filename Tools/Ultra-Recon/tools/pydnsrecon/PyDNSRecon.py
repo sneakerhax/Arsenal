@@ -84,18 +84,39 @@ def crtsh_cert_search(crtsh_target, domain_list):
             domain_list.append((result['name_value'].strip()))
 
 
+def run(target):
+    try:
+        censys_cert_search(target, domain_list)
+    except Exception as e:
+        print("[-] Error running Censys certificate search")
+        pass
+    try:
+        amass_dns_active(target, amass_output, domain_list)
+    except Exception as e:
+        print("[-] Error running Amass DNS active scan")
+        pass
+    try:
+        sonar_zgrep_search(target, sonar_output, sonar_fdns_data, domain_list)
+    except Exception as e:
+        print("[-] Error running Sonar zgrep search")
+        pass
+    try:
+        crtsh_cert_search(target, domain_list)
+    except Exception as e:
+        print("[-] Error running CRT.sh scan")
+        pass
+
+    unique_domains = set(domain_list)
+    print("[+] Printing " + str(len(unique_domains)) + " discovered DNS records")
+    for domain in unique_domains:
+        print(domain.strip())
+
+
 def main():
     if len(sys.argv) == 2:
         banner()
         target = sys.argv[1]
-        censys_cert_search(target, domain_list)
-        amass_dns_active(target, amass_output, domain_list)
-        sonar_zgrep_search(target, sonar_output, sonar_fdns_data, domain_list)
-        crtsh_cert_search(target, domain_list)
-        unique_domains = set(domain_list)
-        print("[+] Printing " + str(len(unique_domains)) + " discovered DNS records")
-        for domain in unique_domains:
-            print(domain.strip())
+        run(target)
     else:
         banner()
         usage()
