@@ -56,14 +56,14 @@ def main():
     print("[+] Starting container " + str(args.image))
     target = args.target
     if args.image == "nmap":
-        container_output = client.containers.run(args.image, command=target + " -p 80")
+        container_output = client.containers.run(args.image, command=target)
     if args.image == "pydnsrecon":
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
 
     print("[+] Running container " + str(args.image))
 
     # Output container stdout to output folder
-    outputpath = Path(output_dir, args.image + ".txt")
+    outputpath = Path(output_dir, args.target + "_" + args.image + ".txt")
     print("[+] Writing output to " + str(outputpath))
     with open(outputpath, 'w') as out:
         out.write(container_output.decode())
