@@ -53,14 +53,12 @@ def main():
     output_dir.mkdir(exist_ok=True, parents=True)
 
     # Run Docker container with Docker SDK for Python
-    print("[+] Starting container " + str(args.image))
+    print("[+] Running container " + str(args.image))
     target = args.target
     if args.image == "nmap":
         container_output = client.containers.run(args.image, command=target)
     if args.image == "pydnsrecon":
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
-
-    print("[+] Running container " + str(args.image))
 
     # Output container stdout to output folder
     outputpath = Path(output_dir, args.target + "_" + args.image + ".txt")
