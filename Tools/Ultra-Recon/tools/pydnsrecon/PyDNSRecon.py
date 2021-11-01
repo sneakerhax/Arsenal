@@ -59,7 +59,7 @@ def amass_dns_active(amass_target, amass_output, domain_list):
             domain_list.append(result.strip())
 
 
-def sonar_zgrep_search(sonar_target, sonary_output, sonar_fdns_data, domain_list):
+def sonar_zgrep_search(sonar_target, sonar_output, sonar_fdns_data, domain_list):
     print("[+] Running Zgrep on Sonar fdns data for " + sonar_target)
     with open(sonar_output, "w") as out:
         zgrep = subprocess.Popen(['zgrep', '-a', '-w', sonar_target, sonar_fdns_data], stdout=out)
