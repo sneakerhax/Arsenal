@@ -53,7 +53,9 @@ $ Ultra-Recon % python3 ultra_recon.py -n sample -t scanme.nmap.org -i nmap
 ## Current images
 
 * Nmap
+* Nmap-small
 * PyDNSRecon (Requires Censys API ID + Secret)
+* PyDNSRecon-Passive (Requires Censys API ID + Secret)
 
 ## References
 
