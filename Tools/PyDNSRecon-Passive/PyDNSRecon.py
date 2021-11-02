@@ -11,10 +11,6 @@ censys_API_ID = os.getenv('censys_API_ID')
 censys_secret = os.getenv('censys_secret')
 censys_basic_auth = (censys_API_ID, censys_secret)
 
-# Amass binary and output file
-amass_binary = "amass/amass"
-amass_output = "amass_dns.txt"
-
 # Sonar fdns file and output file
 sonar_fdns_data = "sonar.json.gz"
 sonar_output = "sonar_output.txt"
@@ -34,6 +30,8 @@ def banner():
     print("/_/    \__, /_____/_/ |_//____/_/ |_|\___/\___/\____/_/ /_/")
     print("      /____/")
     print("")
+    print("[Passive Mode]")
+    print("")
     print("by: sneakerhax")
     print("")
 
@@ -48,15 +46,6 @@ def censys_cert_search(censys_target, domain_list):
     for result in json_response['results']:
         if censys_target in result['parsed.subject.common_name'][0]:
             domain_list.append(result['parsed.subject.common_name'][0].strip())
-
-
-def amass_dns_active(amass_target, amass_output, domain_list):
-    print("[+] Running Amass on " + amass_target)
-    amass = subprocess.Popen([amass_binary, 'enum', '-d', amass_target, '-o', amass_output], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-    amass.communicate()
-    with open(amass_output, 'r') as amass_open:
-        for result in amass_open:
-            domain_list.append(result.strip())
 
 
 def sonar_zgrep_search(sonar_target, sonary_output, sonar_fdns_data, domain_list):
@@ -89,11 +78,6 @@ def run(target):
         censys_cert_search(target, domain_list)
     except Exception as e:
         print("[-] Error running Censys certificate search")
-        pass
-    try:
-        amass_dns_active(target, amass_output, domain_list)
-    except Exception as e:
-        print("[-] Error running Amass DNS active scan")
         pass
     try:
         sonar_zgrep_search(target, sonar_output, sonar_fdns_data, domain_list)
