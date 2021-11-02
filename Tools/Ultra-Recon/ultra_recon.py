@@ -37,7 +37,7 @@ def main():
     censys_secret = config['censys.io']['censys_secret']
 
     # Tool file
-    tool_dir = Path('tools', args.image)
+    tool_dir = Path('../', args.image)
 
     # Build Docker image with Docker SDK for Python
     client = docker.from_env()
@@ -58,6 +58,8 @@ def main():
     if args.image == "nmap":
         container_output = client.containers.run(args.image, command=target)
     if args.image == "pydnsrecon":
+        container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+    if args.image == "pydnsrecon-passive":
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
 
     # Output container stdout to output folder
