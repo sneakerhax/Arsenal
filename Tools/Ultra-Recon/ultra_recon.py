@@ -57,6 +57,8 @@ def main():
     target = args.target
     if args.image == "nmap":
         container_output = client.containers.run(args.image, command=target)
+    if args.image == "nmap-small":
+        container_output = client.containers.run(args.image, command=target)
     if args.image == "pydnsrecon":
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-passive":
