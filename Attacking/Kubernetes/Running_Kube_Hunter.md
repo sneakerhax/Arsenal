@@ -6,13 +6,17 @@
 
 ## Scanning a remote Kuberntes cluster
 
-```docker run -it --rm --network host aquasec/kube-hunter --remote <kubernetes_cluster>```
+```
+docker run -it --rm --network host aquasec/kube-hunter --remote <kubernetes_cluster>
+```
 
 Running a scan on a remote Kubernetes cluster
 
 ## Scanning your local Docker desktop Kubernetes cluster
 
-```docker run -it --rm --network host aquasec/kube-hunter --interface```
+```
+docker run -it --rm --network host aquasec/kube-hunter --interface
+```
 
 Run a scan on network interfaces (easier for local Kubernetes scans)
 
