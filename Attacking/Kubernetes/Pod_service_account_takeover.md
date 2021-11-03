@@ -6,7 +6,9 @@
 
 ## Pod service accounts
 
-```mount | grep kube```
+```
+mount | grep kube
+```
 
 Searching for the serviceaccount folder (Default: /run/secrets/kubernetes.io/serviceaccount)
 
@@ -49,7 +51,9 @@ alias kubectl="<path_to_kubectl> --token=`cat /run/secrets/kubernetes.io/service
 
 Setup kubectl command with discovered credentials from serviceaccount folder
 
-```kubectl auth can-i --list```
+```
+kubectl auth can-i --list
+```
 
 List all privileges with current context
 
