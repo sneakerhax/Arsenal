@@ -1,5 +1,6 @@
 import argparse
 import configparser
+import datetime
 from os import system
 import docker
 from pathlib import Path
@@ -53,7 +54,9 @@ def main():
     output_dir.mkdir(exist_ok=True, parents=True)
 
     # Run Docker container with Docker SDK for Python
-    print("[+] Running container " + str(args.image))
+    now_scan_start = datetime.datetime.now()
+    print("[+] Starting Scan at " + now_scan_start.strftime("%m-%d-%Y_%H:%M:%S"))
+    print("[+] Running container " + str(args.image) + " on target " + str(args.target))
     target = args.target
     if args.image == "nmap":
         container_output = client.containers.run(args.image, command=target)
@@ -63,9 +66,11 @@ def main():
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-passive":
         container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+    now_scan_end = datetime.datetime.now()
+    print("[+] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
     # Output container stdout to output folder
-    outputpath = Path(output_dir, args.target + "_" + args.image + ".txt")
+    outputpath = Path(output_dir, args.target + "_" + args.image + "_" + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S") + ".txt")
     print("[+] Writing output to " + str(outputpath))
     with open(outputpath, 'w') as out:
         out.write(container_output.decode())
