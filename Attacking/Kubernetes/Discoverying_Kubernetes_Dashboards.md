@@ -13,7 +13,9 @@ $ curl -sL localhost:30632 | grep title
 
 ## Nmap
 
-```nmap -sV --script=http-title -p <port> <target>```
+```
+nmap -sV --script=http-title -p <port> <target>
+```
 
 The results of this scan should be "http-title: Kubernetes Dashboard"
 
