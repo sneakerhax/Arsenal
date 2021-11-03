@@ -4,17 +4,23 @@ A Dockerized version of the tool Nmap
 
 ## Running with Docker (Local build)
 
-```docker build -t nmap .```
+```
+docker build -t nmap .
+```
 
 Build the container (locally)
 
-```docker run -it nmap <arguments> <target>```
+```
+docker run -it nmap <arguments> <target>
+```
 
 Run nmap with arguments
 
 ## Running with Docker (Docker Hub)
 
-```docker run -it sneakerhax\nmap <arguments> <targets>```
+```
+docker run -it sneakerhax\nmap <arguments> <targets>
+```
 
 Start image pulled from Docker Hub and run Nmap with target
 
