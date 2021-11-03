@@ -32,11 +32,15 @@ compinit -i
 
 # Setting up Kubernetes auto completion on OSX (zsh)
 
-```kubectl completion zsh```
+```
+kubectl completion zsh
+```
 
 Generate the auto completion script
 
-```source <(kubectl completion zsh)```
+```
+source <(kubectl completion zsh)
+```
 
 Add this line to .zshrc
 
