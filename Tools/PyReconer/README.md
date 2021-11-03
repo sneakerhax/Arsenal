@@ -4,13 +4,17 @@ A Dockerized tool written in Python to perform recon
 
 ## Building the image
 
-```docker build -t pyreconer .```
+```
+docker build -t pyreconer .
+```
 
 *Chromium download takes a few minutes
 
 ## Running the container
 
-```docker run -it pyreconer <target>```
+```
+docker run -it pyreconer <target>
+```
 
 ## Sample Usage
 
