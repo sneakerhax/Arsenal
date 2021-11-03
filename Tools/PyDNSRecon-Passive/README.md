@@ -15,11 +15,15 @@ export censys_secret=<censys_secret>
 
 Building Docker image
 
-```docker build -t pydnsrecon-passive .```
+```
+docker build -t pydnsrecon-passive .
+```
 
 Running Docker container
 
-```docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it pydnsrecon-passive <target>```
+```
+docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it pydnsrecon-passive <target>
+```
 
 Running PyDNSRecon and passing the censys api id and secret (Can be either strings or env variables)
 
