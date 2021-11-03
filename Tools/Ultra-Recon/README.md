@@ -13,7 +13,9 @@ Install Docker on your local system:
 
 Install Docker SDK for Python:
 
-```python3 -m pip install -r requirements.txt```
+```
+python3 -m pip install -r requirements.txt
+```
 
 Keys should be added to config.conf (Example for Censys):
 
@@ -25,7 +27,9 @@ censys_secret = <censys_secret>
 
 ## Usage
 
-```python3 ultra_recon -n <name_of_target> -t <target> -i <docker_image_name>```
+```
+python3 ultra_recon -n <name_of_target> -t <target> -i <docker_image_name>
+```
 
 ## Available Options
 ```
