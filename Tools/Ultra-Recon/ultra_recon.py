@@ -32,10 +32,13 @@ def main():
     args = parser.parse_args()
 
     # load config
-    config = configparser.ConfigParser()
-    config.read('config.conf')
-    censys_API_ID = config['censys.io']['censys_API_ID']
-    censys_secret = config['censys.io']['censys_secret']
+    try:
+        config = configparser.ConfigParser()
+        config.read('config.conf')
+        censys_API_ID = config['censys.io']['censys_API_ID']
+        censys_secret = config['censys.io']['censys_secret']
+    except Exception as e:
+        print("[-] Unable to load config file")
 
     # Tool file
     tool_dir = Path('../', args.image)
