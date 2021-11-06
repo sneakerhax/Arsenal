@@ -26,37 +26,3 @@ For more information on Containerizing tools check out these [resources](https:/
 * **Resources** - Docker and Kubernetes Resources
 * **Setup** - Information about setting up Docker and Kubernetes
 * **Tools** - A directory of tools. Each tool folder contains a set of instructions on how to run the tool
-
-## Folder Listing
-```
-.
-├── Attacking
-│   ├── Docker
-│   └── Kubernetes
-├── Commands
-│   ├── Docker-Compose.md
-│   ├── Docker-Swarm.md
-│   ├── Docker.md
-│   └── Kubernetes.md
-├── LICENSE
-├── README.md
-├── Resources
-│   ├── Docker.md
-│   └── Kubernetes.md
-├── Setup
-│   └── Auto_completion_OSX_Catalina.md
-└── Tools
-    ├── C2concealer
-    ├── Dirbpy
-    ├── Emailharvester
-    ├── Infra
-    ├── Kali_Linux
-    ├── Metasploit
-    ├── Nmap
-    ├── PyDNSRecon
-    ├── PyReconer
-    ├── Pyfiscan
-    ├── Shodan
-    ├── Ultra-Recon
-    └── WhatWeb
-```
