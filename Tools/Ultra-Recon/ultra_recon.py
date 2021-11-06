@@ -65,13 +65,15 @@ def main():
     target = args.target
     LogConfig(type=None)
     if args.image == "nmap":
-        container_output = client.containers.run(args.image, command=target)
+        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target)
     if args.image == "nmap-small":
-        container_output = client.containers.run(args.image, command=target)
+        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target)
     if args.image == "pydnsrecon":
-        container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-passive":
-        container_output = client.containers.run(args.image, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+    if args.image == "pydnsrecon-m1":
+        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     now_scan_end = datetime.datetime.now()
     print("[+] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
