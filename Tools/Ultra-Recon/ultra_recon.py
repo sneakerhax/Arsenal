@@ -6,8 +6,6 @@ import docker
 from pathlib import Path
 import sys
 
-from docker.types.containers import LogConfig
-
 
 def banner():
     print("    __  ______                ____")
@@ -49,7 +47,7 @@ def main():
     client = docker.from_env()
     print("[+] Building image " + str(args.image))
     if Path.exists(tool_dir):
-        client.images.build(path=str(tool_dir), tag=args.image)
+        client.images.build(path=str(tool_dir), rm=True, tag=args.image)
     else:
         print("[-] Path to Dockerfile does not exist")
         sys.exit()
@@ -63,17 +61,16 @@ def main():
     print("[+] Starting Scan at " + now_scan_start.strftime("%m-%d-%Y_%H:%M:%S"))
     print("[+] Running container " + str(args.image) + " on target " + str(args.target))
     target = args.target
-    LogConfig(type=None)
     if args.image == "nmap":
-        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target)
+        container_output = client.containers.run(args.image, remove=True, command=target)
     if args.image == "nmap-small":
-        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target)
+        container_output = client.containers.run(args.image, remove=True, command=target)
     if args.image == "pydnsrecon":
-        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+        container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-passive":
-        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+        container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-m1":
-        container_output = client.containers.run(args.image, log_config=None, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+        container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     now_scan_end = datetime.datetime.now()
     print("[+] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
