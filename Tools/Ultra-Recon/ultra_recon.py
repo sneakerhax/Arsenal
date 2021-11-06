@@ -6,6 +6,8 @@ import docker
 from pathlib import Path
 import sys
 
+from docker.types.containers import LogConfig
+
 
 def banner():
     print("    __  ______                ____")
@@ -61,6 +63,7 @@ def main():
     print("[+] Starting Scan at " + now_scan_start.strftime("%m-%d-%Y_%H:%M:%S"))
     print("[+] Running container " + str(args.image) + " on target " + str(args.target))
     target = args.target
+    LogConfig(type=None)
     if args.image == "nmap":
         container_output = client.containers.run(args.image, command=target)
     if args.image == "nmap-small":
