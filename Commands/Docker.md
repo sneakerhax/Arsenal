@@ -76,6 +76,12 @@ docker image inspect <image_name>
 
 Inspect the image configuration
 
+```
+docker image inspect pnt3-m1 | grep Arch | cut -d'"' -f4
+```
+
+Inspect image and extract Architecture with cut
+
 ## Containers
 
 ```
