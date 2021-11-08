@@ -1,4 +1,4 @@
-# Setting up Docker auto completion on OSX Catalina (zsh)
+# Setting up Docker auto completion on OSX Catalina/Monterey/M1 (zsh)
 
 
 ## Fetching the completion files
