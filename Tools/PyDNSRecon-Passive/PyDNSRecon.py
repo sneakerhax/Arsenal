@@ -87,7 +87,7 @@ def run(target):
     try:
         crtsh_cert_search(target, domain_list)
     except Exception as e:
-        print("[-] Error running CRT.sh scan")
+        print("[-] Error running CRT.sh search")
         pass
 
     unique_domains = set(domain_list)
