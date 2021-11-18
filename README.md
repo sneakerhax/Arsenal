@@ -1,6 +1,6 @@
 # Offensive Cloud Native
 
-* Leveraging Cloud Native technologies to build offensive security tools 
+* Leveraging Cloud Native technologies to build offensive security tools &
 * Knowledge about attacking & securing Cloud Native technologies
 
 [![Python 3.7](https://img.shields.io/badge/python-3.7-FADA5E.svg?logo=python)](https://www.python.org/) 
