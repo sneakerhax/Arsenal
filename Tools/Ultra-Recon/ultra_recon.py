@@ -75,6 +75,8 @@ def main():
         container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "pydnsrecon-m1":
         container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
+    if args.image == "whatweb":
+        container_output = client.containers.run(args.image, remove=True, command=["--color=never", target])
     now_scan_end = datetime.datetime.now()
     print("[*] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
