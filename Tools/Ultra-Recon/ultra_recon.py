@@ -38,13 +38,17 @@ def main():
         censys_API_ID = config['censys.io']['censys_API_ID']
         censys_secret = config['censys.io']['censys_secret']
     except Exception as e:
-        print("[-] Unable to load config file")
+        print("[-] Failed to load config file")
 
     # Tool file
     tool_dir = Path('../', args.image)
 
     # Build Docker image with Docker SDK for Python
-    client = docker.from_env()
+    try:
+        client = docker.from_env()
+    except Exception as e:
+        print("[-] Failed when connecting to Docker daemon")
+        sys.exit()
     print("[+] Building image " + str(args.image))
     if Path.exists(tool_dir):
         client.images.build(path=str(tool_dir), rm=True, tag=args.image)
@@ -58,7 +62,7 @@ def main():
 
     # Run Docker container with Docker SDK for Python
     now_scan_start = datetime.datetime.now()
-    print("[+] Starting Scan at " + now_scan_start.strftime("%m-%d-%Y_%H:%M:%S"))
+    print("[*] Starting Scan at " + now_scan_start.strftime("%m-%d-%Y_%H:%M:%S"))
     print("[+] Running container " + str(args.image) + " on target " + str(args.target))
     target = args.target
     if args.image == "nmap":
@@ -72,7 +76,7 @@ def main():
     if args.image == "pydnsrecon-m1":
         container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     now_scan_end = datetime.datetime.now()
-    print("[+] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
+    print("[*] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
     # Output container stdout to output folder
     outputpath = Path(output_dir, args.target + "_" + args.image + "_" + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S") + ".txt")
