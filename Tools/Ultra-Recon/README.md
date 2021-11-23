@@ -51,9 +51,9 @@ $ Ultra-Recon % python3 ultra_recon.py -n sample -t scanme.nmap.org -i nmap
 	 by sneakerhax...
 
 [+] Building image nmap
-[+] Starting Scan at 11-03-2021_13:34:35
+[*] Starting Scan at 11-03-2021_13:34:35
 [+] Running container nmap on target scanme.nmap.org
-[+] Finished Scan at 11-03-2021_13:34:38
+[*] Finished Scan at 11-03-2021_13:34:38
 [+] Writing output to output/10.0.0.1/scanme.nmap.org_nmap_11-03-2021_13:34:38.txt
 ```
 
