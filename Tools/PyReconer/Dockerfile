@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.10.0b2
 
 RUN apt update && apt upgrade -y
 RUN mkdir PyReconer
