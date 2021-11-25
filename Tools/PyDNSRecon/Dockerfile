@@ -1,4 +1,4 @@
-FROM --platform=linux/x86_64 python:3
+FROM --platform=linux/x86_64 python:3.10.0b2
 
 RUN apt update && apt upgrade -y
 RUN mkdir PyDNSRecon
