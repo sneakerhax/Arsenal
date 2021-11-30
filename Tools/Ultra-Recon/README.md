@@ -63,6 +63,9 @@ $ Ultra-Recon % python3 ultra_recon.py -n sample -t scanme.nmap.org -i nmap
 * Nmap-small
 * PyDNSRecon (Requires Censys API ID + Secret)
 * PyDNSRecon-Passive (Requires Censys API ID + Secret)
+* PyDNSRecon-m1 (For usage with m1 Apple silicon)
+* Whatweb
+* Dirsearch
 
 ## References
 
