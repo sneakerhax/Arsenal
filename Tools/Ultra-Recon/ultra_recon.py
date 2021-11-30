@@ -57,16 +57,16 @@ def main():
         print("[-] Failed when connecting to Docker daemon")
         sys.exit()
 
-    # Check for dirscan folder and if it exist delete before cloning the tool repo
+    # Check for dirsearch folder and if it exist delete before cloning the tool repo
     if args.image == "dirsearch":
         if Path.exists(Path(tool_dir)):
-            print("[+] Pulling Dirscan Github repo")
-            repo = Repo("../Dirscan")
+            print("[+] Pulling Dirsearch Github repo")
+            repo = Repo("../Dirsearch")
             origin = repo.remotes.origin
             origin.pull()
         else:
-            print("[+] Cloning Dirscan Github repo")
-            Repo.clone_from("https://github.com/maurosoria/dirsearch.git", "../Dirscan")
+            print("[+] Cloning Dirsearch Github repo")
+            Repo.clone_from("https://github.com/maurosoria/dirsearch.git", "../Dirsearch")
 
     # Build Docker image with Docker SDK for Python
     print("[+] Building image " + str(args.image))
