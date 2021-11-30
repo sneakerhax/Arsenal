@@ -1,10 +1,12 @@
 import argparse
 import configparser
 import datetime
-from os import system
 import docker
-from pathlib import Path
 import sys
+from git import Repo
+from os import system
+from pathlib import Path
+from urllib.parse import urlparse
 
 
 def banner():
@@ -16,6 +18,11 @@ def banner():
     print("")
     print("\t by sneakerhax...")
     print("")
+
+
+def extract_hostname(target):
+    target = urlparse(target).netloc
+    return target
 
 
 def main():
@@ -43,12 +50,25 @@ def main():
     # Tool file
     tool_dir = Path('../', args.image)
 
-    # Build Docker image with Docker SDK for Python
+    # Connect to the Docker daemon
     try:
         client = docker.from_env()
     except Exception as e:
         print("[-] Failed when connecting to Docker daemon")
         sys.exit()
+
+    # Check for dirscan folder and if it exist delete before cloning the tool repo
+    if args.image == "dirscan":
+        if Path.exists(Path(tool_dir)):
+            print("[+] Pulling Dirscan Github repo")
+            repo = Repo("../Dirscan")
+            origin = repo.remotes.origin
+            origin.pull()
+        else:
+            print("[+] Cloning Dirscan Github repo")
+            Repo.clone_from("https://github.com/maurosoria/dirsearch.git", "../Dirscan")
+
+    # Build Docker image with Docker SDK for Python
     print("[+] Building image " + str(args.image))
     if Path.exists(tool_dir):
         client.images.build(path=str(tool_dir), rm=True, tag=args.image)
@@ -77,11 +97,15 @@ def main():
         container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "whatweb":
         container_output = client.containers.run(args.image, remove=True, command=["--color=never", target])
+    if args.image == "dirscan":
+        container_output = client.containers.run(args.image, remove=True, command=["--no-color", "-u", target])
+        # container_output = client.containers.run(args.image, remove=True, command=["--no-color", "--help"])
+        target = extract_hostname(target)
     now_scan_end = datetime.datetime.now()
     print("[*] Finished Scan at " + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S"))
 
     # Output container stdout to output folder
-    outputpath = Path(output_dir, args.target + "_" + args.image + "_" + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S") + ".txt")
+    outputpath = Path(output_dir, target + "_" + args.image + "_" + now_scan_end.strftime("%m-%d-%Y_%H:%M:%S") + ".txt")
     print("[+] Writing output to " + str(outputpath))
     with open(outputpath, 'w') as out:
         out.write(container_output.decode())
