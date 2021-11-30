@@ -58,7 +58,7 @@ def main():
         sys.exit()
 
     # Check for dirscan folder and if it exist delete before cloning the tool repo
-    if args.image == "dirscan":
+    if args.image == "dirsearch":
         if Path.exists(Path(tool_dir)):
             print("[+] Pulling Dirscan Github repo")
             repo = Repo("../Dirscan")
@@ -97,7 +97,7 @@ def main():
         container_output = client.containers.run(args.image, remove=True, command=target, environment=["censys_API_ID=" + censys_API_ID, "censys_secret=" + censys_secret])
     if args.image == "whatweb":
         container_output = client.containers.run(args.image, remove=True, command=["--color=never", target])
-    if args.image == "dirscan":
+    if args.image == "dirsearch":
         container_output = client.containers.run(args.image, remove=True, command=["--no-color", "-u", target])
         # container_output = client.containers.run(args.image, remove=True, command=["--no-color", "--help"])
         target = extract_hostname(target)
