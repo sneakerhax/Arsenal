@@ -16,3 +16,25 @@ Containerizing offensive security tools provides the following benefits:
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
 For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/TTPs/tree/main/Cloud_Native/Resources)
+
+## Building the tools
+
+```
+docker build -t <image_name> Tools/<tool_directory>/
+```
+
+Building one of the tools using the Dockerfile in each tool directory
+
+```
+docker run -it <image_name> <arguments>
+```
+Running the tool after building the image
+
+## Docker Hub
+
+Tools Containerized through autobuilds on Docker Hub can be found [here](https://hub.docker.com/u/sneakerhax)
+
+```
+docker run it sneakerhax\<image_name> <arguments>
+```
+Running a tool listed on Docker Hub
