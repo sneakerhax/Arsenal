@@ -38,3 +38,26 @@ Tools Containerized through autobuilds on Docker Hub can be found [here](https:/
 docker run it sneakerhax\<image_name> <arguments>
 ```
 Running a tool listed on Docker Hub
+
+## Ultra Recon
+
+Additionally some of the tools are automated using the Docker SDK for Python
+
+```
+$ Ultra-Recon % python3 Tools/Ultra-Recon/ultra_recon.py -n sample -t scanme.nmap.org -i nmap
+    __  ______                ____
+   / / / / / /__________ _   / __ \___  _________  ____
+  / / / / / __/ ___/ __ `/  / /_/ / _ \/ ___/ __ \/ __ \
+ / /_/ / / /_/ /  / /_/ /  / _, _/  __/ /__/ /_/ / / / /
+ \____/_/\__/_/   \__,_/  /_/ |_|\___/\___/\____/_/ /_/
+
+	 by sneakerhax...
+
+[+] Building image nmap
+[*] Starting Scan at 11-03-2021_13:34:35
+[+] Running container nmap on target scanme.nmap.org
+[*] Finished Scan at 11-03-2021_13:34:38
+[+] Writing output to output/10.0.0.1/scanme.nmap.org_nmap_11-03-2021_13:34:38.txt
+```
+
+Running Nmap with Ultra-Recon. The output will be in the Ultra-Recon directory
