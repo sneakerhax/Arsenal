@@ -17,7 +17,7 @@ Containerizing offensive security tools provides the following benefits:
 
 For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/TTPs/tree/main/Cloud_Native/Resources)
 
-## Building the tools
+## Docker (Building and Running locally)
 
 ```
 docker build -t <image_name> Tools/<tool_directory>/
@@ -29,6 +29,30 @@ Building one of the tools using the Dockerfile in each tool directory
 docker run -it <image_name> <arguments>
 ```
 Running the tool after building the image
+
+## Tools
+
+```
+Tools
+├── C2concealer
+├── Dirbpy
+├── Dirsearch
+├── Emailharvester
+├── FFuF
+├── Infra
+├── Kali-Linux
+├── Metasploit
+├── Nmap
+├── Nmap-small
+├── PyDNSRecon
+├── PyDNSRecon-Passive
+├── PyDNSRecon-m1
+├── PyReconer
+├── Pyfiscan
+├── Shodan
+├── Ultra-Recon
+└── WhatWeb
+```
 
 ## Docker Hub
 
