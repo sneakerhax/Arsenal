@@ -38,9 +38,9 @@ def banner():
 
 def censys_cert_search(censys_target, domain_list):
     print("[+] Running Censys.io certificate search on " + str(censys_target))
-    censys_url = "https://censys.io/api/v1/search/certificates"
+    censys_url = "https://search.censys.io/api/v1/search/certificates"
     payload = "{\n    \"query\": \"" + censys_target + "\",\n    \"fields\": [\"parsed.subject.common_name\"]\n}"
-    headers = {'Content-Type': "application/json", 'Host': "censys.io"}
+    headers = {'Content-Type': "application/json", 'Host': "search.censys.io"}
     response = requests.request("POST", censys_url, data=payload, headers=headers, auth=censys_basic_auth)
     json_response = response.json()
     for result in json_response['results']:
