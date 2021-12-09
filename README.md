@@ -20,7 +20,7 @@ For more information on Containerizing tools check out these [resources](https:/
 ## Docker (Building and Running locally)
 
 ```
-docker build -t <image_name> Tools/<tool_directory>/
+docker build -t <image_name> <tool_directory>
 ```
 
 Building one of the tools using the Dockerfile in each tool directory
@@ -59,6 +59,7 @@ Tools
 Tools Containerized through autobuilds on Docker Hub can be found [here](https://hub.docker.com/u/sneakerhax)
 
 ```
+
 docker run it sneakerhax\<image_name> <arguments>
 ```
 Running a tool listed on Docker Hub
@@ -68,7 +69,7 @@ Running a tool listed on Docker Hub
 Additionally some of the tools are automated using the Docker SDK for Python
 
 ```
-$ Ultra-Recon % python3 Tools/Ultra-Recon/ultra_recon.py -n sample -t scanme.nmap.org -i nmap
+$ Ultra-Recon % python3 Ultra-Recon/ultra_recon.py -n sample -t scanme.nmap.org -i nmap
     __  ______                ____
    / / / / / /__________ _   / __ \___  _________  ____
   / / / / / __/ ___/ __ `/  / /_/ / _ \/ ___/ __ \/ __ \
@@ -84,4 +85,4 @@ $ Ultra-Recon % python3 Tools/Ultra-Recon/ultra_recon.py -n sample -t scanme.nma
 [+] Writing output to output/10.0.0.1/scanme.nmap.org_nmap_11-03-2021_13:34:38.txt
 ```
 
-Running Nmap with Ultra-Recon. The output will be in the Ultra-Recon directory
+Running Nmap with Ultra-Recon. The output will be in the Ultra-Recon output directory
