@@ -32,27 +32,24 @@ Running the tool after building the image
 
 ## Tools
 
-```
-Tools
-├── C2concealer
-├── Dirbpy
-├── Dirsearch
-├── Emailharvester
-├── FFuF
-├── Infra
-├── Kali-Linux
-├── Metasploit
-├── Nmap
-├── Nmap-small
-├── PyDNSRecon
-├── PyDNSRecon-Passive
-├── PyDNSRecon-m1
-├── PyReconer
-├── Pyfiscan
-├── Shodan
-├── Ultra-Recon
-└── WhatWeb
-```
+* C2concealer
+* Dirbpy
+* Dirsearch
+* Emailharvester
+* FFuF
+* Infra
+* Kali-Linux
+* Metasploit
+* Nmap
+* Nmap-small
+* PyDNSRecon
+* PyDNSRecon-Passive
+* PyDNSRecon-m1
+* PyReconer
+* Pyfiscan
+* Shodan
+* Ultra-Recon
+* WhatWeb
 
 ## Docker Hub
 
