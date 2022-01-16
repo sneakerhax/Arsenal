@@ -1,4 +1,4 @@
-# Docker - Metasploit (Kali Linux)
+# Docker - Metasploit (Nightly Installer)
 
 A Dockerized version of the Metasploit Nightly Installer
 
