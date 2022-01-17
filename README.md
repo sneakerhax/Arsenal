@@ -40,6 +40,7 @@ Running the tool after building the image
 * Infra
 * Kali-Linux
 * Metasploit
+* Metasploit Nightly Installer
 * Nmap
 * Nmap-small
 * PyDNSRecon
