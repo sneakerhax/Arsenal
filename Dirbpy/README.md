@@ -1,6 +1,6 @@
 # Dirbpy
 
-A Dockerized version of Dirbpy
+A Dockerized version of Dirbpy by marcolivierbouch
 
 ## Running with Docker (Local Build)
 
