@@ -12,7 +12,7 @@ Building the image (locally)
 
 ```
 docker run -it hardcidr
-┌──(root💀200c9d514198)-[/hardcidr]
+┌──(root💀200c9d514190)-[/hardcidr]
 └─# ./hardCIDR.sh
 ```
 Running the Docker container and starting hardCIDR
