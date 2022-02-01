@@ -37,6 +37,7 @@ Running the tool after building the image
 * Dirsearch
 * Emailharvester
 * FFuF
+* HardCIDR
 * Infra
 * Kali-Linux
 * Metasploit
