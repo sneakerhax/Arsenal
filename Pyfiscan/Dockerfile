@@ -1,6 +1,6 @@
 # A dockerized version of the tool pyfiscan by fgeek
 
-FROM python:alpine
+FROM python:3.11.0a5-alpine3.15
 
 RUN apk -U upgrade && apk add git
 RUN git clone https://github.com/fgeek/pyfiscan.git && cd pyfiscan
