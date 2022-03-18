@@ -1,6 +1,6 @@
 # A dockerized version of the tool emailharvester by maldevel
 
-FROM python:alpine
+FROM python:3.10-alpine
 
 RUN apk -U upgrade && apk add git
 RUN git clone https://github.com/maldevel/EmailHarvester
