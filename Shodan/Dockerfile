@@ -1,4 +1,4 @@
-FROM python:alpine
+FROM python:3.10-alpine
 
 RUN apk -U upgrade
 RUN python -m pip install shodan
