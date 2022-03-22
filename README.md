@@ -58,7 +58,6 @@ Running the tool after building the image
 Tools Containerized through autobuilds on Docker Hub can be found [here](https://hub.docker.com/u/sneakerhax)
 
 ```
-
 docker run it sneakerhax\<image_name> <arguments>
 ```
 Running a tool listed on Docker Hub
