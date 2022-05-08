@@ -1,6 +1,6 @@
 # Git-Dumper
 
-A Dockerized version of git-dumper by arthaud
+A Dockerized version of the tool git-dumper by arthaud
 
 ## Running with Docker (Local Build)
 
