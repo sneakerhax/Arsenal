@@ -43,4 +43,4 @@ Search for nse modules containing the string smb
 ```
 docker-slim build --target nmap:latest --http-probe=false --exec "nmap --script=http-title scanme.nmap.org"
 ```
-command to build smaller image with DockerSlim from already built nnap image (will generate nmap.slim image)
+command to build smaller image with DockerSlim from already built nmap image (will generate nmap.slim image)
