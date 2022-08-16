@@ -41,6 +41,6 @@ Search for nse modules containing the string smb
 ## DockerSlim
 
 ```
-docker-slim build --target nmap:latest --http-probe=false --exec "--script=http-title scanme.nmap.org"
+docker-slim build --target nmap:latest --http-probe=false --exec "nmap --script=http-title scanme.nmap.org"
 ```
 command to make image smaller with DockerSlim
