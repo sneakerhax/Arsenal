@@ -25,3 +25,10 @@ docker run -it sneakerhax\nmap-small <arguments> <targets>
 ```
 
 Start image pulled from Docker Hub and run Nmap with target
+
+## DockerSlim
+
+```
+docker-slim build --target nmap:latest --http-probe=false --exec "nmap --script=http-title scanme.nmap.org"
+```
+command to build a smaller image with DockerSlim from already built nmap image (will generate nmap.slim image)
