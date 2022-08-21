@@ -1,8 +1,6 @@
-# Install and Run shodan cli
+# Install Shodan cli
 
-**Description:** This entry describes how to install, initialize, and run basic commands with the Shodan cli
-
-**Requirements:** shodan_cli
+The Shodan cli is tool written in Python that interacts with the Shodan API to get information
 
 ## Installing Shodan cli (Python3)
 
