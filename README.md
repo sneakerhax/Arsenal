@@ -8,7 +8,7 @@ Offensive Security Tools Weaponized
 # Features
 
 * Cloud - Using the cloud for offensive security purposes
-* Containers - Offensive Security Tools containerized
+* Containers - Offensive security Tools containerized
 * Hardware - Setting up hardware for offenisve security purposes
 * Resources - Additional resources for offensive security use
 * Tools - Basic offensive security tool setup and configuration
