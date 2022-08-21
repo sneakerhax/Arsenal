@@ -6,7 +6,11 @@ A port scanning tools used for discovery and enumeration
 * Install [Nmap](https://nmap.org/download.html)
 * Install [Nmap with Brew](https://formulae.brew.sh/formula/nmap)
 
-## NSE script search
+## Configuration
+
+Details about additional configurations for nmap
+
+### NSE script searching
 
 OSX
 
