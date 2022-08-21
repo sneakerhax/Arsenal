@@ -1,3 +1,3 @@
-# Hardware
+# Offensive Hardware
 
 Entries about hardware
