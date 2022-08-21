@@ -8,6 +8,7 @@ Offensive Security Tools Weaponized
 ## Sections
 
 * Cloud - Using the cloud for offensive security purposes
+* Coding - Using different coding languages for offensive security purposes
 * Containers - Offensive security tools containerized
 * Hardware - Setting up hardware for offensive security purposes
 * Resources - Additional resources for offensive security use
