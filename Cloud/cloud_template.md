@@ -2,9 +2,9 @@
 
 **Description:** A description of the entry
 
-**Provider:** required software
+**Provider:** <provider_name>
 
-**Service:**
+**Service:** <service>
 
 ## Section
 
