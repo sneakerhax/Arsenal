@@ -1,6 +1,6 @@
 # Browsers
 
-Entries about browsers
+A list of browser plugins that can be used for offensive security
 
 ## Chrome plugins
 * [Wappalyzer](https://chrome.google.com/webstore/detail/wappalyzer/gppongmhjkpfnbhagpmjfkannfbllamg?hl=en)
