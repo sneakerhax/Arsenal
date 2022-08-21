@@ -16,7 +16,7 @@ python3 -m pip install shodan
 shodan init <api_key>
 ```
 
-## Run basic commands
+## Test basic command
 
 ```
 shodan host <ip_address>
