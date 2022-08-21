@@ -1,5 +1,11 @@
 # Port scanning using Azure
 
+**Description:** This entry describes how to use the Azure container service to run port scans
+
+**Provider:** Azure
+
+**Service:** Container Service
+
 ## Logging into Azure (Creating context)
 
 ```docker login azure```
