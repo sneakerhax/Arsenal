@@ -1,0 +1,3 @@
+# Hardware
+
+Entries about hardware
