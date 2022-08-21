@@ -1,16 +1,12 @@
 # Nmap
 
-A port scanning tools used for discovery and enumeration
+Nmap is a port scanning tool used for discovery and enumeration of targets
 
 ## Installation
 * Install [Nmap](https://nmap.org/download.html)
 * Install [Nmap with Brew](https://formulae.brew.sh/formula/nmap)
 
-## Configuration
-
-Details about additional configurations for nmap
-
-### NSE script searching
+## NSE script searching
 
 OSX
 
