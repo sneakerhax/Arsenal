@@ -1,3 +1,3 @@
 # Offensive Hardware
 
-Entries about hardware
+Guides for the setup and configuration of hardware devices for offensive security purposes
