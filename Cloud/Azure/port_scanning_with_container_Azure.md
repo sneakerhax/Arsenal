@@ -1,4 +1,4 @@
-# Port scanning using Azure
+# Port scanning using Azure Container Instance
 
 **Description:** This entry describes how to use the Azure container service to run port scans
 
@@ -37,6 +37,8 @@ Get the results using docker logs
 
 ## References
 * https://www.docker.com/blog/how-to-deploy-containers-to-azure-aci-using-docker-cli-and-compose/
+* https://azure.microsoft.com/en-us/services/container-instances/
+* https://docs.microsoft.com/en-us/azure/container-instances/
 
 
 
