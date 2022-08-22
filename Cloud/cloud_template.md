@@ -4,7 +4,7 @@
 
 **Provider:** <provider_name>
 
-**Service:** <service>
+**Service:** <service_name>
 
 ## Section
 
