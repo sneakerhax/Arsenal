@@ -12,6 +12,11 @@
 ```
 
 Command explanation
+
+## Additional Entries
+
+* <entry_1>
+* <entry_2>
   
 ## References
 * <reference_url>
