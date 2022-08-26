@@ -8,7 +8,7 @@
 
 ## Setting up a Docker install StackScript
 
-1. Navigate to StackScripts in navigation panel on the right side then choose **Create StackScript**
+1. Navigate to StackScripts in the navigation panel on the left side then choose **Create StackScript**
 
 2. Add a description in the **Description** Field
 
@@ -36,6 +36,13 @@ echo \
 sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 ```
+
+## Using the StackScript on deployment
+
+1. Navigate to StackScripts in the navigation panel on the left side
+2. From the list of StackScripts choose the one you want to deploy (In this case Docker engine)
+3. Click the 3 dots to the right side of the StackScript listing and choose **Deploy New Linode**
+4. Follow the instructions to deploy a virtual machine with Docker engine installed
   
 ## References
 * https://www.linode.com/docs/guides/platform/stackscripts/
