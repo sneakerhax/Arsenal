@@ -13,7 +13,8 @@ Resources related to Kubernetes, Building offensive security Tools with Kubernet
 * [Kubernetes: The Documentary - Part 2](https://www.youtube.com/watch?v=318elIq37PE) - Honeypot
 
 ## Vulns and Exploits
-* [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - Cvedetails
+* [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) - Kubernetes
+* [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - CVE Details
 
 ## Attacking Kubernetes
 
