@@ -1,6 +1,6 @@
 # Listing all ip addresses using the AWS CLI
 
-**Description:** This entry will describe how to list all ip addresses in your account using the aws cli by region. This is useful to perform deconflicts.
+**Description:** This entry will describe how to list all ip addresses in your account using the AWS CLI by region. This is useful for reporting.
 
 **Required:** AWS CLI
 
