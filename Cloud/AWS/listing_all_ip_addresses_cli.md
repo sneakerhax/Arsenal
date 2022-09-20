@@ -14,7 +14,7 @@
 aws ec2 describe-instances --region <region> --query="Reservations[].Instances[].PublicIpAddress" | jq -r ".[]"
 ```
 
-Use the AWS CLI to list all ip addresses on ec2 instances in a certain reqion. The piping to jq is optional
+Use the AWS CLI to list all ip addresses on ec2 instances in a certain region. The piping to jq is optional
   
 ## References
 * https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
