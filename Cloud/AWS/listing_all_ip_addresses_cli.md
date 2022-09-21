@@ -2,7 +2,7 @@
 
 **Description:** This entry will describe how to list all ip addresses in your account using the AWS CLI by region. This is useful for reporting.
 
-**Required:** AWS CLI
+**Requirements:** AWS CLI
 
 **Provider:** AWS (Amazon Web Services)
 
