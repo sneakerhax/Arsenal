@@ -2,6 +2,8 @@
 
 **Description:** A description of the entry
 
+**Requirements:**
+
 **Provider:** <provider_name>
 
 **Service:** <service_name>
