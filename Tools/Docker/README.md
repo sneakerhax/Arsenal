@@ -14,6 +14,9 @@ Resources related to Docker, building offensive security Tools with Docker, Atta
 * [Github Actions - Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images) - Docker
 * [Container Training](https://container.training/) - Jérôme Petazzoni
 
+## Development
+* [Development Containers](https://containers.dev) - Microsoft
+
 ## Offensive Docker (Tooling)
 
 * [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/) - ropnop
