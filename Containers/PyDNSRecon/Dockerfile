@@ -1,6 +1,6 @@
-FROM --platform=linux/x86_64 python:3
+FROM --platform=linux/x86_64 python:3-slim
 
-RUN apt update && apt upgrade -y
+RUN apt update && apt upgrade -y && apt install wget unzip -y
 RUN mkdir PyDNSRecon
 COPY PyDNSRecon.py /PyDNSRecon
 WORKDIR /PyDNSRecon
