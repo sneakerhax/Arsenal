@@ -19,7 +19,7 @@ Running the Docker container with arguments
 ## Running with Docker (Docker Hub)
 
 ```
-docker run -it sneakerhax\dirbpy <arguments>
+docker run -it sneakerhax/dirbpy <arguments>
 ```
 
 Start container with the image pulled from Docker Hub and run dirbpy with arguments
