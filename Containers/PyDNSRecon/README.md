@@ -30,7 +30,7 @@ Running PyDNSRecon and passing the censys api id and secret (Can be either strin
 ## Running with Docker (Docker Hub)
 
 ```
-docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it sneakerhax\metasploit <target>
+docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it sneakerhax\pydnsrecon <target>
 ```
 
 Start image pulled from Docker Hub and run PyDNSRecon
