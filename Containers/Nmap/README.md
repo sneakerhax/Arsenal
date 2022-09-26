@@ -19,7 +19,7 @@ Run nmap with arguments
 ## Running with Docker (Docker Hub)
 
 ```
-docker run -it sneakerhax\nmap <arguments> <targets>
+docker run -it sneakerhax/nmap <arguments> <targets>
 ```
 
 Start image pulled from Docker Hub and run Nmap with target
