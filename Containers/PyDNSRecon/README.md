@@ -11,7 +11,7 @@ export censys_API_ID=<censys_API_ID>
 export censys_secret=<censys_secret>
 ```
 
-## Running with Docker
+## Running with Docker (Local build)
 
 Building Docker image
 
@@ -26,6 +26,14 @@ docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it p
 ```
 
 Running PyDNSRecon and passing the censys api id and secret (Can be either strings or env variables)
+
+## Running with Docker (Docker Hub)
+
+```
+docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it sneakerhax/pydnsrecon <target>
+```
+
+Start image pulled from Docker Hub and run PyDNSRecon
 
 ## Example usage
 

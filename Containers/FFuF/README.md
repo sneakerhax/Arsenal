@@ -19,7 +19,7 @@ Running the Docker container with arguments
 ## Running with Docker (Docker Hub)
 
 ```
-docker run -it sneakerhax\ffuf <arguments>
+docker run -it sneakerhax/ffuf <arguments>
 ```
 
 Start image pulled from Docker Hub and run ffuf with arguments
