@@ -30,7 +30,7 @@ Running PyDNSRecon and passing the censys api id and secret (Can be either strin
 ## Example usage
 
 ```
-$ docker run -it pydnsrecon site.com
+$ docker run -it pydnsrecon-m1 site.com
     ____        ____  _   _______ ____
    / __ \__  __/ __ \/ | / / ___// __ \___  _________  ____
   / /_/ / / / / / / /  |/ /\__ \/ /_/ / _ \/ ___/ __ \/ __ \
