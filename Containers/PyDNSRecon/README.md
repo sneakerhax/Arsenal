@@ -38,7 +38,7 @@ Start image pulled from Docker Hub and run PyDNSRecon
 ## Example usage
 
 ```
-$ docker run -it PyDNSRecon.py site.com
+$ docker run -it pydnsrecon site.com
     ____        ____  _   _______ ____
    / __ \__  __/ __ \/ | / / ___// __ \___  _________  ____
   / /_/ / / / / / / /  |/ /\__ \/ /_/ / _ \/ ___/ __ \/ __ \
