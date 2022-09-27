@@ -30,7 +30,7 @@ Running PyDNSRecon and passing the censys api id and secret (Can be either strin
 ## Example usage
 
 ```
-$ docker run -it PyDNSRecon.py site.com
+$ docker run -it pydnsrecon-passive site.com
     ____        ____  _   _______ ____
    / __ \__  __/ __ \/ | / / ___// __ \___  _________  ____
   / /_/ / / / / / / /  |/ /\__ \/ /_/ / _ \/ ___/ __ \/ __ \
@@ -38,8 +38,11 @@ $ docker run -it PyDNSRecon.py site.com
 /_/    \__, /_____/_/ |_//____/_/ |_|\___/\___/\____/_/ /_/
       /____/
 
+[Passive Mode]
+
 by: sneakerhax
 
+[*] Passive scans may contain stale DNS records!
 [+] Running Censys.io certificate search on site.com
 [+] Running Amass on site.com
 [+] Running Zgrep on Sonar fdns data for site.com

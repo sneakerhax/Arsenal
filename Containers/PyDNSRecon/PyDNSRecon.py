@@ -51,7 +51,7 @@ def censys_cert_search(censys_target, domain_list):
 
 
 def amass_dns_active(amass_target, amass_output, domain_list):
-    print("[+] Running Amass on " + amass_target)
+    print("[+] Running Amass active scan on " + amass_target)
     amass = subprocess.Popen([amass_binary, 'enum', '-d', amass_target, '-o', amass_output], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     amass.communicate()
     with open(amass_output, 'r') as amass_open:
@@ -72,7 +72,7 @@ def amass_dns_active(amass_target, amass_output, domain_list):
 
 
 def crtsh_cert_search(crtsh_target, domain_list):
-    print("[+] Running Crt.sh search for " + crtsh_target)
+    print("[+] Running Crt.sh certificate search for " + crtsh_target)
     crtsh_search = f"https://crt.sh/?q={crtsh_target}&output=json"
     response = requests.get(crtsh_search).json()
     for result in response:
@@ -103,7 +103,7 @@ def run(target):
     try:
         crtsh_cert_search(target, domain_list)
     except Exception as e:
-        print("[-] Error running CRT.sh search")
+        print("[-] Error running CRT.sh certificate search")
         pass
 
     unique_domains = set(domain_list)

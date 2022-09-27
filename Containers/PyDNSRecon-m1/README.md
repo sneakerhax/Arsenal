@@ -22,7 +22,7 @@ docker build -t pydnsrecon .
 Running Docker container
 
 ```
-docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it pydnsrecon <target>
+docker run -e censys_API_ID=$censys_API_ID -e censys_secret=$censys_secret -it pydnsrecon-m1 <target>
 ```
 
 Running PyDNSRecon and passing the censys api id and secret (Can be either strings or env variables)
@@ -30,7 +30,7 @@ Running PyDNSRecon and passing the censys api id and secret (Can be either strin
 ## Example usage
 
 ```
-$ docker run -it PyDNSRecon.py site.com
+$ docker run -it pydnsrecon site.com
     ____        ____  _   _______ ____
    / __ \__  __/ __ \/ | / / ___// __ \___  _________  ____
   / /_/ / / / / / / /  |/ /\__ \/ /_/ / _ \/ ___/ __ \/ __ \
