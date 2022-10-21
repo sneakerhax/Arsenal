@@ -45,7 +45,6 @@ by: sneakerhax
 [*] Passive scans may contain stale DNS records!
 [+] Running Censys.io certificate search on site.com
 [+] Running Amass on site.com
-[+] Running Zgrep on Sonar fdns data for site.com
 [+] Running Crt.sh search site.com
 [+] Printing 5 discovered DNS records
 dev.site.com
