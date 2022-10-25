@@ -1,6 +1,6 @@
 # A dockerized version of the tool git-dumper by arthaud
 
-FROM python:3
+FROM python:3-slim
 
 RUN apt update && apt upgrade -y && apt install -y git
 RUN git clone https://github.com/arthaud/git-dumper
