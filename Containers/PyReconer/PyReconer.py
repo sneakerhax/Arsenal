@@ -7,7 +7,7 @@ aquatone_binary = "aquatone/aquatone"
 chromium_binary = "chrome-linux/chrome"
 nmap_binary = "nmap"
 nmap_scan_to_csv = "Nmap-Scan-to-CSV/nmap_xml_parser.py"
-python_binary = "python"
+python_binary = "python3"
 
 # Output files
 amass_output = "output/amass_results.txt"
@@ -42,7 +42,7 @@ def amass_dns_active(amass_targets, amass_output):
 
 def nmap_top_ports(nmap_targets, nmap_output):
     print("[+] Running nmap on " + amass_output)
-    nmap = subprocess.Popen([nmap_binary, '--top-ports', '1000', '-Pn', '--open', '--reason', '-iL', nmap_targets, '-oA', nmap_output], stdout=subprocess.PIPE)
+    nmap = subprocess.Popen([nmap_binary, '--unprivileged', '--top-ports', '1000', '-Pn', '--open', '--reason', '-iL', nmap_targets, '-oA', nmap_output], stdout=subprocess.PIPE)
     out, err = nmap.communicate()
     print(out.decode('utf-8'))
 
