@@ -1,6 +1,6 @@
 FROM --platform=linux/x86_64 ubuntu:latest
 
-RUN apt update && apt upgrade -y && apt install wget nmap unzip git python3 -y
+RUN apt update && apt upgrade -y && apt install -y wget nmap unzip git python3
 RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer
