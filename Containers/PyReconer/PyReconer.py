@@ -3,7 +3,7 @@ import sys
 
 # Tool locations
 amass_binary = "amass/amass"
-aquatone_binary = "aquatone/aquatone"
+eyewitness_binary = "eyewitness/EyeWitness-20221102.1/Python/EyeWitness.py"
 chromium_binary = "chrome-linux/chrome"
 nmap_binary = "nmap"
 nmap_scan_to_csv = "Nmap-Scan-to-CSV/nmap_xml_parser.py"
@@ -14,7 +14,7 @@ amass_output = "output/amass_results.txt"
 nmap_output = "output/nmap_results"
 nmap_output_csv = "output/nmap_results.csv"
 nmap_output_xml = "output/nmap_results.xml"
-aquatone_output = "output/"
+eyewitness_output = "output/"
 
 
 def banner():
@@ -54,13 +54,11 @@ def nmap_convert_csv():
     print(out.decode('utf-8'))
 
 
-def aquatone_screen_grab():
-    print("[+] Running aquatone on " + nmap_output_xml)
-    aquatone_nmap_file = subprocess.Popen(['cat', nmap_output_xml], stdout=subprocess.PIPE)
-    aquatone_run = subprocess.Popen([aquatone_binary, '-nmap', '--chrome-path', chromium_binary, '-out', aquatone_output], stdin=aquatone_nmap_file.stdout, stdout=subprocess.PIPE)
-    out, err = aquatone_run.communicate()
+def eyewitness_screen_grab():
+    print("[+] Running eyewitness on " + nmap_output_xml)
+    eyewitness_run = subprocess.Popen([python_binary, eyewitness_binary, '--createtargets', nmap_output_xml, '--web', '-d', eyewitness_output, '--no-prompt'],  stdout=subprocess.PIPE)
+    out, err = eyewitness_run.communicate()
     print(out.decode('utf-8'))
-
 
 def main():
     if len(sys.argv) == 2:
@@ -69,7 +67,7 @@ def main():
         amass_dns_active(target, amass_output)
         nmap_top_ports(amass_output, nmap_output)
         nmap_convert_csv()
-        aquatone_screen_grab()
+        eyewitness_screen_grab()
     else:
         banner()
         usage()
