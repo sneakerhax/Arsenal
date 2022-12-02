@@ -102,5 +102,5 @@ Wrote HTML report to: output/aquatone_report.html
 
 * [Amass](https://github.com/OWASP/Amass) - OWASP
 * [Nmap](https://nmap.org/) - Fyador and contributors
-* [Aquatone](https://github.com/michenriksen/aquatone) - michenriksen
-* [Nmap-Scan-to-CSV](https://github.com/laconicwolf/Nmap-Scan-to-CSV) - laconicwolf
+* [EyeWitness]https://github.com/FortyNorthSecurity/EyeWitness - christophertruncer
+
