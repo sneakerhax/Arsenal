@@ -7,19 +7,20 @@ A Dockerized tool written in Python to perform recon
 ```
 docker build -t pyreconer .
 ```
-
-*Chromium download takes a few minutes
+Build the PyReconer image (takes around 220s on my M1 Macbook Pro)
 
 ## Running the container
 
 ```
-docker run -it pyreconer <target>
+docker run --platform=linux/x86_64 -v output:/PyReconer/output -it pyreconer <target>
 ```
+
+If you're using Apple silicon (M1/M2) you should set the --platform arguments as seen above.
 
 ## Sample Usage
 
 ```
-$ docker run -it pyreconer scanme.nmap.org
+$ docker run --platform=linux/x86_64 -v output:/PyReconer/output -it pyreconer scanme.nmap.org
     ____        ____
    / __ \__  __/ __ \___  _________  ____  ___  _____
   / /_/ / / / / /_/ / _ \/ ___/ __ \/ __ \/ _ \/ ___/
@@ -56,46 +57,16 @@ PORT      STATE SERVICE    REASON
 
 Nmap done: 1 IP address (1 host up) scanned in 1.73 seconds
 
-[+] Converting Nmap XML to CSV
+[+] Running Eywitness on output/nmap_results.xml
+################################################################################
+#                                  EyeWitness                                  #
+################################################################################
+#           FortyNorth Security - https://www.fortynorthsecurity.com           #
+################################################################################
 
-[+] The file output/nmap_results.csv does not exist. New file created!
-
-
-[+] Running aquatone on output/nmap_results.xml
-aquatone v1.7.0 started at 2019-07-08T21:34:37Z
-
-Targets    : 2
-Threads    : 2
-Ports      : 80, 443, 8000, 8080, 8443
-Output dir : output
-
-http://scanme.nmap.org/: 200 OK
-http://scanme.nmap.org/: 200 OK
-http://scanme.nmap.org/: screenshot successful
-http://scanme.nmap.org/: screenshot successful
-Calculating page structures... done
-Clustering similar pages... done
-Generating HTML report... done
-
-Writing session file...Time:
- - Started at  : 2019-07-08T21:34:37Z
- - Finished at : 2019-07-08T21:34:41Z
- - Duration    : 5s
-
-Requests:
- - Successful : 2
- - Failed     : 0
-
- - 2xx : 2
- - 3xx : 0
- - 4xx : 0
- - 5xx : 0
-
-Screenshots:
- - Successful : 2
- - Failed     : 0
-
-Wrote HTML report to: output/aquatone_report.html
+Starting Web Requests (1 Hosts)
+Attempting to screenshot http://scanme.nmap.org
+Finished in 27.50956964492798 seconds
 ```
 
 ## List of 3rd party tools

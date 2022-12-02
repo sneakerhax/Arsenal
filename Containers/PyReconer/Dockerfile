@@ -1,6 +1,6 @@
-FROM python:3-slim
+FROM --platform=linux/x86_64 python:3-slim
 
-RUN apt update && apt upgrade -y && apt install -y wget nmap python3-pip python3-distutils unzip git
+RUN apt update && apt upgrade -y && apt install -y wget nmap unzip git
 RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer

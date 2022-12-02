@@ -11,7 +11,7 @@ python_binary = "python3"
 amass_output = "output/amass_results.txt"
 nmap_output = "output/nmap_results"
 nmap_output_xml = "output/nmap_results.xml"
-eyewitness_output = "output/"
+eyewitness_output = "output/eyewitness"
 
 
 def banner():
@@ -32,7 +32,7 @@ def usage():
 
 def amass_dns_active(amass_targets, amass_output):
     print("[+] Running amass on " + amass_targets)
-    amass = subprocess.Popen([amass_binary, 'enum', '-o', amass_output, '-d', amass_targets], stdout=subprocess.PIPE)
+    amass = subprocess.Popen([amass_binary, 'enum', '-r', '1.1.1.1', '-o', amass_output, '-d', amass_targets], stdout=subprocess.PIPE)
     out, err = amass.communicate()
     print(out.decode('utf-8'))
 
@@ -44,12 +44,12 @@ def nmap_top_ports(nmap_targets, nmap_output):
     print(out.decode('utf-8'))
 
 
-
-def eyewitness_screen_grab():
+def eyewitness_screen_grab(nmap_output_xml):
     print("[+] Running eyewitness on " + nmap_output_xml)
-    eyewitness_run = subprocess.Popen([python_binary, eyewitness_binary, '--createtargets', nmap_output_xml, '--web', '-f', eyewitness_output, '--no-prompt'],  stdout=subprocess.PIPE)
+    eyewitness_run = subprocess.Popen([python_binary, eyewitness_binary, '-x', nmap_output_xml, '--web', '-d', eyewitness_output, '--no-prompt'], stdout=subprocess.PIPE)
     out, err = eyewitness_run.communicate()
     print(out.decode('utf-8'))
+
 
 def main():
     if len(sys.argv) == 2:
@@ -57,7 +57,7 @@ def main():
         target = sys.argv[1]
         amass_dns_active(target, amass_output)
         nmap_top_ports(amass_output, nmap_output)
-        eyewitness_screen_grab()
+        eyewitness_screen_grab(nmap_output_xml)
     else:
         banner()
         usage()
