@@ -3,16 +3,13 @@ import sys
 
 # Tool locations
 amass_binary = "amass/amass"
-eyewitness_binary = "eyewitness/EyeWitness-20221102.1/Python/EyeWitness.py"
-chromium_binary = "chrome-linux/chrome"
+eyewitness_binary = "EyeWitness/Python/EyeWitness.py"
 nmap_binary = "nmap"
-nmap_scan_to_csv = "Nmap-Scan-to-CSV/nmap_xml_parser.py"
 python_binary = "python3"
 
 # Output files
 amass_output = "output/amass_results.txt"
 nmap_output = "output/nmap_results"
-nmap_output_csv = "output/nmap_results.csv"
 nmap_output_xml = "output/nmap_results.xml"
 eyewitness_output = "output/"
 
@@ -47,16 +44,10 @@ def nmap_top_ports(nmap_targets, nmap_output):
     print(out.decode('utf-8'))
 
 
-def nmap_convert_csv():
-    print("[+] Converting Nmap XML to CSV ")
-    nmap = subprocess.Popen([python_binary, nmap_scan_to_csv, '-f', nmap_output_xml, '-csv', nmap_output_csv], stdout=subprocess.PIPE)
-    out, err = nmap.communicate()
-    print(out.decode('utf-8'))
-
 
 def eyewitness_screen_grab():
     print("[+] Running eyewitness on " + nmap_output_xml)
-    eyewitness_run = subprocess.Popen([python_binary, eyewitness_binary, '--createtargets', nmap_output_xml, '--web', '-d', eyewitness_output, '--no-prompt'],  stdout=subprocess.PIPE)
+    eyewitness_run = subprocess.Popen([python_binary, eyewitness_binary, '--createtargets', nmap_output_xml, '--web', '-f', eyewitness_output, '--no-prompt'],  stdout=subprocess.PIPE)
     out, err = eyewitness_run.communicate()
     print(out.decode('utf-8'))
 
@@ -66,7 +57,6 @@ def main():
         target = sys.argv[1]
         amass_dns_active(target, amass_output)
         nmap_top_ports(amass_output, nmap_output)
-        nmap_convert_csv()
         eyewitness_screen_grab()
     else:
         banner()

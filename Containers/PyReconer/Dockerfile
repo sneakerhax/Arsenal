@@ -1,15 +1,12 @@
-FROM --platform=linux/x86_64 ubuntu:latest
+FROM python:3-slim
 
-RUN apt update && apt upgrade -y && apt install -y wget nmap python3-pip python3-distutils unzip git python3
+RUN apt update && apt upgrade -y && apt install -y wget nmap python3-pip python3-distutils unzip git
 RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer
 RUN mkdir output
 RUN wget https://github.com/OWASP/Amass/releases/download/v3.14.2/amass_linux_amd64.zip && unzip amass_linux_amd64.zip && mv amass_linux_amd64 amass
-RUN wget https://github.com/FortyNorthSecurity/EyeWitness/archive/refs/tags/v20221102.1.zip && unzip v20221102.1.zip -d eyewitness
-RUN wget https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots -O chrome-linux.zip && unzip chrome-linux.zip
-RUN git clone https://github.com/laconicwolf/Nmap-Scan-to-CSV
+RUN git clone https://github.com/FortyNorthSecurity/EyeWitness.git && ./EyeWitness/Python/setup/setup.sh
 RUN python3 -m pip install netaddr selenium
-RUN apt install -yq --no-install-recommends libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 libnss3 
 
 ENTRYPOINT ["python3", "PyReconer.py"]
