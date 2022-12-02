@@ -73,5 +73,5 @@ Finished in 27.50956964492798 seconds
 
 * [Amass](https://github.com/OWASP/Amass) - OWASP
 * [Nmap](https://nmap.org/) - Fyador and contributors
-* [EyeWitness]https://github.com/FortyNorthSecurity/EyeWitness - christophertruncer
+* [EyeWitness](https://github.com/FortyNorthSecurity/EyeWitness) - christophertruncer
 
