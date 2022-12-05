@@ -22,6 +22,26 @@ root@82a3e1e109ca:/# linode-cli account view
 ```
 You will need to set the LINODE_CLI_TOKEN in your local env with `export LINODE_CLI_TOKEN=<token>`
 
+## Usage Examples
+
+```
+linode-cli account view
+```
+
+List account information
+
+```
+linode-cli linodes list
+```
+
+List all computer instances
+
+```
+linode-cli stackscripts list --mine true
+```
+
+List the StackScripts created by you.
+
 ## References
 * https://www.linode.com/docs/products/tools/cli/guides/install/
 
