@@ -1,12 +1,13 @@
-FROM --platform=linux/x86_64 python:3-slim
+FROM --platform=linux/x86_64 python:alpine
 
-RUN apt update && apt upgrade -y && apt install -y wget nmap unzip git
+RUN apk -U upgrade && apk add bash wget nmap unzip git
 RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer
 RUN mkdir output
 RUN wget https://github.com/OWASP/Amass/releases/download/v3.14.2/amass_linux_amd64.zip && unzip amass_linux_amd64.zip && mv amass_linux_amd64 amass
 RUN git clone https://github.com/FortyNorthSecurity/EyeWitness.git && ./EyeWitness/Python/setup/setup.sh
-RUN python -m pip install netaddr selenium
+RUN python3 -m pip install netaddr selenium
 
-ENTRYPOINT ["python", "PyReconer.py"]
+ENTRYPOINT ["python3", "PyReconer.py"]
+
