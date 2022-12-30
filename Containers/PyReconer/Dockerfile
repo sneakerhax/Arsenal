@@ -10,4 +10,3 @@ RUN git clone https://github.com/FortyNorthSecurity/EyeWitness.git && ./EyeWitne
 RUN python3 -m pip install netaddr selenium
 
 ENTRYPOINT ["python3", "PyReconer.py"]
-
