@@ -36,7 +36,9 @@ Running the tool after building the image
 * FFuF
 * HardCIDR
 * Infra
+    * socat-http-redirector
 * Kali-Linux
+* Linode_cli
 * Metasploit
 * Metasploit Nightly Installer
 * Nmap
@@ -44,8 +46,8 @@ Running the tool after building the image
 * PyDNSRecon
 * PyDNSRecon-Passive
 * PyDNSRecon-m1
-* PyReconer
 * Pyfiscan
+* PyReconer
 * Shodan
 * Ultra-Recon
 * WhatWeb
