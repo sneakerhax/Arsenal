@@ -9,4 +9,4 @@ RUN wget https://github.com/OWASP/Amass/releases/download/v3.14.2/amass_linux_am
 RUN git clone https://github.com/FortyNorthSecurity/EyeWitness.git && ./EyeWitness/Python/setup/setup.sh
 RUN python3 -m pip install netaddr selenium
 
-ENTRYPOINT ["python3", "PyReconer.py"]
+ENTRYPOINT ["python", "PyReconer.py"]

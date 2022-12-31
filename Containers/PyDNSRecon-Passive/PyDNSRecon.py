@@ -15,10 +15,6 @@ censys_basic_auth = (censys_API_ID, censys_secret)
 amass_binary = "amass_linux_arm64/amass"
 amass_output = "amass_dns.txt"
 
-# Sonar fdns file and output file
-# sonar_fdns_data = "sonar.json.gz"
-# sonar_output = "sonar_output.txt"
-
 # CRTSH command - curl -s "https://crt.sh/?q=uipath.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u > certsh.txt
 
 
@@ -61,18 +57,6 @@ def amass_dns_passive(amass_target, amass_output, domain_list):
             domain_list.append(result.strip())
 
 
-# def sonar_zgrep_search(sonar_target, sonar_output, sonar_fdns_data, domain_list):
-#     print("[+] Running Zgrep on Sonar fdns data for " + sonar_target)
-#     with open(sonar_output, "w") as out:
-#         zgrep = subprocess.Popen(['zgrep', '-a', '-w', sonar_target, sonar_fdns_data], stdout=out)
-#         zgrep.communicate()
-#         with open(sonar_output, "r") as sonar:
-#             for result in sonar:
-#                 json_string = json.loads(result)
-#                 if sonar_target in json_string['name']:
-#                     domain_list.append(json_string['name'].strip())
-
-
 def crtsh_cert_search(crtsh_target, domain_list):
     print("[+] Running Crt.sh certificate search for " + crtsh_target)
     crtsh_search = f"https://crt.sh/?q={crtsh_target}&output=json"
@@ -98,11 +82,6 @@ def run(target):
     except Exception as e:
         print("[-] Error running Amass DNS passive scan")
         pass
-    # try:
-    #     sonar_zgrep_search(target, sonar_output, sonar_fdns_data, domain_list)
-    # except Exception as e:
-    #     print("[-] Error running Sonar zgrep search")
-    #     pass
     try:
         crtsh_cert_search(target, domain_list)
     except Exception as e:
