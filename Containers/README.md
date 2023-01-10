@@ -63,7 +63,7 @@ Running a tool listed on Docker Hub
 
 ## Ultra Recon
 
-Additionally some of the tools are automated using the Docker SDK for Python
+Additionally, some of the tools are automated using the Docker SDK for Python
 
 ```
 $ Ultra-Recon % python3 Ultra-Recon/ultra_recon.py -n sample -t scanme.nmap.org -i nmap
