@@ -12,7 +12,7 @@ Containerizing offensive security tools provides the following benefits:
 * Documented setup process (Dockerfiles)
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
-For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/TTPs/tree/main/Cloud_Native/Resources)
+For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Docker/README.md)
 
 ## Docker (Building and Running locally)
 
