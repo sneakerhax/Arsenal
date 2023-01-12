@@ -12,7 +12,7 @@ Containerizing offensive security tools provides the following benefits:
 * Documented setup process (Dockerfiles)
 * Deployable to cloud services (e.g. recon scans, c2 infra, team services)
 
-For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/TTPs/tree/main/Cloud_Native/Resources)
+For more information on Containerizing tools check out these [resources](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Docker/README.md)
 
 ## Docker (Building and Running locally)
 
@@ -63,7 +63,7 @@ Running a tool listed on Docker Hub
 
 ## Ultra Recon
 
-Additionally some of the tools are automated using the Docker SDK for Python
+Additionally, some of the tools are automated using the Docker SDK for Python
 
 ```
 $ Ultra-Recon % python3 Ultra-Recon/ultra_recon.py -n sample -t scanme.nmap.org -i nmap
