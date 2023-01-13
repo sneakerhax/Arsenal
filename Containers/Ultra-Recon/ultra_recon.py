@@ -98,7 +98,7 @@ def main():
     if args.image == "whatweb":
         container_output = client.containers.run(args.image, remove=True, command=["--color=never", target])
     if args.image == "dirsearch":
-        container_output = client.containers.run(args.image, remove=True, command=["--no-color", "-u", target])
+        container_output = client.containers.run(args.image, remove=True, command=["--no-color", "-q", "-u", target])
         # container_output = client.containers.run(args.image, remove=True, command=["--no-color", "--help"])
         target = extract_hostname(target)
     now_scan_end = datetime.datetime.now()
