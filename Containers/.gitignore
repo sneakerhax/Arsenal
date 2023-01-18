@@ -1,4 +1,6 @@
+# input files
 *.txt
+*.conf
 
 # Repos pulled by running Docker builds
 Dirsearch/
