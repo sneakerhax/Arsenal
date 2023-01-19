@@ -47,6 +47,7 @@ Running the tool after building the image
 * PyDNSRecon-Passive
 * PyDNSRecon-m1
 * Pyfiscan
+* Searchsploit
 * PyReconer
 * Shodan
 * Ultra-Recon
