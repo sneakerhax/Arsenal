@@ -15,5 +15,3 @@ docker run -it searchsploit <arguments> <search>
 ```
 
 Running searchsploit with searchterm and optional arguments
-
-```
