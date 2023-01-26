@@ -2,6 +2,8 @@
 
 **Description:** A description of the entry
 
+**Requirements:** A list of requirements
+
 ## Installation
 
 * Download location
