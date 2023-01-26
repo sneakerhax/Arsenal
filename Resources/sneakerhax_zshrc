@@ -9,7 +9,13 @@ nmap_quick(){nmap -Pn --open -p 21,22,80,443,445,8080 $1}
 # Add Nmap vulners scan
 nmap_vuln_scan(){nmap -Pn --open -sV --script=vulners $1}
 # Add Nmap Docker scan
-nmap_docker_scan(){nmap -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
+nmap_container_scan(){nmap -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
+
+##########
+# Python #
+##########
+
+pyserver(){python3 -m http.server $1}
 
 ######
 # Go #
@@ -26,9 +32,11 @@ export PATH="$GOPATH/bin:$PATH"
 bupd(){brew update}
 bupg(){brew upgrade}
 bcupg(){brew upgrade --cask}
-bcle(){brew cleanup}
+bcle(){brew cleanup -s}
+barm(){brew autoremove}
 bdoc(){brew doctor}
 bdep(){brew deps --tree --installed}
+ball(){bupd && bupg && bcle && barm && bdoc}
 
 #######
 # Zsh #
@@ -64,17 +72,23 @@ get_pub_ip(){curl -s ifconfig.me | pbcopy}
 
 file_size(){ls -hl}
 
+#######
+# Git #
+#######
+
+update_seclists(){git -C ~/Code/Repos/SecLists pull}
+
 ##########
 # Docker #
 ##########
 
 docker_python(){docker run -it python:3}
 docker_kali(){docker run -it kalilinux/kali-rolling}
-docker_metasploit(){docker run -it metasploit}
-docker_nmap(){docker run -it nmap-small $1}
-docker_nmap_quick(){docker run -it nmap-small -Pn --open -p 21,22,80,443,445,8080 $1}
-docker_nmap_vuln_scan(){docker run -it nmap-small -Pn --open -sV --script=vulners $1}
-docker_nmap_container_scan(){docker run -it nmap-small -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
+docker_metasploit(){docker run -it sneakerhax/metasploit}
+docker_nmap(){docker run -it sneakerhax/nmap-small --unprivileged $1}
+docker_nmap_quick(){docker run -it sneakerhax/nmap-small --unprivileged -Pn --open -p 21,22,80,443,445,8080 $1}
+docker_nmap_vuln_scan(){docker run -it sneakerhax/nmap-small --unprivileged -Pn --open -sV --script=vulners $1}
+docker_nmap_container_scan(){docker run -it sneakerhax/nmap-small --unprivileged -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
 
 #######
 # ssh #
