@@ -2,7 +2,7 @@
 
 **Description:** A description of the entry
 
-**Requirements:**
+**Requirements:** A list of requirements
 
 **Provider:** <provider_name>
 
