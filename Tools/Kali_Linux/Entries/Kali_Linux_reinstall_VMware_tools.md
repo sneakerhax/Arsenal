@@ -1,4 +1,4 @@
-# Kali Linux - Re-install VMware Tools
+# Kali Linux reinstall VMware Tools
 
 ```
 sudo apt-get remove --auto-remove open-vm-tools-desktop
