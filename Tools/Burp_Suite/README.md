@@ -10,6 +10,7 @@
 * Install [Burp Suite with Brew](https://formulae.brew.sh/cask/burp-suite)
 
 ## Burp Suite Plugins
+
 * [Software Vulnerability Scanner](https://portswigger.net/bappstore/c9fb79369b56407792a7104e3c4352fb) - Vulners
 * [Wordpress Scanner](https://portswigger.net/bappstore/77a12b2966844f04bba032de5744cd35) - Kacper Szurek
 * [Turbo Intruder](https://portswigger.net/bappstore/9abaa233088242e8be252cd4ff534988) - James 'albinowax' Kettle, PortSwigger Web Security
@@ -21,6 +22,7 @@
 * [Using cookie jar](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Burp_Suite/Entries/Using_cookie_jar.md)
   
 ## References
+
 * [Documentation](https://portswigger.net/burp/help/)
 * [Install Mozilla](https://www.mozilla.org/en-US/firefox/new/)
 * [Install Foxy Proxy Standard](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)

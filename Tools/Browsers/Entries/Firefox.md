@@ -10,6 +10,7 @@
 * Instal [Firefox with Brew](https://formulae.brew.sh/cask/firefox)
 
 ## Firefox plugins
+
 * [Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
 * [Builtwith](https://addons.mozilla.org/En-us/firefox/addon/builtwith/)
 * [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)

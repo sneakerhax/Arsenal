@@ -28,4 +28,5 @@ Fully update when packages are not updating (reinstalls packages)
 * [Kali Linux re-install VMware tools](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Kali_Linux/Entries/Kali_Linux_re-install_VMware_tools.md)
   
 ## References
+
 * [Installing Kali Linux](https://www.kali.org/docs/installation/)

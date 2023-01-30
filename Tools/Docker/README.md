@@ -39,6 +39,7 @@ Resources related to Docker, building offensive security Tools with Docker, Atta
 * [Container Training](https://container.training/) - Jérôme Petazzoni
 
 ## Development
+
 * [Development Containers](https://containers.dev) - Microsoft
 
 ## Offensive Docker (Tooling)
@@ -97,6 +98,7 @@ Resources related to Docker, building offensive security Tools with Docker, Atta
 * [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
 
 ## Open Source Tools
+
 * [Trivy](https://github.com/aquasecurity/trivy) - aquasecurity
 * [Clair](https://github.com/quay/clair) - Quay
 * [Anchore](https://github.com/anchore/anchore-engine) - Anchore
