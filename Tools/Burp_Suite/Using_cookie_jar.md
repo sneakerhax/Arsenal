@@ -1,4 +1,4 @@
-# Session
+# Using Cookie Jar
 
 Maintaining session information:
 
