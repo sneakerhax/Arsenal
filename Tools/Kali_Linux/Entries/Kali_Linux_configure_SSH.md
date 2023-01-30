@@ -1,4 +1,4 @@
-# Kali Linux - Configure SSH
+# Kali Linux configure SSH
 
 ```
 vim /etc/ssh/sshd_config
