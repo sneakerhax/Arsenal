@@ -2,7 +2,7 @@
 
 **Description:** A entry describing how to install and configure Docker
 
-**Requirements:** A list of requirements
+**Requirements:** See Install instructions for details
 
 ## Installation
 
