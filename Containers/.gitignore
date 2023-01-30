@@ -2,5 +2,5 @@
 *.txt
 *.conf
 
-# Repos pulled by running Docker builds
+# Repos pulled by running Docker builds using Ultra-Recon
 Dirsearch/
