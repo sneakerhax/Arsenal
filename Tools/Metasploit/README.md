@@ -1,19 +1,19 @@
 # Metasploit
 
-**Description:** A description of the entry
+**Description:** This entry describes how to install and configure Metasploit
 
-**Requirements:** A list of requirements
+**Requirements:** Nmap
 
 ## Installation
 
-* Download location
-* Additional download methods
+* Install [Metaspoit](https://www.metasploit.com/download)
+* Install [Metasploit with Homebrew](https://formulae.brew.sh/cask/metasploit)
 
 ```
-<command>
+metasploit --version
 ```
 
-Command explanation
+Verify Metasploit is installed
 
 ## Additional Entries
 
@@ -21,5 +21,5 @@ Command explanation
 * <entry_2>
   
 ## References
-* <reference_url>
-* <reference_url>
+
+* [Metasploit Docs](https://docs.metasploit.com/)
