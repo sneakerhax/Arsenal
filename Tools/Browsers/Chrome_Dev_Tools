@@ -1,0 +1,7 @@
+# Chrome Developers Tools
+
+## Javascript Console (Option + Command + J)
+
+```encodeURIComponent('22');```
+
+Used in Chrome Javascript console to url encode
