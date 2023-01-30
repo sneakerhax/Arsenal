@@ -9,11 +9,9 @@ Nmap is a port scanning tool used for discovery and enumeration of targets
 ## NSE scripts
 
 NSE (Nmap Scripting Engine) is a collection of scripts that extend Nmap's core capabilites
-
 * [NSE Scripts](https://nmap.org/nsedoc/scripts/)
 
 ## Additional Entries
-
 * [NSE Script Searching](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Nmap/nse_script_searching.md)
 
 ## References
