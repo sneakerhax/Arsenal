@@ -15,4 +15,4 @@
 * [Shodan](https://chrome.google.com/webstore/detail/shodan/jjalcfnidlmpjhdfepjhjbhnhkbgleap?hl=en-US)
 
 ## Additional Entries
-* [Chrome Dev Tools](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Browsers/Chrome_Dev_Tools)
+* [Chrome Dev Tools](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Browsers/Entries/Chrome_Dev_Tools.md)
