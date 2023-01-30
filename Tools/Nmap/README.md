@@ -12,7 +12,7 @@ NSE (Nmap Scripting Engine) is a collection of scripts that extend Nmap's core c
 * [NSE Scripts](https://nmap.org/nsedoc/scripts/)
 
 ## Additional Entries
-* [NSE Script Searching](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Nmap/nse_script_searching.md)
+* [NSE Script Searching](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Nmap/Entries/nse_script_searching.md)
 
 ## References
 * [Nmap](https://nmap.org/) 
