@@ -17,8 +17,10 @@ Verify Metasploit is installed
 
 ## Additional Entries
 
-* <entry_1>
-* <entry_2>
+* [Metasploit Data](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Metasploit/Entries/Metasploit_Data.md)
+* [Metasploit Data](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Metasploit/Entries/Metasploit_Handlers.md)
+* [Metasploit Data](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Metasploit/Entries/Metasploit_ILO.md)
+* [Metasploit Data](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Metasploit/Entries/Metasploit_Meterpreter.md)
   
 ## References
 
