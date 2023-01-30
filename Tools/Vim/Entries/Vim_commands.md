@@ -1,4 +1,4 @@
-# Text Editors - VIM
+# Vim commands
 
 ```
 cat file.txt | vim -
