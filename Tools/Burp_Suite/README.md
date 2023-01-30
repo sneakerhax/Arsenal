@@ -18,7 +18,7 @@
 
 * [Burp Suite on M1](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Burp_Suite/Burp_suite_on_m1.md)
 * [Saving Projects](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Burp_Suite/saving_projects.md)
-* [Session](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Burp_Suite/Using_cookie_jar.md)
+* [Using cookie jar](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Burp_Suite/Using_cookie_jar.md)
   
 ## References
 * [Documentation](https://portswigger.net/burp/help/)
