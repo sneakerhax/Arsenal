@@ -1,4 +1,4 @@
-# Kali Linux - Linux Host
+# Kali Linux on Debian
 
 **Choose a version of Debian Linux Including one found on a cloud service**
 

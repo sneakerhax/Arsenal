@@ -12,8 +12,8 @@ sudo apt-get purge --auto-remove open-vm-tools-desktop
 
 Purge open-vm-tools-desktop
 
-```a
-pt -y install open-vm-tools-desktop fuse
+```
+apt -y install open-vm-tools-desktop fuse
 ```
 
 Re-install open-vm-tools-desktop
