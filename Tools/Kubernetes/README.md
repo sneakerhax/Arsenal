@@ -18,7 +18,7 @@ kubectl cluster-info
 Verify Kubernetes cluster is running
 
 ## Additional Entries
-* 
+* [Kubernetes commands](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Kubernetes/Entries/Kubernetes_commands.md)
   
 ## References
 
