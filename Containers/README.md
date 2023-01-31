@@ -52,6 +52,7 @@ Running the tool after building the image
 * Shodan
 * Ultra-Recon
 * WhatWeb
+* Wordlists
 
 ## Docker Hub
 
