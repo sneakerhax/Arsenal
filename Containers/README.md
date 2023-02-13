@@ -41,7 +41,9 @@ Running the tool after building the image
 * Linode_cli
 * Metasploit
 * Metasploit Nightly Installer
-* Nmap
+* Ncrack
+* Ngrok (instructions only)
+* Nmap (Includes ncrack)
 * Nmap-small
 * PyDNSRecon
 * PyDNSRecon-Passive
