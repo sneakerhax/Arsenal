@@ -12,7 +12,7 @@ Buildling the image
 ## Run the Linode CLI
 
 ```
-$ docker run -e LINODE_CLI_TOKEN=$LINODE_CLI_TOKEN -it linode_cli
+$ docker run -e LINODE_CLI_TOKEN=$LINODE_CLI_TOKEN -it linode-cli
 root@82a3e1e109ca:/# linode-cli account view
 ┌────────────┬───────────┬──────────────────────┬─────────┬────────────────────┐
 │ first_name │ last_name │ email                │ balance │ balance_uninvoiced │
