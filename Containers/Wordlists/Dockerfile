@@ -5,4 +5,4 @@ COPY download_wordlists.sh download_wordlists.sh
 RUN chmod +x download_wordlists.sh && mkdir wordlists
 WORKDIR /wordlists
 
-ENTRYPOINT [ "sh", "./download_wordlists.sh" ]
+ENTRYPOINT [ "sh", "/download_wordlists.sh" ]
