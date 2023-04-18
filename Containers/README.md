@@ -40,7 +40,7 @@ Running the tool after building the image
 * Kali-Linux
 * Linode_cli
 * Metasploit
-* Metasploit Nightly Installer
+* Metasploit Nightly Installer (deprecated)
 * Ncrack
 * Ngrok (instructions only)
 * Nmap (Includes ncrack)
