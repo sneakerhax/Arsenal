@@ -11,3 +11,6 @@ docker run --net=host -it -e NGROK_AUTHTOKEN=<ngrok_auth_token> ngrok/ngrok http
 ```
 
 Create an http Ngrok tunnel that exposes your host 8080 (For none Docker Desktop such as cloud virtual machine)
+
+## References
+* [Using ngrok with Docker](https://ngrok.com/docs/using-ngrok-with/docker/)
