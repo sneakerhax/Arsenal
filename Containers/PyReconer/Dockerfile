@@ -5,7 +5,7 @@ RUN mkdir PyReconer
 COPY PyReconer.py /PyReconer
 WORKDIR /PyReconer
 RUN mkdir output
-RUN wget https://github.com/owasp-amass/amass/releases/download/v3.22.2/amass_linux_amd64.zip && unzip amass_linux_amd64.zip && mv amass_linux_amd64 amass
+RUN wget https://github.com/OWASP/Amass/releases/latest/download/amass_linux_amd64.zip && unzip amass_linux_amd64.zip && mv amass_linux_amd64.zip amass
 RUN git clone https://github.com/FortyNorthSecurity/EyeWitness.git && ./EyeWitness/Python/setup/setup.sh
 RUN python3 -m pip install netaddr selenium
 
