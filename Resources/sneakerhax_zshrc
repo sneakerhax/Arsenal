@@ -55,10 +55,10 @@ compinit -i
 ##############
 
 # show ip address of en0
-show_ip(){ifconfig | grep -A 3 en0 | grep inet | cut -d " " -f2}
+show_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2}
 
 # get ip address of en0 and copy to clipboard
-get_ip(){ifconfig | grep -A 3 en0 | grep inet | cut -d " " -f2 | tr -d '\n'| pbcopy}
+get_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2 | tr -d '\n'| pbcopy}
 
 # show public ip address
 show_pub_ip(){curl -s ifconfig.me}
