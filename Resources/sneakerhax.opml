@@ -45,6 +45,7 @@
         </outline>
         <outline text="Exploit + Vulnerability" title="Exploit + Vulnerability">
             <outline type="rss" text="Zero Day Initiative - Blog" title="Zero Day Initiative - Blog" xmlUrl="https://www.thezdi.com/blog?format=rss" htmlUrl="https://www.thezdi.com/blog/"/>
+            <outline type="rss" text="Rapid7 Vulnerability Management" title="Rapid7 Vulnerability Management" xmlUrl="https://feedly.com/web/e7b547c9-0df2-4e64-a906-749c4d7baff7" htmlUrl="https://www.rapid7.com/blog/tag/vulnerability-management/"/>
             <outline type="rss" text="Exploit-DB updates" title="Exploit-DB updates" xmlUrl="http://www.exploit-db.com/rss.php" htmlUrl="https://www.exploit-db.com"/>
             <outline type="rss" text="Full Disclosure" title="Full Disclosure" xmlUrl="http://seclists.org/rss/fulldisclosure.rss" htmlUrl="https://seclists.org/#fulldisclosure"/>
             <outline type="rss" text="Project Zero" title="Project Zero" xmlUrl="http://googleprojectzero.blogspot.com/feeds/posts/default" htmlUrl="https://googleprojectzero.blogspot.com/"/>
@@ -68,11 +69,12 @@
             <outline type="rss" text="Posts By SpecterOps Team Members" title="Posts By SpecterOps Team Members" xmlUrl="https://posts.specterops.io/feed" htmlUrl="https://posts.specterops.io?source=rss----f05f8696e3cc---4"/>
             <outline type="rss" text="XPN InfoSec Blog" title="XPN InfoSec Blog" xmlUrl="https://blog.xpnsec.com/rss/" htmlUrl="https://blog.xpnsec.com/"/>
             <outline type="rss" text="OffSec" title="OffSec" xmlUrl="http://www.offensive-security.com/feed/" htmlUrl="https://www.offsec.com/"/>
-            <outline type="rss" text="Black Hills Information Security" title="Black Hills Information Security" xmlUrl="http://www.blackhillsinfosec.com/?feed=rss2" htmlUrl="https://www.blackhillsinfosec.com/"/>
+            <outline type="rss" text="Black Hills Information Security" title="Black Hills Information Security" xmlUrl="http://www.blackhillsinfosec.com/?feed=rss2" htmlUrl="https://www.blackhillsinfosec.com"/>
             <outline type="rss" text="The Wover" title="The Wover" xmlUrl="https://thewover.github.io/feed.xml" htmlUrl="https://thewover.github.io/"/>
             <outline type="rss" text="Rasta Mouse" title="Rasta Mouse" xmlUrl="http://rastamouse.me/feed/" htmlUrl="http://rastamouse.me"/>
             <outline type="rss" text="Raesene's Ramblings" title="Raesene's Ramblings" xmlUrl="https://raesene.github.io/feed.xml" htmlUrl="https://raesene.github.io/"/>
             <outline type="rss" text="Unit42" title="Unit42" xmlUrl="http://feeds.feedburner.com/Unit42" htmlUrl="https://unit42.paloaltonetworks.com/"/>
+            <outline type="rss" text="bishopfox.com" title="bishopfox.com" xmlUrl="http://www.bishopfox.com/blog/feed/" htmlUrl="https://bishopfox.com/"/>
         </outline>
     </body>
 </opml>
