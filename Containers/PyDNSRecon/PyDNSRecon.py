@@ -12,7 +12,7 @@ censys_secret = os.getenv('censys_secret')
 censys_basic_auth = (censys_API_ID, censys_secret)
 
 # Amass binary and output file
-amass_binary = "amass/amass"
+amass_binary = "amass_Linux_amd64/amass"
 amass_output = "amass_dns.txt"
 
 # CRTSH command - curl -s "https://crt.sh/?q=uipath.com&output=json" | jq -r '.[].name_value' | sed 's/\*\.//g' | sort -u > certsh.txt
