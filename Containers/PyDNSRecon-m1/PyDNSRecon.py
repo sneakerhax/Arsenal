@@ -70,8 +70,7 @@ def run(target):
     try:
         censys_cert_search(target, domain_list)
     except Exception as e:
-        print(str(e))
-        # print("[-] Error running Censys certificate search")
+        print("[-] Error running Censys certificate search")
         pass
     try:
         amass_dns_active(target, amass_output, domain_list)
