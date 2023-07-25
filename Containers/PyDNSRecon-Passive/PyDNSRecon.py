@@ -38,14 +38,12 @@ def banner():
 
 def censys_cert_search(censys_target, domain_list):
     print("[+] Running Censys.io certificate search on " + str(censys_target))
-    censys_url = "https://search.censys.io/api/v1/search/certificates"
-    payload = "{\n    \"query\": \"" + censys_target + "\",\n    \"fields\": [\"parsed.subject.common_name\"]\n}"
-    headers = {'Content-Type': "application/json", 'Host': "search.censys.io"}
-    response = requests.request("POST", censys_url, data=payload, headers=headers, auth=censys_basic_auth)
+    url = "https://search.censys.io/api/v2/certificates/search?q=" + censys_target
+    response = requests.request("GET", url, auth=censys_basic_auth)
     json_response = response.json()
-    for result in json_response['results']:
-        if censys_target in result['parsed.subject.common_name'][0]:
-            domain_list.append(result['parsed.subject.common_name'][0].strip())
+    for result in json_response['result']['hits'][0]['names']:
+        if censys_target in result:
+            domain_list.append(result.strip())
 
 
 def amass_dns_passive(amass_target, amass_output, domain_list):
