@@ -1,29 +1,3 @@
-########
-# Nmap #
-########
-
-# Add Nmap nse search function
-nse(){ find /opt/homebrew/Cellar/nmap/7.92/share/nmap/scripts -iname "*$1*" | cut -c32- | cut -d'/' -f4;}
-# Add Nmap quick scan
-nmap_quick(){nmap -Pn --open -p 21,22,80,443,445,8080 $1}
-# Add Nmap vulners scan
-nmap_vuln_scan(){nmap -Pn --open -sV --script=vulners $1}
-# Add Nmap Docker scan
-nmap_container_scan(){nmap -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
-
-##########
-# Python #
-##########
-
-pyserver(){python3 -m http.server $1}
-
-######
-# Go #
-######
-
-export GOPATH="$HOME/go"
-export PATH="$GOPATH/bin:$PATH"
-
 ############
 # Homebrew #
 ############
@@ -49,6 +23,19 @@ PROMPT='%F{red}%n%F{white}@%m%~ %F{red}$%F{white} '
 autoload -Uz compinit
 fpath=(~/.zsh/completion $fpath)
 compinit -i
+
+##########
+# Python #
+##########
+
+pyserver(){python3 -m http.server $1}
+
+######
+# Go #
+######
+
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 
 ##############
 # Networking #
@@ -77,6 +64,19 @@ file_size(){ls -hl}
 #######
 
 update_seclists(){git -C ~/Code/Repos/SecLists pull}
+
+########
+# Nmap #
+########
+
+# Add Nmap nse search function
+nse(){ find /opt/homebrew/Cellar/nmap/7.94_1/share/nmap/scripts -iname "*$1*" | cut -d '/' -f10 | cut -d "." -f1;}
+# Add Nmap quick scan
+nmap_quick(){nmap -Pn --open -p 21,22,80,443,445,8080 $1}
+# Add Nmap vulners scan
+nmap_vuln_scan(){nmap -Pn --open -sV --script=vulners $1}
+# Add Nmap Docker scan
+nmap_container_scan(){nmap -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
 
 ##########
 # Docker #
