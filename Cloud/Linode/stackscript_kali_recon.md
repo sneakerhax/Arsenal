@@ -6,7 +6,7 @@
 
 **Service:** StackScript
 
-## Setting up a Metasploit install StackScript
+## Setting up a Kali recon install StackScript
 
 1. Navigate to StackScripts in the navigation panel on the left side then choose **Create StackScript**
 
@@ -50,9 +50,9 @@ source ~/.zshrc
 ## Using the StackScript on deployment
 
 1. Navigate to StackScripts in the navigation panel on the left side
-2. From the list of StackScripts choose the one you want to deploy (In this case Metasploit)
+2. From the list of StackScripts choose the one you want to deploy (In this case Kali recon)
 3. Click the 3 dots to the right side of the StackScript listing and choose **Deploy New Linode**
-4. Follow the instructions to deploy a virtual machine with Metasploit installed
+4. Follow the instructions to deploy a virtual machine with Kali recon installed
   
 ## References
 * https://www.linode.com/docs/guides/platform/stackscripts/
