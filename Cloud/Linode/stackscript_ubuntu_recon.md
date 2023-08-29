@@ -70,6 +70,7 @@ docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
 git clone https://github.com/sneakerhax/Arsenal.git $HOME/Repos/Arsenal
 git clone https://github.com/blechschmidt/massdns $HOME/Repos/massdns && cd $HOME/Repos/massdns && make && cp $HOME/Repos/massdns/bin/massdns /usr/bin/
+
 # Install go tools
 # go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest && echo source ~/.bashrc >> ~/.profile
 ```
