@@ -1,4 +1,4 @@
-# Creating a StackScript to install Metasploit
+# Creating a StackScript to install Metasploit Nightly
 
 **Description:** This entry describes how to setup a script to install Metasploit on virtual machines
 
