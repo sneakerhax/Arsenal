@@ -20,8 +20,10 @@
 
 ```
 #!/bin/bash
+
+export DEBIAN_FRONTEND=noninteractive
 apt update && apt upgrade -y
-apt install -y curl gnupg nmap
+apt install -y curl gnupg nmap mosh
 curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \
   chmod 755 msfinstall && \
   ./msfinstall
