@@ -20,27 +20,35 @@
 
 ```
 #!/bin/bash
+
 # Update all packages
 export DEBIAN_FRONTEND=noninteractive
 sudo apt update && apt upgrade -y
+
 # Apt installs
 apt install mosh nmap ncrack docker.io golang-go libpcap-dev massdns -y
+
 # Add gopath
 echo export GOPATH=$HOME/go >> ~/.zshrc
 source ~/.zshrc
 echo export PATH=$PATH:$GOPATH/bin >> ~/.zshrc
 source ~/.zshrc
+
 # Setup directories
 mkdir $HOME/Data $HOME/Repos $HOME/Wordlists $HOME/Scripts
+
 # Add Scripts
 echo "hostnamectl set-hostname \$1" > $HOME/Scripts/set-hostname.sh
 echo "exec bash" >> $HOME/Scripts/set-hostname.sh
+
 # Install docker recon tools
 docker pull sneakerhax/wordlists:latest
 docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
+
 # Install repos
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
 git clone https://github.com/sneakerhax/Arsenal.git $HOME/Repos/Arsenal
+
 # Install recon tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
 pdtm
