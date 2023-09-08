@@ -48,6 +48,8 @@ docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
 # Install repos
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
 git clone https://github.com/sneakerhax/Arsenal.git $HOME/Repos/Arsenal
+git clone https://github.com/sneakerhax/Arsenal-containers.git
+git clone https://github.com/sneakerhax/Ultra-Recon
 
 # Install recon tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
