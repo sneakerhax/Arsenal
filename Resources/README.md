@@ -6,5 +6,5 @@ Additional offensive security resources
 
 * sneakerhax.opml - [Feedly](https://feedly.com/) sources export file.
   * Import instructions can be found [here](https://blog.feedly.com/opml/)
-* sneakerhax_zshrc - zshrc config file 
+* sneakerhax_zshrc - zshrc config file (OSX)
 
