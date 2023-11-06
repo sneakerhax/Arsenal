@@ -29,3 +29,12 @@ db_disconnect
 ```
 
 Disconnect from data source
+
+```
+<db_command> -R
+```
+
+Set the current database commmand output to the RHOSTS parameter
+
+## References
+* [Metasploit Unleashed - Using the Database](https://www.offsec.com/metasploit-unleashed/using-databases/)
