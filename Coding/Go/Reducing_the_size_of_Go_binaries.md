@@ -2,7 +2,7 @@
 
 **Description:** This entry describes how to reduce the size of Go binaries that are typically larger than other compiled binaries. This is because all dependencies are packed into the binary
 
-**Requirements:** upx
+**Requirements:** go, upx
 
 ## Reducing binary size
 
