@@ -13,7 +13,7 @@
 brew install go
 ```
 
-Install golang using brew
+Install Go using brew
 
 ```
 export GOPATH="$HOME/go"
