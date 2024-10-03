@@ -21,3 +21,7 @@ Check Docker version to verify install
 * [Docker commands](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Docker/Entries/Docker_commands.md)
 * [Docker Compose commands](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Docker/Entries/Docker_Compose_commands.md)
 * [Docker Swarm commands](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Docker/Entries/Docker_Swarm_commands.md)
+
+## References
+
+* [Docker Docs](https://docs.docker.com/)
