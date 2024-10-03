@@ -1,6 +1,6 @@
 # Kubernetes
 
-A list of vetted sources related to attacking and securing Kubernetes
+A list of vetted sources for attacking and securing Kubernetes
 
 ## Vulns and Exploits
 * [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) - Kubernetes
