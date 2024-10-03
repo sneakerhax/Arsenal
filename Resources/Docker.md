@@ -1,6 +1,6 @@
 # Docker
 
-A list of vetted sources related to attacking and securing Docker
+A list of vetted sources for attacking and securing Docker
 
 ## Offensive Docker (Tooling)
 
