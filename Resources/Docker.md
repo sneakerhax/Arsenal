@@ -2,13 +2,21 @@
 
 A list of vetted sources for attacking and securing Docker
 
-## Offensive Docker (Tooling)
+## General
+* [Docker Overview](https://docs.docker.com/engine/docker-overview/) - Docker
+* [How Docker Works - Intro to Namespaces](https://youtu.be/-YnMr1lj4Z8) - LiveOverflow
+* [Deepdive Containers - Kernel Sources and nsenter](https://youtu.be/sHp0Q3rvamk) - LiveOverflow
+* [Container Runtimes Part 1: An Introduction to Container Runtimes](https://www.ianlewis.org/en/container-runtimes-part-1-introduction-container-r) - Ian Lewis
+* [Understanding Containerization By Recreating Docker](https://itnext.io/linux-container-from-scratch-339c3ba0411d) - Daniel Mitre
+* [Bocker - Docker implemented in around 100 lines of bash](https://github.com/p8952/bocker) - Peter Wilmott
+* [Top 20 Dockerfile best practices](https://sysdig.com/blog/dockerfile-best-practices/) - Álvaro Iradier (sysdig)
+* [The capable kernel an intro to linux capabilities](https://www.starkandwayne.com/blog/the-capable-kernel-an-introduction-to-linux-capabilities/) - James Hunt
+* [Github Actions - Build and push Docker images](https://github.com/marketplace/actions/build-and-push-docker-images) - Docker
+* [Container Training](https://container.training/) - Jérôme Petazzoni
 
-* [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/) - ropnop
-* [Serverless Toolkit for Pentesters](https://blog.ropnop.com/serverless-toolkit-for-pentesters/) - ropnop
-* [Introduction to Docker for CTFs](https://youtu.be/cPGZMt4cJ0I) - LiveOverflow
-* [Solving Pwnable CTF Challenge With Docker Workflow](https://youtu.be/OqTpc_ljPYk) - Live Overflow
-* [Red Cloud](https://github.com/khast3x/Redcloud) - khast3x
+## Development
+
+* [Development Containers](https://containers.dev) - Microsoft
 
 ## Vulns and Exploit
 
@@ -20,6 +28,10 @@ A list of vetted sources for attacking and securing Docker
 
 ## Attacking Docker
 
+* [Introduction to Docker for CTFs](https://youtu.be/cPGZMt4cJ0I) - LiveOverflow
+* [Solving Pwnable CTF Challenge With Docker Workflow](https://youtu.be/OqTpc_ljPYk) - Live Overflow
+* [Docker for Pentesters](https://blog.ropnop.com/docker-for-pentesters/) - ropnop
+* [Serverless Toolkit for Pentesters](https://blog.ropnop.com/serverless-toolkit-for-pentesters/) - ropnop
 * [Plundering Docker Images](https://blog.ropnop.com/plundering-docker-images/) - ropnop
 * [Attacking Docker exposed API](https://medium.com/@riccardo.ancarani94/attacking-docker-exposed-api-3e01ffc3c124) - Riccardo Ancarani
 * [Metasploit - Docker Daemon - Unprotected TCP Socket Exploit](https://www.rapid7.com/db/modules/exploit/linux/http/docker_daemon_tcp/) - Martin Pizala (Rapid7)
@@ -65,3 +77,4 @@ A list of vetted sources for attacking and securing Docker
 * [Dockerscan](https://github.com/cr0hn/dockerscan) - cr0hn
 * [Docker_Explorer](https://github.com/matiassequeira/docker_explorer) - matiassequeira
 * [SecretScanner](https://github.com/deepfence/SecretScanner) - DeepFence
+* [Red Cloud](https://github.com/khast3x/Redcloud) - khast3x
