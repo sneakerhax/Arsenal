@@ -7,9 +7,9 @@ Red Team Tools Weaponized
 
 ## Sections
 
-* Cloud - Using the cloud for offensive security purposes
-* Coding - Using different coding languages for offensive security purposes
-* Containers - Offensive security tools containerized
-* Hardware - Setting up hardware for offensive security purposes
-* Resources - Additional resources for offensive security use
-* Tools - Basic offensive security tool setup and configuration
+* Cloud - Using the cloud for Red Team purposes
+* Coding - Using different coding languages for Red Team purposes
+* Containers - Red Team tools containerized
+* Hardware - Setting up hardware for Red Team purposes
+* Resources - Additional resources for Red Team use
+* Tools - Basic Red Team tool setup and configuration
