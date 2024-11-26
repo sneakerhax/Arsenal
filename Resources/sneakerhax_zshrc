@@ -77,6 +77,21 @@ nmap_quick(){nmap -Pn --open -p 21,22,80,443,445,8080 $1}
 nmap_vuln_scan(){nmap -Pn --open -sV --script=vulners $1}
 # Add Nmap Docker scan
 nmap_container_scan(){nmap -Pn --open -sV --script=http-title -p 80,443,2375,5000,5001,6443,8001,8443 $1}
+# Add Nmap Docker Engine API scan
+nmap_docker_engine_scan(){
+cat << EOF
+##########################
+# Docker Engine API scan #
+##########################
+
+Port 2375 - Unencrypted Docker Engine port
+Port 2376 - Encrypted Docker Engine port
+4243 - Docker rest API over HTTP
+4244 - Docker Swarm API (now integrated into Docker API)
+
+EOF
+nmap -Pn --open -sV --script=http-title -p 2375,2376,4243,4244
+}
 
 ##########
 # Docker #
@@ -111,3 +126,9 @@ rando_pass20(){pwgen -s -1 20}
 rando_pass16(){pwgen -s -1 16}
 rando_pass12(){pwgen -s -1 12}
 rando_pass8(){pwgen -s -1 8}
+
+###########
+# Clam AV #
+###########
+
+run_av(){freshclam && clamscan}
