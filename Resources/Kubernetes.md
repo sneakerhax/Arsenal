@@ -6,7 +6,7 @@ A list of vetted sources for attacking and securing Kubernetes
 
 * [Kubernetes Docs](https://kubernetes.io/docs/home/) - Kubernetes
 * [Kubernetes Tutorials](https://kubernetes.io/docs/tutorials/) - Kubernetes
-* [Kubernetes By Example](https://kubernetesbyexample.com/) - OpenShift
+* [Kube By Example](https://kubebyexample.com/) - RedHat
 * [The Illustrated Children's Guide to Kubernetes](https://youtu.be/4ht22ReBjno) - Matt Butcher
 * [Kubernetes Failure Stories](https://k8s.af/) - @try_except_
 * [Kubernetes: The Documentary - Part 1](https://www.youtube.com/watch?v=BE77h7dmoQU) - Honeypot
