@@ -56,6 +56,7 @@ A list of vetted sources for attacking and securing Kubernetes
 ### Open Source Tools
 
 * [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Kubernetes
+* [Kubernetes Go Client](https://github.com/kubernetes/client-go) - Kubernetes
 * [Kube-Hunter](https://github.com/aquasecurity/kube-hunter) - Aquasec
 * [Peirates](https://github.com/inguardians/peirates) - Inguardians
 * [KubiScan](https://github.com/cyberark/KubiScan) - Eviatar Gerzi (CyberArk)
