@@ -26,8 +26,8 @@ A list of vetted sources for attacking and securing Kubernetes
 * [Kubernetes Pentest Methodology Part 3](https://www.cyberark.com/resources/conjur-secrets-manager-enterprise/kubernetes-pentest-methodology-part-3) - Or Ida (CyberArk)
 * [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi (Cyber Ark)
 * [Bust-a-Kube](https://www.bustakube.com/) - Jay Beale
-   * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale (InGuardians)
-   * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.inguardians.com/kubernetes-hacking-and-hardening-episode-2-bust-a-kube/presentations/) - Jay Beale (InGuardians)
+   * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/blog/attacking-and-defending-kubernetes-bust-a-kube-episode-1/) - Jay Beale (InGuardians)
+   * [Kubernetes Hacking and Hardening Episode 2: Bust a Kube (Part of the BeyondTrust webinar series)](https://www.beyondtrust.com/resources/webinars/kubernetes-hacking-and-hardening-episode-2-bust-a-kube) - Jay Beale (InGuardians)
 * [The Path Less Traveled: Abusing Kubernetes Defaults](https://youtu.be/HmoVSmTIOxM) - Ian Coldwater & Duffie Cooley
   * [Github repo for demos](https://github.com/mauilion/blackhat-2019) - Ian Coldwater & Duffie Cooley
 * [Advanced Persistence Threats: The Future of Kubernetes Attacks](https://youtu.be/auUgVullAWM) - Ian Coldwater & Brad Geesaman
