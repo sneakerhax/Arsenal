@@ -22,6 +22,8 @@ A list of vetted sources for attacking and securing Kubernetes
   * [Kubecon video NA 2019 CTF](https://youtu.be/UdMFTdeAL1s)
 * [DEF CON Safe Mode Red Team Village - Madhu Akula - Kubernetes Goat Vulnerable by Design](https://youtu.be/aEaSZJRbnTo) - Madhu Akula
 * [Kubernetes Pentest Methodology Part 1](https://www.cyberark.com/resources/threat-research-blog/kubernetes-pentest-methodology-part-1) - Or Ida (CyberArk)
+* [Kubernetes Pentest Methodology Part 2](https://www.cyberark.com/resources/conjur-secrets-manager-enterprise/kubernetes-pentest-methodology-part-2) - Or Ida (CyberArk)
+* [Kubernetes Pentest Methodology Part 3](https://www.cyberark.com/resources/conjur-secrets-manager-enterprise/kubernetes-pentest-methodology-part-3) - Or Ida (CyberArk)
 * [Using Kubelet Client to Attack the Kubernetes Cluster](https://www.cyberark.com/resources/secure-devops-pipelines-and-cloud-native-apps/using-kubelet-client-to-attack-the-kubernetes-cluster) - Eviatar Gerzi (Cyber Ark)
 * [Bust-a-Kube](https://www.bustakube.com/) - Jay Beale
    * [Attacking and Defending Kubernetes: Bust-A-Kube – Episode 1](https://www.inguardians.com/attacking-and-defending-kubernetes-bust-a-kube-episode-1/blog/) - Jay Beale (InGuardians)
