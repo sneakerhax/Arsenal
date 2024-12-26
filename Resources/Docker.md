@@ -26,6 +26,21 @@ A list of vetted sources for attacking and securing Docker
 * [CVE-2020-15275: New Vulnerability Exploits containerd-shim API](https://blog.aquasec.com/cve-2020-15257-containerd-shim-api-vulnerability) - Gal Singer (aquasec)
 * [ABSTRACT SHIMMER (CVE-2020-15257): Host Networking is root-Equivalent, Again](https://research.nccgroup.com/2020/12/10/abstract-shimmer-cve-2020-15257-host-networking-is-root-equivalent-again/) - Jeff Dileo (NCC Group)
 
+## Securing Docker
+
+* [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
+* [Docker Bench Security](https://github.com/docker/docker-bench-security) - Docker
+* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
+* [Owasp - Docker Security](https://github.com/OWASP/Docker-Security) - OWASP
+* [Owasp - Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html) - OWASP
+* [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - Liran Tal and Omer Levi Hevroni (snyk)
+* [Docker security scanning cheatsheet 2021](https://snyk.io/blog/docker-security-scanning-cheatsheet-2021/) - Jim Armstrong (snyk)
+* [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Ajmal Kohgadai (StackRox)
+* [Docker Security](http://containertutorials.com/docker-security.html) - Rajdeep Dua (Container Tutorials)
+* [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
+* [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Aaron Grattafior (NCC Group)
+* [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
+
 ## Attacking Docker
 
 * [Introduction to Docker for CTFs](https://youtu.be/cPGZMt4cJ0I) - LiveOverflow
@@ -53,21 +68,6 @@ A list of vetted sources for attacking and securing Docker
 * [Traitor - Automatic Linux privesc via exploitation of low-hanging fruit](https://github.com/liamg/traitor) - liamg
 * [Docker - PRIVILEGE ESCALATION Technique](https://youtu.be/MnUtHSpcdLQ) - John Hammond
 * [Escaping Virtualized Containers](https://youtu.be/jFlqVe11eeM) - Yuval Avrahami
-
-## Securing Docker
-
-* [Docker Security Docs](https://docs.docker.com/engine/security/security/) - Docker
-* [Docker Bench Security](https://github.com/docker/docker-bench-security) - Docker
-* [Manage sensitive data with Docker secrets](https://docs.docker.com/engine/swarm/secrets/) - Docker
-* [Owasp - Docker Security](https://github.com/OWASP/Docker-Security) - OWASP
-* [Owasp - Docker Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html) - OWASP
-* [10 Docker Image Security Best Practices](https://snyk.io/blog/10-docker-image-security-best-practices/) - Liran Tal and Omer Levi Hevroni (snyk)
-* [Docker security scanning cheatsheet 2021](https://snyk.io/blog/docker-security-scanning-cheatsheet-2021/) - Jim Armstrong (snyk)
-* [Docker Security 101](https://www.stackrox.com/post/2019/09/docker-security-101/) - Ajmal Kohgadai (StackRox)
-* [Docker Security](http://containertutorials.com/docker-security.html) - Rajdeep Dua (Container Tutorials)
-* [What security concerns should I have with Docker?](https://github.com/bretfisher/ama/issues/17) - Bret Fisher
-* [Understanding and Hardening Linux Containers](https://research.nccgroup.com/wp-content/uploads/2020/07/ncc_group_understanding_hardening_linux_containers-1-1.pdf) - Aaron Grattafior (NCC Group)
-* [Dockerizing with Distroless](https://medium.com/@luke_perry_dev/dockerizing-with-distroless-f3b84ae10f3a) - Luke Perry
 
 ## Open Source Tools
 
