@@ -27,7 +27,6 @@ A list of vetted sources for attacking and securing Kubernetes
 * [Containers Matrix](https://attack.mitre.org/matrices/enterprise/containers/) - Mitre
 * [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
 * [Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Ian Lewis, (Google)
-* [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
 * [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (Snyk)
 * [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
     * [Secure containerized environments with updated threat matrix for Kubernetes](https://www.microsoft.com/en-us/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/) - Yossi Weizman (Microsoft)
@@ -78,6 +77,7 @@ A list of vetted sources for attacking and securing Kubernetes
 * [Privileged pod escalations in Kubernetes and GKE](https://security.googleblog.com/2022/05/privileged-pod-escalations-in.html) - GKE and Anthos Platform Security Teams
 
 ## Threat Research
+* [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
 * [Finding Azurescape – Cross-Account Container Takeover in Azure Container Instances](https://unit42.paloaltonetworks.com/azure-container-instances/) - Yuval Avrahami (Unit 42)
 * [Mitigating RBAC-Based Privilege Escalation in Popular Kubernetes Platforms](https://unit42.paloaltonetworks.com/kubernetes-privilege-escalation/) - Yuval Avrahami (Unit 42)
 * [Dirty DAG: New Vulnerabilities in Azure Data Factory’s Apache Airflow Integration](https://unit42.paloaltonetworks.com/azure-data-factory-apache-airflow-vulnerabilities/) - Ofir Balassiano & David Orlovsky (Unit 42)
