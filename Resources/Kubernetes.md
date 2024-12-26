@@ -11,10 +11,34 @@ A list of vetted sources for attacking and securing Kubernetes
 * [Kubernetes Failure Stories](https://k8s.af/) - @try_except_
 * [Kubernetes: The Documentary - Part 1](https://www.youtube.com/watch?v=BE77h7dmoQU) - Honeypot
 * [Kubernetes: The Documentary - Part 2](https://www.youtube.com/watch?v=318elIq37PE) - Honeypot
+* [The Kubernetes Networking Guide](https://www.tkng.io/) - networkop
 
-## Vulns and Exploits
+## Tools
+* [KIND](https://kind.sigs.k8s.io/) - KIND
+* [K3s](https://k3s.io/) - K3s
+
+## Vulnerabilities
 * [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) - Kubernetes
 * [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - CVE Details
+
+## Securing Kubernetes
+
+* [Kubernetes - Security Audits](https://github.com/kubernetes/community/tree/master/sig-security) - Kubernetes (sig-security)
+* [Containers Matrix](https://attack.mitre.org/matrices/enterprise/containers/) - Mitre
+* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
+* [Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Ian Lewis, (Google)
+* [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
+* [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (Snyk)
+* [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
+    * [Secure containerized environments with updated threat matrix for Kubernetes](https://www.microsoft.com/en-us/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/) - Yossi Weizman (Microsoft)
+    * [Threat Matrix for Kubernetes - Matrix](https://microsoft.github.io/Threat-Matrix-for-Kubernetes/)
+* [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
+* [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
+* [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (Aquasec)
+* [How to secure your Kubernetes control plane and node components](https://www.cncf.io/blog/2021/08/20/how-to-secure-your-kubernetes-control-plane-and-node-components/) - Amit Ashwini Bhagat (LOGIQ.AI)
+* [Kubernetes Hardening Guide](https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF) - NSA
+* [OWASP Kubernetes Top Ten](https://owasp.org/www-project-kubernetes-top-ten/) - OWASP
+* [Kubernetes Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Kubernetes_Security_Cheat_Sheet.html) - OWASP
 
 ## Attacking Kubernetes
 
@@ -58,24 +82,7 @@ A list of vetted sources for attacking and securing Kubernetes
 * [Mitigating RBAC-Based Privilege Escalation in Popular Kubernetes Platforms](https://unit42.paloaltonetworks.com/kubernetes-privilege-escalation/) - Yuval Avrahami (Unit 42)
 * [Dirty DAG: New Vulnerabilities in Azure Data Factory’s Apache Airflow Integration](https://unit42.paloaltonetworks.com/azure-data-factory-apache-airflow-vulnerabilities/) - Ofir Balassiano & David Orlovsky (Unit 42)
 
-## Securing Kubernetes
-
-* [Kubernetes - Security Audits](https://github.com/kubernetes/community/tree/master/sig-security) - Kubernetes (sig-security)
-* [Containers Matrix](https://attack.mitre.org/matrices/enterprise/containers/) - Mitre
-* [11 Ways (Not) to Get Hacked](https://kubernetes.io/blog/2018/07/18/11-ways-not-to-get-hacked/) - Andrew Martin (Kubernetes)
-* [Kubernetes Security Best Practices](https://youtu.be/wqsUfvRyYpw) - Ian Lewis, (Google)
-* [Analyzing Activity on Kubernetes Ports: Potential Backdooring Through the Kubelet API](https://blog.rapid7.com/2018/06/27/analyzing-the-kubernetes-hack-backdooring-through-the-kubelet-api/) - Shan Sikdar (Rapid7)
-* [10 Kubernetes Security Context settings you should understand](https://snyk.io/blog/10-kubernetes-security-context-settings-you-should-understand/) - Eric Smalling, Matt Jarvis (Snyk)
-* [Threat matrix for Kubernetes](https://www.microsoft.com/security/blog/2020/04/02/attack-matrix-kubernetes/) - Yossi Weizman (Microsoft)
-    * [Secure containerized environments with updated threat matrix for Kubernetes](https://www.microsoft.com/en-us/security/blog/2021/03/23/secure-containerized-environments-with-updated-threat-matrix-for-kubernetes/) - Yossi Weizman (Microsoft)
-    * [Threat Matrix for Kubernetes - Matrix](https://microsoft.github.io/Threat-Matrix-for-Kubernetes/)
-* [Protecting Yourself with Pod Security Policies](https://starkandwayne.com/blog/protecting-yourself-with-pod-security-policies/) - James Hunt
-* [Kubernetes Built-in Controls Workshop](https://securek8s.dev/) - Connor Gilbert (StackRox)
-* [Top 10 Kubernetes Application Security Hardening Techniques](https://blog.aquasec.com/kubernetes-hardening-techniques) - Rory McCune (Aquasec)
-* [How to secure your Kubernetes control plane and node components](https://www.cncf.io/blog/2021/08/20/how-to-secure-your-kubernetes-control-plane-and-node-components/) - Amit Ashwini Bhagat (LOGIQ.AI)
-* [Kubernetes Hardening Guide](https://media.defense.gov/2022/Aug/29/2003066362/-1/-1/0/CTR_KUBERNETES_HARDENING_GUIDANCE_1.2_20220829.PDF) - NSA
-
-### Open Source Tools
+## Open Source Tools
 
 * [Kubernetes Python Client](https://github.com/kubernetes-client/python) - Kubernetes
 * [Kubernetes Go Client](https://github.com/kubernetes/client-go) - Kubernetes
