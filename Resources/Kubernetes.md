@@ -19,6 +19,7 @@ A list of vetted sources for attacking and securing Kubernetes
 
 ## Vulnerabilities
 * [Official CVE Feed](https://kubernetes.io/docs/reference/issues-security/official-cve-feed/) - Kubernetes
+* [Kubernetes - Github - Issues (open security bugs)](https://github.com/kubernetes/kubernetes/issues?q=state%3Aopen%20label%3A%22area%2Fsecurity%22%20AND%20label%3Akind%2Fbug) - Kubernetes
 * [CVE Details for Kubernetes](https://www.cvedetails.com/vulnerability-list/vendor_id-15867/product_id-34016/Kubernetes-Kubernetes.html) - CVE Details
 
 ## Securing Kubernetes
