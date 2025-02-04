@@ -62,6 +62,9 @@ get_pub_ip(){curl -s ifconfig.me | pbcopy}
 # display file sizes human-readable
 file_size(){ls -hl}
 
+# Shortcut to list files with details
+alias ll="ls -la"
+
 #######
 # Git #
 #######
@@ -91,19 +94,24 @@ cat <<EOF
 
 Port 80/tcp - http Kubernetes
 Port 443/tcp - https Kubernetes
+Port 2379/tcp - etcd service
+Port 2746/tcp - Argo Workflows
+Port 4040/tcp - Weave Scope
 Port 4149/tcp - kubelet (cAdvisor)
 Port 5000/tcp - http kube-registry-proxy
 Port 5001/tcp - https kube-registry-proxy
 Port 6443/tcp - Kubernetes API server
 Port 8001/tcp - Kubernetes dashboard
-Port 8443/tcp - Kubernetes Nginx ingress controller
+Port 8080/tcp - Kubeflow
+Port 8443/tcp - Kubernetes Nginx ingress controller, Apache NiFi
 Port 9099/tcp - calico-felix health check server
 Port 10250/tcp - kubelet API full node access
 Port 10255/tcp - kubelet Unauthenticated read-only port
 Port 10256/tcp - kube-proxy
+Port 30000-32767/tcp - NodePort
 
 EOF
-nmap -Pn --open -sV --script=http-title -p 80,443,4149,5000,5001,6443,8001,8443,9099,10250,10255,10256 $1
+nmap -Pn --open -sV --script=http-title -p 80,443,4040,4149,5000,5001,6443,8001,8080,8443,9099,10250,10255,10256,30000-32767 $1
 }
 
 # Nmap Docker Engine API scan
@@ -196,6 +204,8 @@ ssh_proxy(){ssh -D 9999 $1}
 
 # load kubectl autocompletion
 source <(kubectl completion zsh)
+
+alias k="kubectl"
 
 #############
 # Passwords #
