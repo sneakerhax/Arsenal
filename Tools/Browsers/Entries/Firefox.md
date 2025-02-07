@@ -7,7 +7,7 @@
 ## Installation
 
 * Install [Firefox](https://www.mozilla.org/en-US/firefox/new/)
-* Instal [Firefox with Brew](https://formulae.brew.sh/cask/firefox)
+* Install [Firefox with Brew](https://formulae.brew.sh/cask/firefox)
 
 ## Firefox plugins
 
