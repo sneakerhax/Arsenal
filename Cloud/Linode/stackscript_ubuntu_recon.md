@@ -45,7 +45,7 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Apt installs
-apt install mosh make nmap ncrack libpcap-dev gcc -y
+apt install mosh make nmap ncrack libpcap-dev gcc python3-pip python3-venv -y
 
 # Setup directories
 mkdir $HOME/Data $HOME/Repos $HOME/Wordlists $HOME/Scripts
