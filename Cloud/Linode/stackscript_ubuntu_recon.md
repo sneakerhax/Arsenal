@@ -22,10 +22,12 @@
 #!/bin/bash
 
 # Update all packages
+
 export DEBIAN_FRONTEND=noninteractive
 sudo apt update && apt upgrade -y
 
 # install docker
+
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get update
 sudo apt-get install -y \
@@ -43,36 +45,43 @@ sudo apt-get update
 sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Apt installs
-apt install mosh make nmap ncrack -y
+apt install mosh make nmap ncrack libpcap-dev gcc -y
 
 # Setup directories
 mkdir $HOME/Data $HOME/Repos $HOME/Wordlists $HOME/Scripts
 
 # Add Scripts
+
 echo "hostnamectl set-hostname \$1" > $HOME/Scripts/set-hostname.sh
 echo "exec bash" >> $HOME/Scripts/set-hostname.sh
 
 # Install go
-apt install golang-go -y
-echo export GOPATH=$HOME/go >> ~/.profile
+
+wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
+echo export PATH=$PATH:/usr/local/go/bin:go/bin >> ~/.profile
 source ~/.profile
-echo export PATH=$PATH:$GOPATH/bin >> ~/.profile
 
 # Install docker recon tools
 
 # docker pull projectdiscovery/subfinder
-
 # docker pull projectdiscovery/shuffledns
 docker pull sneakerhax/wordlists
 docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
 
 # Install repos
+
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
-git clone https://github.com/sneakerhax/Arsenal.git $HOME/Repos/Arsenal
+git clone https://github.com/sneakerhax/Arsenal-containers $HOME/Repos/Arsenal-containers
+git clone https://github.com/sneakerhax/Tacticontainer $HOME/Repos/Tacticontainer
 git clone https://github.com/blechschmidt/massdns $HOME/Repos/massdns && cd $HOME/Repos/massdns && make && cp $HOME/Repos/massdns/bin/massdns /usr/bin/
 
 # Install go tools
-# go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest && echo source ~/.bashrc >> ~/.profile
+
+export CGO_ENABLED=1
+go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+echo source ~/.bashrc >> ~/.profile
+source ~/.profile
 ```
 
 ## Using the StackScript on deployment
