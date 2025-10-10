@@ -11,6 +11,5 @@
 
 ## Firefox plugins
 
-* [Wappalyzer](https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/)
-* [Builtwith](https://addons.mozilla.org/En-us/firefox/addon/builtwith/)
 * [Foxy Proxy](https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/)
+    *[FoxyProxy.json](https://github.com/sneakerhax/Arsenal/blob/main/Tools/Browsers/Entries/FoxyProxy.json.md)

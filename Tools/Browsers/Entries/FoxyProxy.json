@@ -1,0 +1,34 @@
+{
+  "mode": "localhost:9999",
+  "sync": false,
+  "autoBackup": false,
+  "passthrough": "",
+  "theme": "",
+  "container": {},
+  "commands": {
+    "setProxy": "",
+    "setTabProxy": "",
+    "includeHost": "",
+    "excludeHost": ""
+  },
+  "data": [
+    {
+      "active": true,
+      "title": "ssh_proxy",
+      "type": "socks5",
+      "hostname": "localhost",
+      "port": "9999",
+      "username": "",
+      "password": "",
+      "cc": "",
+      "city": "",
+      "color": "#00003f",
+      "pac": "",
+      "pacString": "",
+      "proxyDNS": true,
+      "include": [],
+      "exclude": [],
+      "tabProxy": []
+    }
+  ]
+}
