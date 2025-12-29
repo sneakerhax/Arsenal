@@ -19,10 +19,11 @@ ball(){bupd && bupg && bcle && barm && bdoc}
 # zsh custom prompt
 PROMPT='🦑%F{red}%n%F{white}@%m%~ %F{red}$%F{white} '
 
-# zsh auto completion
+# zsh completions
+fpath=(/Users/sneakerhax/.docker/completions $fpath)
 autoload -Uz compinit
-fpath=(~/.zsh/completion $fpath)
-compinit -i
+compinit
+source <(kubectl completion zsh)
 
 ##########
 # Python #
@@ -65,6 +66,12 @@ file_size(){ls -hl}
 # Shortcut to list files with details
 alias ll="ls -la"
 
+# Move into mounted drives
+alias cd_shares="cd /Volumes/"
+
+# Move into Synology NAS RedTeam share
+alias cd_redteam="cd /Volumes/RedTeam"
+
 #######
 # Git #
 #######
@@ -76,8 +83,11 @@ update_seclists(){git -C ~/Code/Repos/SecLists pull}
 # Nmap #
 ########
 
+# Set nmap version env variable
+export NMAP_VERSION=$(brew info nmap | grep "/opt/homebrew/Cellar/nmap" | cut -d "/" -f6 | cut -d " " -f1)
+
 # Nmap nse search function
-nse(){ find /opt/homebrew/Cellar/nmap/7.94_1/share/nmap/scripts -iname "*$1*" | cut -d '/' -f10 | cut -d "." -f1;}
+nse(){ find /opt/homebrew/Cellar/nmap/$NMAP_VERSION/share/nmap/scripts -iname "*$1*" | cut -d '/' -f10 | cut -d "." -f1;}
 
 # Nmap quick scan
 nmap_quick(){nmap -Pn --open -p 21,22,80,443,445,8080 $1}
@@ -131,11 +141,11 @@ nmap -Pn --open -sV --script=http-title -p 2375,2376,4243,4244 $1
 }
 
 # Print out the nmap-services top ports 
-nmap_top_ports(){grep -v '^#' /opt/homebrew/Cellar/nmap/7.95/share/nmap/nmap-services | sort -r -k3 | head -n $1}
+nmap_top_ports(){grep -v '^#' /opt/homebrew/Cellar/nmap/$NMAP_VERSION/share/nmap/nmap-services | sort -r -k3 | head -n $1}
 
 # Print out the nmap-services top ports (clean)
 nmap_top_ports_clean() {
-    grep -v '^#' /opt/homebrew/Cellar/nmap/7.95/share/nmap/nmap-services | \
+    grep -v '^#' /opt/homebrew/Cellar/nmap/$NMAP_VERSION/share/nmap/nmap-services | \
     sort -r -k3 | \
     awk '{
         comment = "";
@@ -149,7 +159,7 @@ nmap_top_ports_clean() {
 ##########
 
 # Start Docker Desktop
-start_docker_desktop(){open /Applications/Docker.app}
+start_docker_desktop(){docker desktop start}
 
 # Start Docker python3 interactive session
 docker_python(){docker run -it python:3}
@@ -194,7 +204,6 @@ docker_exec_container_bash(){docker exec -it $1 bash}
 # ssh #
 #######
 
-
 # Start ssh socks proxy on port 9999
 ssh_proxy(){ssh -D 9999 $1}
 
@@ -203,8 +212,6 @@ ssh_proxy(){ssh -D 9999 $1}
 ##############
 
 # load kubectl autocompletion
-source <(kubectl completion zsh)
-
 alias k="kubectl"
 
 #############
