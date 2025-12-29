@@ -69,7 +69,7 @@ alias ll="ls -la"
 # Move into mounted drives
 alias cd_shares="cd /Volumes/"
 
-# Move into Synology NAS RedTeam share
+# Move into NAS RedTeam share
 alias cd_redteam="cd /Volumes/RedTeam"
 
 #######
