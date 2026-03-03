@@ -48,13 +48,11 @@ docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
 # Install repos
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
 git clone https://github.com/sneakerhax/Arsenal.git $HOME/Repos/Arsenal
-git clone https://github.com/sneakerhax/Arsenal-containers.git $HOME/Repos/Arsenal-containers
+git clone https://github.com/sneakerhax/Containers.git $HOME/Repos/Containers
 git clone https://github.com/sneakerhax/Ultra-Recon $HOME/Repos/Ultra-Recon
 
 # Install recon tools
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
-pdtm
-source ~/.zshrc
 ```
 
 ## Using the StackScript on deployment

@@ -72,7 +72,7 @@ docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
 # Install repos
 
 git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
-git clone https://github.com/sneakerhax/Arsenal-containers $HOME/Repos/Arsenal-containers
+git clone https://github.com/sneakerhax/Containers.git $HOME/Repos/Containers
 git clone https://github.com/sneakerhax/Tacticontainer $HOME/Repos/Tacticontainer
 git clone https://github.com/blechschmidt/massdns $HOME/Repos/massdns && cd $HOME/Repos/massdns && make && cp $HOME/Repos/massdns/bin/massdns /usr/bin/
 
@@ -80,8 +80,8 @@ git clone https://github.com/blechschmidt/massdns $HOME/Repos/massdns && cd $HOM
 
 export CGO_ENABLED=1
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
-echo source ~/.bashrc >> ~/.profile
-source ~/.profile
+# echo source ~/.bashrc >> ~/.profile
+# source ~/.profile
 ```
 
 ## Using the StackScript on deployment
