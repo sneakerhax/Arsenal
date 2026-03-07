@@ -21,6 +21,9 @@
 ```
 #!/bin/bash
 
+# log output to file
+exec &> $HOME/install.out
+
 # Update all packages
 
 export DEBIAN_FRONTEND=noninteractive
