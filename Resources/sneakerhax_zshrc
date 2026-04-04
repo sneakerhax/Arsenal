@@ -45,16 +45,22 @@ export PATH="$GOPATH/bin:$PATH"
 ##############
 
 # show ip address of en0
-show_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2}
+show_local_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2}
 
-# get ip address of en0 and copy to clipboard
-get_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2 | tr -d '\n'| pbcopy}
+# copy ip address of en0 to clipboard
+copy_local_ip(){ifconfig | grep -A 3 en0 | grep -w inet | cut -d " " -f2 | tr -d '\n'| pbcopy}
+
+# show local mac address of en0
+show_local_mac(){ifconfig | grep -A 5 en0 | grep -w "ether" | cut -d " " -f2}
+
+# copy local mac address of en0 to clipboard
+copy_local_mac(){ifconfig | grep -A 5 en0 | grep -w "ether" | cut -d " " -f2 | tr -d '\n'| pbcopy}
 
 # show public ip address
 show_pub_ip(){curl -s ifconfig.me}
 
-# get public ip address and copy to clipboard
-get_pub_ip(){curl -s ifconfig.me | pbcopy}
+# copy public ip address and copy to clipboard
+copy_pub_ip(){curl -s ifconfig.me | pbcopy}
 
 #########
 # Files #
@@ -76,8 +82,9 @@ alias cd_redteam="cd /Volumes/RedTeam"
 # Git #
 #######
 
-# update SecLists repo
-update_seclists(){git -C ~/Code/Repos/SecLists pull}
+pull_seclists_repo(){git -C ~/Code/Repos/SecLists pull}
+
+pull_all_repos(){find ~/Code/Repos -mindepth 1 -maxdepth 1 -type d -print -exec git -C {} pull \;}
 
 ########
 # Nmap #
