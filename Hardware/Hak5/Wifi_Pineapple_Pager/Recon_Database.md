@@ -18,6 +18,12 @@ hostap_basic      hostap_handshake  wifi_device
 List all tables (current firmware 1.08-stable has the listed tables)
 
 ```sql
+PRAGMA table_info(table_name);
+```
+
+List table column names
+
+```sql
 SELECT ssid FROM ssid WHERE TRIM(ssid) != '' AND UNICODE(ssid) != 160 AND UNICODE(ssid) !=10 AND UNICODE(ssid) !=13;
 ```
 
@@ -29,3 +35,11 @@ select * from scan;
 ```
 
 List captured clients (Probe requests)
+
+```sql
+SELECT DISTINCT ssid FROM ssid WHERE encryption = 0;
+```
+
+List open ssid (no encryption)
+
+
