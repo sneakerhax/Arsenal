@@ -30,8 +30,7 @@ SELECT ssid FROM ssid WHERE TRIM(ssid) != '' AND UNICODE(ssid) != 160 AND UNICOD
 List captured ssids
 
 ```sql
-select * from scan;
-
+select name from scan where TRIM(name) != '' AND UNICODE(name) != 160 AND UNICODE(name) !=10 AND UNICODE(name) !=13;
 ```
 
 List captured clients (Probe requests)
