@@ -16,14 +16,14 @@ argument-hint: 'Path to the recon scan JSON file to display as a table'
 2. Run the table script against the file:
 
 ```bash
-python3 Hardware/Hak5/Wifi_Pineapple_Pager/format-hak5-recon-data-table.py <filename>
+python3 Hardware/Hak5/Wifi_Pineapple/format-hak5-recon-data-table.py <filename>
 ```
 
 3. Output is printed to the terminal — it does not modify the file
 
 ## Script
 
-[format-hak5-recon-data-table.py](../../../Hardware/Hak5/Wifi_Pineapple_Pager/format-hak5-recon-data-table.py)
+[format-hak5-recon-data-table.py](../../../Hardware/Hak5/Wifi_Pineapple/format-hak5-recon-data-table.py)
 
 ## Notes
 - The script reads the file but does not modify it

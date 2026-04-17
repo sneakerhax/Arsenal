@@ -16,14 +16,14 @@ argument-hint: 'Path to the recon scan JSON file to format'
 2. Run the formatter script against the file:
 
 ```bash
-python3 Hardware/Hak5/Wifi_Pineapple_Pager/format-hak5-recon-data-json.py <filename>
+python3 Hardware/Hak5/Wifi_Pineapple/format-hak5-recon-data-json.py <filename>
 ```
 
 3. Confirm the file has been formatted in place with 2-space indentation
 
 ## Script
 
-[format-hak5-recon-data-json.py](../../../Hardware/Hak5/Wifi_Pineapple_Pager/format-hak5-recon-data-json.py)
+[format-hak5-recon-data-json.py](../../../Hardware/Hak5/Wifi_Pineapple/format-hak5-recon-data-json.py)
 
 ## Notes
 - The script overwrites the input file in place
