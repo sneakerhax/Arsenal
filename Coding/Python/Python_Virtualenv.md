@@ -1,13 +1,13 @@
 # Python - Virtualenv
 
 ```
-virtualenv -p python3 <name>
+python3 -m venv .venv
 ```
 
 Creating a new environment
 
 ```
-source <name>/bin/activate
+source .venv/bin/activate
 ```
 
 Activate env
