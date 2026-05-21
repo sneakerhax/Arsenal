@@ -13,4 +13,4 @@ source .venv/bin/activate
 Activate env
 
 ## References
-* https://hackercodex.com/guide/python-development-environment-on-mac-osx/
+* https://docs.python.org/3/library/venv.html
