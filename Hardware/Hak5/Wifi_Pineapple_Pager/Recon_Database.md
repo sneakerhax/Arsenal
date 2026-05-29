@@ -41,4 +41,10 @@ SELECT DISTINCT ssid FROM ssid WHERE encryption = 0;
 
 List open ssid (no encryption)
 
+```sql
+.exit
+```
+
+Exit the sqlite3 session
+
 
