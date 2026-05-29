@@ -24,7 +24,7 @@ PRAGMA table_info(table_name);
 List table column names
 
 ```sql
-SELECT ssid FROM ssid WHERE TRIM(ssid) != '' AND UNICODE(ssid) != 160 AND UNICODE(ssid) !=10 AND UNICODE(ssid) !=13;
+SELECT DISTINCT ssid FROM ssid WHERE TRIM(ssid) != '' AND UNICODE(ssid) != 160 AND UNICODE(ssid) !=10 AND UNICODE(ssid) !=13;
 ```
 
 List captured ssids
