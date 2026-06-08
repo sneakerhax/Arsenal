@@ -1,3 +1,3 @@
-# Offensive Cloud
+# Cloud
 
-Guides for using cloud providers for offensive security purposes
+Guides for using cloud providers for Red Team purposes
