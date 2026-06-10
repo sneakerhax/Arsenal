@@ -13,12 +13,6 @@ sudo usermod -aG sudo <user>
 Adding user to sudo group
 
 ```
-sudo usermod -aG docker <user>
-```
-
-Adding user to Docker group
-
-```
 su - <user>
 ```
 
