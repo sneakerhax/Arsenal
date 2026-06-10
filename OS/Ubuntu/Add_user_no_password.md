@@ -19,9 +19,3 @@ passwd <user>
 ```
 
 Set password (requires root)
-
-```
-adduser <user> sudo
-```
-
-Optionally add them to the sudo group (requires root)
