@@ -27,64 +27,98 @@ exec &> $HOME/install.out
 # Update all packages
 
 export DEBIAN_FRONTEND=noninteractive
-sudo apt update && apt upgrade -y
+apt update && apt upgrade -y
 
 # install docker
 
-sudo apt-get remove docker docker-engine docker.io containerd runc
-sudo apt-get update
-sudo apt-get install -y \
+apt-get remove -y docker docker-engine docker.io containerd runc
+apt-get update
+apt-get install -y \
     ca-certificates \
     curl \
     gnupg \
     lsb-release
-sudo mkdir -p /etc/apt/keyrings
-sudo rm /etc/apt/keyrings/docker.gpg
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+mkdir -p /etc/apt/keyrings
+rm -f /etc/apt/keyrings/docker.gpg
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
-  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-sudo apt-get update
-sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
+  $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+apt-get update
+apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 # Apt installs
 apt install mosh make nmap ncrack libpcap-dev gcc python3-pip python3-venv -y
 
+# Add recon user
+
+useradd -m -s /bin/bash recon
+usermod -aG sudo,docker recon
+
 # Setup directories
-mkdir $HOME/Data $HOME/Repos $HOME/Wordlists $HOME/Scripts
+su - recon -c "mkdir -p /home/recon/Data /home/recon/Repos /home/recon/Wordlists /home/recon/Scripts"
 
 # Add Scripts
 
-echo "hostnamectl set-hostname \$1" > $HOME/Scripts/set-hostname.sh
-echo "exec bash" >> $HOME/Scripts/set-hostname.sh
+su - recon <<'EOF'
+echo "hostnamectl set-hostname \$1" > /home/recon/Scripts/set-hostname.sh
+echo "exec bash" >> /home/recon/Scripts/set-hostname.sh
+EOF
 
 # Install go
 
-wget https://go.dev/dl/go1.23.5.linux-amd64.tar.gz
-rm -rf /usr/local/go && tar -C /usr/local -xzf go1.23.5.linux-amd64.tar.gz
+wget https://go.dev/dl/go1.26.6.linux-amd64.tar.gz
+rm -rf /usr/local/go && tar -C /usr/local -xzf go1.26.6.linux-amd64.tar.gz
 echo export PATH=$PATH:/usr/local/go/bin:go/bin >> ~/.profile
+echo export PATH=$PATH:/usr/local/go/bin:go/bin >> /home/recon/.profile
 source ~/.profile
 
 # Install docker recon tools
 
-# docker pull projectdiscovery/subfinder
-# docker pull projectdiscovery/shuffledns
+su - recon <<'EOF'
 docker pull sneakerhax/wordlists
-docker run -d -v $HOME/Wordlists:/wordlists sneakerhax/wordlists
+docker run -d -v /home/recon/Wordlists:/wordlists sneakerhax/wordlists
+EOF
 
 # Install repos
 
-git clone https://github.com/trickest/resolvers $HOME/Repos/resolvers
-git clone https://github.com/sneakerhax/Containers.git $HOME/Repos/Containers
-git clone https://github.com/sneakerhax/Tacticontainer $HOME/Repos/Tacticontainer
-git clone https://github.com/blechschmidt/massdns $HOME/Repos/massdns && cd $HOME/Repos/massdns && make && cp $HOME/Repos/massdns/bin/massdns /usr/bin/
+su - recon <<'EOF'
+git clone https://github.com/trickest/resolvers /home/recon/Repos/resolvers
+git clone https://github.com/sneakerhax/Containers.git /home/recon/Repos/Containers
+git clone https://github.com/sneakerhax/Tacticontainer /home/recon/Repos/Tacticontainer
+git clone https://github.com/blechschmidt/massdns /home/recon/Repos/massdns && cd /home/recon/Repos/massdns && make
+EOF
+
+# Copy massdns to system path
+if [ -f /home/recon/Repos/massdns/bin/massdns ]; then
+    cp /home/recon/Repos/massdns/bin/massdns /usr/bin/
+else
+    echo "massdns build failed, skipping install to /usr/bin" >&2
+fi
 
 # Install go tools
 
+su - recon <<'EOF'
 export CGO_ENABLED=1
 go install -v github.com/projectdiscovery/pdtm/cmd/pdtm@latest
+EOF
 # echo source ~/.bashrc >> ~/.profile
 # source ~/.profile
+
+# Install brew
+
+# pre-create and hand over the install dir so the installer doesn't need sudo
+mkdir -p /home/linuxbrew/.linuxbrew
+chown recon:recon /home/linuxbrew/.linuxbrew
+
+su - recon -c '/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"'
+
+su - recon <<'EOF'
+echo >> /home/recon/.bashrc
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"' >> /home/recon/.bashrc
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv bash)"
+brew install claude-cli copilot-cli
+EOF
 ```
 
 ## Using the StackScript on deployment
