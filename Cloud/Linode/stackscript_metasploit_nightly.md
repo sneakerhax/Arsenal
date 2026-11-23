@@ -1,6 +1,6 @@
 # Creating a StackScript to install Metasploit Nightly
 
-**Description:** This entry describes how to setup a script to install Metasploit on virtual machines
+**Description:** This entry describes how to set up a Linode Stackscript on a Linux virtual machine to install the Metasploit nightly installer.
 
 **Provider:** Linode
 

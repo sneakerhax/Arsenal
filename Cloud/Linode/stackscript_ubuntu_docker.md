@@ -1,6 +1,6 @@
 # Creating a StackScript to install Docker
 
-**Description:** This entry describes how to setup a script to install Docker engine on virtual machines
+**Description:** This entry describes how to set up a Linode Stackscript on an Ubuntu Linux virtual machine to install the Docker engine.
 
 **Provider:** Linode
 

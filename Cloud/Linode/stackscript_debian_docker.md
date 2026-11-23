@@ -1,6 +1,6 @@
 # Creating a StackScript to install Docker
 
-**Description:** This entry describes how to setup a script to install Docker engine on virtual machines
+**Description:** This entry describes how to set up a Linode Stackscript on a Debian Linux virtual machine to install recon tools.
 
 **Provider:** Linode
 
@@ -27,6 +27,9 @@ exec &> $HOME/install.out
 # Enable noninteractive in debconf for unnattended install 
 export DEBIAN_FRONTEND=noninteractive
 
+# Update and upgrade packages
+apt update && apt upgrade -y
+
 apt remove -y $(dpkg --get-selections docker.io docker-compose docker-doc docker-buildx podman-docker containerd runc | cut -f1)
 
 # Add Docker's official GPG key:
@@ -46,7 +49,7 @@ Architectures: $(dpkg --print-architecture)
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
 
-# Update packages after adding apt sources
+# Update packages after adding apt sources from Docker
 apt update
 
 # Install Docker packages

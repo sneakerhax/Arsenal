@@ -1,6 +1,6 @@
 # Creating a StackScript to install Ubuntu for recon
 
-**Description:** This entry describes how to setup a script to Ubuntu for recon on virtual machines
+**Description:** This entry describes how to set up a Linode Stackscript on an Ubuntu Linux virtual machine to install recon tools.
 
 **Provider:** Linode
 

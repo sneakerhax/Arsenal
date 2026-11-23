@@ -1,6 +1,6 @@
 # Creating a StackScript to install Kali for recon
 
-**Description:** This entry describes how to setup a script to Kali for recon on virtual machines
+**Description:** This entry describes how to set up a Linode Stackscript on a Kali Linux virtual machine to install recon tools.
 
 **Provider:** Linode
 
